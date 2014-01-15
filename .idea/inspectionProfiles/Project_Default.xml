@@ -1,0 +1,23 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0" is_locked="false">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="false" />
+    <inspection_tool class="AndroidLintBackButton" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintEasterEgg" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintIconExpectedSize" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintRtlCompat" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintRtlEnabled" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintRtlHardcoded" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintSelectableText" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintStopShip" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintTypographyQuotes" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintUnusedIds" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="UnusedDeclaration" enabled="true" level="INFO" enabled_by_default="true">
+      <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+      <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+      <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+      <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnusedParameters" enabled="true" level="INFO" enabled_by_default="true" />
+  </profile>
+</component>
