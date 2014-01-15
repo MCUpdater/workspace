@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MCU-DownloadLib" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-FXGUI" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-Yggdrasil" vcs="Git" />
   </component>
