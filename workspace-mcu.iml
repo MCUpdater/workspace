@@ -6,7 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="MCU-API" />
+    <orderEntry type="module" module-name="MCU-FXGUI" />
+    <orderEntry type="module" module-name="MCU-DownloadLib" />
+    <orderEntry type="module" module-name="MCU-Yggdrasil" />
   </component>
 </module>
 
