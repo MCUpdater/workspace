@@ -6,10 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="workspace update&#10;&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   .idea/codeStyleSettings.xml&#10;#&#9;modified:   .idea/workspace.xml&#10;#&#10;# Untracked files:&#10;#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)&#10;#&#10;#&#9;.idea/dictionaries/&#10;diff --git a/.idea/codeStyleSettings.xml b/.idea/codeStyleSettings.xml&#10;index 05b8113..cab819f 100644&#10;--- a/.idea/codeStyleSettings.xml&#10;+++ b/.idea/codeStyleSettings.xml&#10;@@ -2,7 +2,11 @@&#10; &lt;project version=&quot;4&quot;&gt;&#10;   &lt;component name=&quot;ProjectCodeStyleSettingsManager&quot;&gt;&#10;     &lt;option name=&quot;PER_PROJECT_SETTINGS&quot;&gt;&#10;-      &lt;value /&gt;&#10;+      &lt;value&gt;&#10;+        &lt;XML&gt;&#10;+          &lt;option name=&quot;XML_LEGACY_SETTINGS_IMPORTED&quot; value=&quot;true&quot; /&gt;&#10;+        &lt;/XML&gt;&#10;+      &lt;/value&gt;&#10;     &lt;/option&gt;&#10;     &lt;option name=&quot;PREFERRED_PROJECT_CODE_STYLE&quot; value=&quot;Default (1)&quot; /&gt;&#10;   &lt;/component&gt;&#10;diff --git a/.idea/workspace.xml b/.idea/workspace.xml&#10;index c1297a8..b06a92b 100644&#10;--- a/.idea/workspace.xml&#10;+++ b/.idea/workspace.xml&#10;@@ -3,10 +3,9 @@&#10;   &lt;component name=&quot;ChangeListManager&quot;&gt;&#10;     &lt;list default=&quot;true&quot; id=&quot;14248ec1-6e0f-4e9a-8059-17669d8131ed&quot; name=&quot;Default&quot; comment=&quot;&quot;&gt;&#10;       &lt;change type=&quot;NEW&quot; beforePath=&quot;&quot; afterPath=&quot;$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib.iml&quot; /&gt;&#10;-      &lt;change type=&quot;NEW&quot; beforePath=&quot;&quot; afterPath=&quot;$PROJECT_DIR$/.idea/codeStyleSettings.xml&quot; /&gt;&#10;-      &lt;change type=&quot;MODIFICATION&quot; beforePath=&quot;$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml&quot; afterPath=&quot;$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml&quot; /&gt;&#10;+      &lt;change type=&quot;MODIFICATION&quot; beforePath=&quot;$PROJECT_DIR$/.idea/codeStyleSettings.xml&quot; afterPath=&quot;$PROJECT_DIR$/.idea/codeStyleSettings.xml&quot; /&gt;&#10;       &lt;change type=&quot;MODIFICATION&quot; beforePath=&quot;$PROJECT_DIR$/MCU-FXGUI/.idea/gradle.xml&quot; afterPath=&quot;$PROJECT_DIR$/MCU-FXGUI/.idea/gradle.xml&quot; /&gt;&#10;-      &lt;change type=&quot;MODIFICATION&quot; beforePath=&quot;$PROJECT_DIR$/workspace-mcu.iml&quot; afterPath=&quot;$PROJECT_DIR$/workspace-mcu.iml&quot; /&gt;&#10;+      &lt;change type=&quot;MODIFICATION&quot; beforePath=&quot;$PROJECT_DIR$/.idea/workspace.xml&quot; afterPath=&quot;$PROJECT_DIR$/.idea/workspace.xml&quot; /&gt;&#10;       &lt;change type=&quot;MODIFICATION&quot; beforePath=&quot;$PROJECT_DIR$/MCU-FXGUI/.idea/workspace.xml&quot; afterPath=&quot;$PROJECT_DIR$/MCU-FXGUI/.idea/workspace.xml&quot; /&gt;&#10;     &lt;/list&gt;&#10;     &lt;ignored path=&quot;workspace-mcu.iws&quot; /&gt;&#10;@@ -78,6 +77,7 @@&#10;     &lt;/FindUsagesManager&gt;&#10;   &lt;/component&gt;&#10;   &lt;component name=&quot;Git.Settings&quot;&gt;&#10;+    &lt;option name=&quot;SYNC_SETTING&quot; value=&quot;SYNC&quot; /&gt;&#10;     &lt;option name=&quot;RECENT_GIT_ROOT_PATH&quot; value=&quot;$PROJECT_DIR$&quot; /&gt;&#10;   &lt;/component&gt;&#10;   &lt;component name=&quot;ProjectFrameBounds&quot;&gt;&#10;@@ -116,7 +116,7 @@&#10;     &lt;ConfirmationsSetting value=&quot;0&quot; id=&quot;Remove&quot; /&gt;&#10;   &lt;/component&gt;&#10;   &lt;component name=&quot;ProjectReloadState&quot;&gt;&#10;-    &lt;option name=&quot;STATE&quot; value=&quot;2&quot; /&gt;&#10;+    &lt;option name=&quot;STATE&quot; value=&quot;0&quot; /&gt;&#10;   &lt;/component&gt;&#10;   &lt;component name=&quot;ProjectStructureProblems&quot;&gt;&#10;     &lt;ignored-problems&gt;&#10;@@ -137,6 +137,9 @@&#10;       &lt;sortByType /&gt;&#10;     &lt;/navigator&gt;&#10;     &lt;panes&gt;&#10;+      &lt;pane id=&quot;PackagesPane&quot;&gt;&#10;+        &lt;subPane /&gt;&#10;+      &lt;/pane&gt;&#10;       &lt;pane id=&quot;ProjectPane&quot;&gt;&#10;         &lt;subPane&gt;&#10;           &lt;PATH&gt;&#10;@@ -157,9 +160,6 @@&#10;           &lt;/PATH&gt;&#10;         &lt;/subPane&gt;&#10;       &lt;/pane&gt;&#10;-      &lt;pane id=&quot;PackagesPane&quot;&gt;&#10;-        &lt;subPane /&gt;&#10;-      &lt;/pane&gt;&#10;       &lt;pane id=&quot;Scope&quot;&gt;&#10;         &lt;subPane subId=&quot;Problems&quot; /&gt;&#10;         &lt;subPane subId=&quot;Project Files&quot; /&gt;&#10;@@ -175,14 +175,19 @@&#10;     &lt;property name=&quot;MemberChooser.copyJavadoc&quot; value=&quot;false&quot; /&gt;&#10;     &lt;property name=&quot;last_opened_file_path&quot; value=&quot;$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil.iml&quot; /&gt;&#10;     &lt;property name=&quot;project.structure.last.edited&quot; value=&quot;Modules&quot; /&gt;&#10;-    &lt;property name=&quot;project.structure.proportion&quot; value=&quot;0.0&quot; /&gt;&#10;+    &lt;property name=&quot;project.structure.proportion&quot; value=&quot;0.15&quot; /&gt;&#10;     &lt;property name=&quot;project.structure.side.proportion&quot; value=&quot;0.2&quot; /&gt;&#10;-    &lt;property name=&quot;options.lastSelected&quot; value=&quot;Errors&quot; /&gt;&#10;+    &lt;property name=&quot;options.lastSelected&quot; value=&quot;reference.idesettings.quicklists&quot; /&gt;&#10;     &lt;property name=&quot;options.splitter.main.proportions&quot; value=&quot;0.3&quot; /&gt;&#10;     &lt;property name=&quot;options.splitter.details.proportions&quot; value=&quot;0.2&quot; /&gt;&#10;     &lt;property name=&quot;options.searchVisible&quot; value=&quot;true&quot; /&gt;&#10;+    &lt;property name=&quot;FullScreen&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;property name=&quot;SearchEverywhereHistory&quot; value=&quot;&quot; /&gt;&#10;+    &lt;property name=&quot;recentsLimit&quot; value=&quot;5&quot; /&gt;&#10;+    &lt;property name=&quot;restartRequiresConfirmation&quot; value=&quot;true&quot; /&gt;&#10;+    &lt;property name=&quot;dynamic.classpath&quot; value=&quot;false&quot; /&gt;&#10;   &lt;/component&gt;&#10;-  &lt;component name=&quot;RunManager&quot;&gt;&#10;+  &lt;component name=&quot;RunManager&quot; selected=&quot;Application.MCUpdater JavaFX&quot;&gt;&#10;     &lt;configuration default=&quot;true&quot; type=&quot;#org.jetbrains.idea.devkit.run.PluginConfigurationType&quot; factoryName=&quot;Plugin&quot; singleton=&quot;true&quot;&gt;&#10;       &lt;module name=&quot;&quot; /&gt;&#10;       &lt;option name=&quot;VM_PARAMETERS&quot; value=&quot;-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea&quot; /&gt;&#10;@@ -197,19 +202,6 @@&#10;       &lt;option name=&quot;PORT&quot; value=&quot;5005&quot; /&gt;&#10;       &lt;method /&gt;&#10;     &lt;/configuration&gt;&#10;-    &lt;configuration default=&quot;true&quot; type=&quot;Applet&quot; factoryName=&quot;Applet&quot;&gt;&#10;-      &lt;module name=&quot;&quot; /&gt;&#10;-      &lt;option name=&quot;MAIN_CLASS_NAME&quot; /&gt;&#10;-      &lt;option name=&quot;HTML_FILE_NAME&quot; /&gt;&#10;-      &lt;option name=&quot;HTML_USED&quot; value=&quot;false&quot; /&gt;&#10;-      &lt;option name=&quot;WIDTH&quot; value=&quot;400&quot; /&gt;&#10;-      &lt;option name=&quot;HEIGHT&quot; value=&quot;300&quot; /&gt;&#10;-      &lt;option name=&quot;POLICY_FILE&quot; value=&quot;$APPLICATION_HOME_DIR$/bin/appletviewer.policy&quot; /&gt;&#10;-      &lt;option name=&quot;VM_PARAMETERS&quot; /&gt;&#10;-      &lt;option name=&quot;ALTERNATIVE_JRE_PATH_ENABLED&quot; value=&quot;false&quot; /&gt;&#10;-      &lt;option name=&quot;ALTERNATIVE_JRE_PATH&quot; /&gt;&#10;-      &lt;method /&gt;&#10;-    &lt;/configuration&gt;&#10;     &lt;configuration default=&quot;true&quot; type=&quot;TestNG&quot; factoryName=&quot;TestNG&quot;&gt;&#10;       &lt;module name=&quot;&quot; /&gt;&#10;       &lt;option name=&quot;ALTERNATIVE_JRE_PATH_ENABLED&quot; value=&quot;false&quot; /&gt;&#10;@@ -237,6 +229,19 @@&#10;       &lt;listeners /&gt;&#10;       &lt;method /&gt;&#10;     &lt;/configuration&gt;&#10;+    &lt;configuration default=&quot;true&quot; type=&quot;Applet&quot; factoryName=&quot;Applet&quot;&gt;&#10;+      &lt;module name=&quot;&quot; /&gt;&#10;+      &lt;option name=&quot;MAIN_CLASS_NAME&quot; /&gt;&#10;+      &lt;option name=&quot;HTML_FILE_NAME&quot; /&gt;&#10;+      &lt;option name=&quot;HTML_USED&quot; value=&quot;false&quot; /&gt;&#10;+      &lt;option name=&quot;WIDTH&quot; value=&quot;400&quot; /&gt;&#10;+      &lt;option name=&quot;HEIGHT&quot; value=&quot;300&quot; /&gt;&#10;+      &lt;option name=&quot;POLICY_FILE&quot; value=&quot;$APPLICATION_HOME_DIR$/bin/appletviewer.policy&quot; /&gt;&#10;+      &lt;option name=&quot;VM_PARAMETERS&quot; /&gt;&#10;+      &lt;option name=&quot;ALTERNATIVE_JRE_PATH_ENABLED&quot; value=&quot;false&quot; /&gt;&#10;+      &lt;option name=&quot;ALTERNATIVE_JRE_PATH&quot; /&gt;&#10;+      &lt;method /&gt;&#10;+    &lt;/configuration&gt;&#10;     &lt;configuration default=&quot;true&quot; type=&quot;Application&quot; factoryName=&quot;Application&quot;&gt;&#10;       &lt;option name=&quot;MAIN_CLASS_NAME&quot; /&gt;&#10;       &lt;option name=&quot;VM_PARAMETERS&quot; /&gt;&#10;@@ -271,13 +276,48 @@&#10;       &lt;patterns /&gt;&#10;       &lt;method /&gt;&#10;     &lt;/configuration&gt;&#10;-    &lt;list size=&quot;0&quot; /&gt;&#10;+    &lt;configuration default=&quot;false&quot; name=&quot;MCUpdater JavaFX&quot; type=&quot;Application&quot; factoryName=&quot;Application&quot;&gt;&#10;+      &lt;option name=&quot;MAIN_CLASS_NAME&quot; value=&quot;org.mcupdater.gui.Main&quot; /&gt;&#10;+      &lt;option name=&quot;VM_PARAMETERS&quot; value=&quot;&quot; /&gt;&#10;+      &lt;option name=&quot;PROGRAM_PARAMETERS&quot; value=&quot;&quot; /&gt;&#10;+      &lt;option name=&quot;WORKING_DIRECTORY&quot; value=&quot;file://$PROJECT_DIR$&quot; /&gt;&#10;+      &lt;option name=&quot;ALTERNATIVE_JRE_PATH_ENABLED&quot; value=&quot;false&quot; /&gt;&#10;+      &lt;option name=&quot;ALTERNATIVE_JRE_PATH&quot; value=&quot;&quot; /&gt;&#10;+      &lt;option name=&quot;ENABLE_SWING_INSPECTOR&quot; value=&quot;false&quot; /&gt;&#10;+      &lt;option name=&quot;ENV_VARIABLES&quot; /&gt;&#10;+      &lt;option name=&quot;PASS_PARENT_ENVS&quot; value=&quot;true&quot; /&gt;&#10;+      &lt;module name=&quot;MCU-FXGUI&quot; /&gt;&#10;+      &lt;envs /&gt;&#10;+      &lt;RunnerSettings RunnerId=&quot;Run&quot; /&gt;&#10;+      &lt;ConfigurationWrapper RunnerId=&quot;Run&quot; /&gt;&#10;+      &lt;method /&gt;&#10;+    &lt;/configuration&gt;&#10;+    &lt;list size=&quot;1&quot;&gt;&#10;+      &lt;item index=&quot;0&quot; class=&quot;java.lang.String&quot; itemvalue=&quot;Application.MCUpdater JavaFX&quot; /&gt;&#10;+    &lt;/list&gt;&#10;     &lt;configuration name=&quot;&amp;lt;template&amp;gt;&quot; type=&quot;WebApp&quot; default=&quot;true&quot; selected=&quot;false&quot;&gt;&#10;       &lt;Host&gt;localhost&lt;/Host&gt;&#10;       &lt;Port&gt;5050&lt;/Port&gt;&#10;     &lt;/configuration&gt;&#10;   &lt;/component&gt;&#10;   &lt;component name=&quot;ShelveChangesManager&quot; show_recycled=&quot;false&quot; /&gt;&#10;+  &lt;component name=&quot;SvnConfiguration&quot; maxAnnotateRevisions=&quot;500&quot; myUseAcceleration=&quot;nothing&quot; myAutoUpdateAfterCommit=&quot;false&quot; cleanupOnStartRun=&quot;false&quot; SSL_PROTOCOLS=&quot;all&quot;&gt;&#10;+    &lt;option name=&quot;USER&quot; value=&quot;&quot; /&gt;&#10;+    &lt;option name=&quot;PASSWORD&quot; value=&quot;&quot; /&gt;&#10;+    &lt;option name=&quot;mySSHConnectionTimeout&quot; value=&quot;30000&quot; /&gt;&#10;+    &lt;option name=&quot;mySSHReadTimeout&quot; value=&quot;30000&quot; /&gt;&#10;+    &lt;option name=&quot;LAST_MERGED_REVISION&quot; /&gt;&#10;+    &lt;option name=&quot;MERGE_DRY_RUN&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;option name=&quot;MERGE_DIFF_USE_ANCESTRY&quot; value=&quot;true&quot; /&gt;&#10;+    &lt;option name=&quot;UPDATE_LOCK_ON_DEMAND&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;option name=&quot;IGNORE_SPACES_IN_MERGE&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;option name=&quot;CHECK_NESTED_FOR_QUICK_MERGE&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;option name=&quot;IGNORE_SPACES_IN_ANNOTATE&quot; value=&quot;true&quot; /&gt;&#10;+    &lt;option name=&quot;SHOW_MERGE_SOURCES_IN_ANNOTATE&quot; value=&quot;true&quot; /&gt;&#10;+    &lt;option name=&quot;FORCE_UPDATE&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;option name=&quot;IGNORE_EXTERNALS&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;myIsUseDefaultProxy&gt;false&lt;/myIsUseDefaultProxy&gt;&#10;+  &lt;/component&gt;&#10;   &lt;component name=&quot;TaskManager&quot;&gt;&#10;     &lt;task active=&quot;true&quot; id=&quot;Default&quot; summary=&quot;Default task&quot;&gt;&#10;       &lt;changelist id=&quot;14248ec1-6e0f-4e9a-8059-17669d8131ed&quot; name=&quot;Default&quot; comment=&quot;&quot; /&gt;&#10;@@ -300,18 +340,19 @@&#10;       &lt;window_info id=&quot;Event Log&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;7&quot; side_tool=&quot;true&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Favorites&quot; active=&quot;false&quot; anchor=&quot;left&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;2&quot; side_tool=&quot;true&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Version Control&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;7&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;+      &lt;window_info id=&quot;Messages&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;-1&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;TODO&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;6&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Structure&quot; active=&quot;false&quot; anchor=&quot;left&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.25&quot; sideWeight=&quot;0.5&quot; order=&quot;1&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Maven Projects&quot; active=&quot;false&quot; anchor=&quot;right&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;3&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Commander&quot; active=&quot;false&quot; anchor=&quot;right&quot; auto_hide=&quot;false&quot; internal_type=&quot;SLIDING&quot; type=&quot;SLIDING&quot; visible=&quot;false&quot; weight=&quot;0.4&quot; sideWeight=&quot;0.5&quot; order=&quot;0&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Application Servers&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;7&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Project&quot; active=&quot;true&quot; anchor=&quot;left&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;true&quot; weight=&quot;0.24973656&quot; sideWeight=&quot;0.5&quot; order=&quot;0&quot; side_tool=&quot;false&quot; content_ui=&quot;combo&quot; /&gt;&#10;-      &lt;window_info id=&quot;Run&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;2&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;+      &lt;window_info id=&quot;Run&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.32925683&quot; sideWeight=&quot;0.5&quot; order=&quot;2&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Cvs&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.25&quot; sideWeight=&quot;0.5&quot; order=&quot;4&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Message&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;0&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;       &lt;window_info id=&quot;Find&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.33&quot; sideWeight=&quot;0.5&quot; order=&quot;1&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;-      &lt;window_info id=&quot;Hierarchy&quot; active=&quot;false&quot; anchor=&quot;right&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.25&quot; sideWeight=&quot;0.5&quot; order=&quot;2&quot; side_tool=&quot;false&quot; content_ui=&quot;combo&quot; /&gt;&#10;       &lt;window_info id=&quot;Inspection&quot; active=&quot;false&quot; anchor=&quot;bottom&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.4&quot; sideWeight=&quot;0.5&quot; order=&quot;5&quot; side_tool=&quot;false&quot; content_ui=&quot;tabs&quot; /&gt;&#10;+      &lt;window_info id=&quot;Hierarchy&quot; active=&quot;false&quot; anchor=&quot;right&quot; auto_hide=&quot;false&quot; internal_type=&quot;DOCKED&quot; type=&quot;DOCKED&quot; visible=&quot;false&quot; weight=&quot;0.25&quot; sideWeight=&quot;0.5&quot; order=&quot;2&quot; side_tool=&quot;false&quot; content_ui=&quot;combo&quot; /&gt;&#10;     &lt;/layout&gt;&#10;   &lt;/component&gt;&#10;   &lt;component name=&quot;Vcs.Log.UiProperties&quot;&gt;&#10;@@ -330,12 +371,14 @@&#10;   &lt;component name=&quot;XDebuggerManager&quot;&gt;&#10;     &lt;breakpoint-manager /&gt;&#10;   &lt;/component&gt;&#10;+  &lt;component name=&quot;antWorkspaceConfiguration&quot;&gt;&#10;+    &lt;option name=&quot;IS_AUTOSCROLL_TO_SOURCE&quot; value=&quot;false&quot; /&gt;&#10;+    &lt;option name=&quot;FILTER_TARGETS&quot; value=&quot;false&quot; /&gt;&#10;+  &lt;/component&gt;&#10;   &lt;component name=&quot;editorHistoryManager&quot;&gt;&#10;     &lt;entry file=&quot;file://$PROJECT_DIR$/workspace-mcu.iml&quot;&gt;&#10;       &lt;provider selected=&quot;true&quot; editor-type-id=&quot;text-editor&quot;&gt;&#10;-        &lt;state line=&quot;0&quot; column=&quot;0&quot; selection-start=&quot;0&quot; selection-end=&quot;0&quot; vertical-scroll-proportion=&quot;0.0&quot; vertical-offset=&quot;0&quot; max-vertical-offset=&quot;1036&quot;&gt;&#10;-          &lt;folding /&gt;&#10;-        &lt;/state&gt;&#10;+        &lt;state line=&quot;0&quot; column=&quot;0&quot; selection-start=&quot;0&quot; selection-end=&quot;0&quot; vertical-scroll-proportion=&quot;0.0&quot; vertical-offset=&quot;0&quot; max-vertical-offset=&quot;1036&quot; /&gt;&#10;       &lt;/provider&gt;&#10;     &lt;/entry&gt;&#10;   &lt;/component&gt;&#10;@@ -379,7 +422,7 @@&#10;       &lt;/state&gt;&#10;       &lt;state key=&quot;JdkListConfigurable.UI&quot;&gt;&#10;         &lt;settings&gt;&#10;-          &lt;last-edited&gt;1.6&lt;/last-edited&gt;&#10;+          &lt;last-edited&gt;1.7&lt;/last-edited&gt;&#10;           &lt;splitter-proportions&gt;&#10;             &lt;option name=&quot;proportions&quot;&gt;&#10;               &lt;list&gt;&#10;@@ -391,7 +434,7 @@&#10;       &lt;/state&gt;&#10;       &lt;state key=&quot;ModuleStructureConfigurable.UI&quot;&gt;&#10;         &lt;settings&gt;&#10;-          &lt;last-edited&gt;MCU-Yggdrasil&lt;/last-edited&gt;&#10;+          &lt;last-edited&gt;MCU-API&lt;/last-edited&gt;&#10;           &lt;splitter-proportions&gt;&#10;             &lt;option name=&quot;proportions&quot;&gt;&#10;               &lt;list&gt;&#10;@@ -413,6 +456,17 @@&#10;           &lt;/splitter-proportions&gt;&#10;         &lt;/settings&gt;&#10;       &lt;/state&gt;&#10;+      &lt;state key=&quot;ScopeChooserConfigurable.UI&quot;&gt;&#10;+        &lt;settings&gt;&#10;+          &lt;splitter-proportions&gt;&#10;+            &lt;option name=&quot;proportions&quot;&gt;&#10;+              &lt;list&gt;&#10;+                &lt;option value=&quot;0.2&quot; /&gt;&#10;+              &lt;/list&gt;&#10;+            &lt;/option&gt;&#10;+          &lt;/splitter-proportions&gt;&#10;+        &lt;/settings&gt;&#10;+      &lt;/state&gt;&#10;     &lt;/states&gt;&#10;   &lt;/component&gt;&#10; &lt;/project&gt;&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/MCUpdater_JavaFX.xml" />
+    <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -79,7 +78,7 @@
       <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="37" selection-start="5851" selection-end="5851" vertical-scroll-proportion="0.0" vertical-offset="2100" max-vertical-offset="3924">
+            <state line="191" column="0" selection-start="5401" selection-end="5401" vertical-scroll-proportion="0.0" vertical-offset="2736" max-vertical-offset="3348">
               <folding />
             </state>
           </provider>
@@ -88,16 +87,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="828">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TrackerListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TrackerListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="26" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="234">
+            <state line="26" column="0" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="666">
               <folding />
             </state>
           </provider>
@@ -106,7 +96,16 @@
       <file leaf-file-name="NewsBrowser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/NewsBrowser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="8" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="612">
+            <state line="25" column="8" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MCUSettings.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="209" column="4" selection-start="7048" selection-end="7048" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="3690">
               <folding />
             </state>
           </provider>
@@ -115,16 +114,7 @@
       <file leaf-file-name="ProfilePane.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ProfilePane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="51" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0" vertical-offset="695" max-vertical-offset="1260">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstanceListCell.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/InstanceListCell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="20" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1080">
+            <state line="42" column="51" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="954">
               <folding />
             </state>
           </provider>
@@ -148,19 +138,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginDialog.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LoginDialog.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="24" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-              <folding />
+            <state line="44" column="1" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.7647059" vertical-offset="324" max-vertical-offset="972">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginDialog.fxml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginDialog.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="288" selection-end="288" vertical-scroll-proportion="0.19354838" vertical-offset="0" max-vertical-offset="684">
+            <state line="23" column="92" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
               <folding />
             </state>
           </provider>
@@ -214,12 +206,13 @@
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUpdater.css" />
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/ITrackerListener.java" />
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TrackerListener.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainController.java" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainDialog.fxml" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ProfilePane.java" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.fxml" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.java" />
+        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainController.java" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml" />
+        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java" />
       </list>
     </option>
   </component>
@@ -310,6 +303,40 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-FXGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,40 +462,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-Yggdrasil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-FXGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -533,6 +526,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -558,19 +564,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -686,7 +679,11 @@
       <created>1390522815973</created>
       <updated>1390522815974</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add LoginDialog class and FXML">
+      <created>1390781354904</created>
+      <updated>1390781354904</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -720,7 +717,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39887112" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5010267" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33104396" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -737,7 +734,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997253" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39887112" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -759,7 +756,8 @@
     <MESSAGE value="ProgressView fully functional" />
     <MESSAGE value="Getting closer to beta&#10;" />
     <MESSAGE value="Getting closer to beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting closer to beta" />
+    <MESSAGE value="Add LoginDialog class and FXML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add LoginDialog class and FXML" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -776,9 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-35.350563" vertical-offset="15731" max-vertical-offset="16416">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-35.350563" vertical-offset="15731" max-vertical-offset="16416" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/build.xml">
@@ -808,9 +804,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/org/mcupdater/Version.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="26" selection-start="2636" selection-end="2636" vertical-scroll-proportion="3.0152285" vertical-offset="0" max-vertical-offset="1620">
-          <folding />
-        </state>
+        <state line="67" column="26" selection-start="2636" selection-end="2636" vertical-scroll-proportion="3.0152285" vertical-offset="0" max-vertical-offset="1620" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/AssetIndex.java">
@@ -912,11 +906,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ServerList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="4" selection-start="4100" selection-end="4100" vertical-scroll-proportion="0.9168539" vertical-offset="1788" max-vertical-offset="2340">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="176" column="4" selection-start="4100" selection-end="4100" vertical-scroll-proportion="0.9168539" vertical-offset="1788" max-vertical-offset="2340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/org/mcupdater/MCUCLI.java">
@@ -955,25 +945,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/Module.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-          <folding />
-        </state>
+        <state line="22" column="0" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/ServerPackParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="297" column="0" selection-start="9902" selection-end="9902" vertical-scroll-proportion="0.0" vertical-offset="4766" max-vertical-offset="6444">
-          <folding />
-        </state>
+        <state line="297" column="0" selection-start="9902" selection-end="9902" vertical-scroll-proportion="0.0" vertical-offset="4766" max-vertical-offset="6444" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/MCUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="788" column="30" selection-start="26039" selection-end="26039" vertical-scroll-proportion="0.3952381" vertical-offset="13118" max-vertical-offset="21384">
-          <folding>
-            <element signature="e#26233#26234#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="788" column="30" selection-start="26039" selection-end="26039" vertical-scroll-proportion="0.3952381" vertical-offset="13118" max-vertical-offset="21384" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ProgressView.java">
@@ -995,23 +977,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUpdater.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/NewsBrowser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TrackerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <folding />
-        </state>
+        <state line="9" column="11" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
@@ -1019,16 +985,9 @@
         <state line="817" column="0" selection-start="24560" selection-end="24560" vertical-scroll-proportion="0.33333334" vertical-offset="14566" max-vertical-offset="46098" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/InstanceListCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="20" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
+        <state line="27" column="20" selection-start="781" selection-end="781" vertical-scroll-proportion="-0.006779661" vertical-offset="274" max-vertical-offset="864">
           <folding />
         </state>
       </provider>
@@ -1040,9 +999,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainController.java">
+    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TrackerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="37" selection-start="5851" selection-end="5851" vertical-scroll-proportion="0.0" vertical-offset="3504" max-vertical-offset="3924">
+        <state line="2" column="26" selection-start="50" selection-end="50" vertical-scroll-proportion="0.05882353" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/NewsBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="8" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
           <folding />
         </state>
       </provider>
@@ -1056,14 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="4" selection-start="7048" selection-end="7048" vertical-scroll-proportion="0.3945783" vertical-offset="2924" max-vertical-offset="3690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+        <state line="209" column="4" selection-start="7048" selection-end="7048" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="3690">
           <folding />
         </state>
       </provider>
@@ -1075,10 +1034,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="0" selection-start="5401" selection-end="5401" vertical-scroll-proportion="0.0" vertical-offset="2502" max-vertical-offset="3348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="288" selection-end="288" vertical-scroll-proportion="0.19354838" vertical-offset="0" max-vertical-offset="684">
+        <state line="23" column="92" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="1" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.7647059" vertical-offset="324" max-vertical-offset="972">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
