@@ -2,7 +2,7 @@
   <configuration default="false" name="MCUpdater JavaFX" type="Application" factoryName="Application" singleton="true">
     <option name="MAIN_CLASS_NAME" value="org.mcupdater.gui.Main" />
     <option name="VM_PARAMETERS" value="" />
-    <option name="PROGRAM_PARAMETERS" value="" />
+    <option name="PROGRAM_PARAMETERS" value="--MCURoot $USER_HOME$/.MCUpdater" />
     <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
     <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -11,7 +11,13 @@
     <option name="PASS_PARENT_ENVS" value="true" />
     <module name="MCU-FXGUI" />
     <envs />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
     <RunnerSettings RunnerId="Run" />
+    <ConfigurationWrapper RunnerId="Debug" />
     <ConfigurationWrapper RunnerId="Run" />
     <method />
   </configuration>
