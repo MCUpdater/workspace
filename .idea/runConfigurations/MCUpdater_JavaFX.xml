@@ -2,7 +2,7 @@
   <configuration default="false" name="MCUpdater JavaFX" type="Application" factoryName="Application" singleton="true">
     <option name="MAIN_CLASS_NAME" value="org.mcupdater.gui.Main" />
     <option name="VM_PARAMETERS" value="" />
-    <option name="PROGRAM_PARAMETERS" value="--MCURoot $USER_HOME$/.MCUpdater" />
+    <option name="PROGRAM_PARAMETERS" value="--MCURoot $USER_HOME$/.MCUpdater --ServerPack http://files.mcupdater.com/example/SamplePack.xml" />
     <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
     <option name="ALTERNATIVE_JRE_PATH" value="" />
