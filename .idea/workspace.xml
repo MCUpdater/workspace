@@ -9,118 +9,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="Move to gradle">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_lang3_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gson_2_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__xz_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/minecraft.png" afterPath="$PROJECT_DIR$/MCU-API/src/main/resources/minecraft.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/FMLStyleFormatter.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/FMLStyleFormatter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/MCUApp.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUApp.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/MCUCLI.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUCLI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/Version.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/Version.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/instance/FileInfo.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/FileInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/instance/Instance.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/Instance.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/instance/InstanceManager.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/InstanceManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/Backup.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Backup.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ConfigFile.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ConfigFile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/GenericModule.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/GenericModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/LoginData.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/LoginData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ModSide.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModSide.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ModType.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/Module.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Module.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ModuleComparator.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModuleComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/PrioritizedURL.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/PrioritizedURL.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ServerList.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ServerList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ServerListPacket.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ServerListPacket.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/.gitignore" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/AssetIndex.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetIndex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/AssetManager.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/Extract.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Extract.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/Library.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Library.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/LowerCaseEnumTypeAdapterFactory.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/LowerCaseEnumTypeAdapterFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/MinecraftVersion.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/MinecraftVersion.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/OperatingSystem.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/OperatingSystem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/Rule.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Rule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/package-info.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/package-info.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/settings/Profile.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Profile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/settings/Settings.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Settings.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/settings/SettingsListener.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/SettingsListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/settings/SettingsManager.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/SettingsManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/Archive.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/Archive.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/DownloadCache.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/DownloadCache.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/HTTPSUtils.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/HTTPSUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/Localization.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/Localization.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/MCLegacyAuth.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLegacyAuth.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/MCLoginException.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLoginException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/MCUpdater.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/ModDownload.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/ServerPackParser.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/ServerStatus.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerStatus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/md5.dat" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/md5.dat" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/minecraft.key" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/minecraft.key" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/version.properties" afterPath="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/test/org/mcupdater/mojang/TestClass.java" afterPath="$PROJECT_DIR$/MCU-API/src/test/java/org/mcupdater/mojang/TestClass.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/DownloadQueue.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/DownloadQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/Downloadable.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Downloadable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/MirrorOutputStream.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/MirrorOutputStream.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/ProgressTracker.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/ProgressTracker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TaskableExecutor.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TrackerListener.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackerListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TrackingInputStream.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackingInputStream.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ConsoleHandler.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsoleHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ConsolePane.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsolePane.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/InstanceListCell.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/InstanceListCell.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/LoginDialog.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/LoginDialog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.fxml" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUSettings.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUSettings.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUpdater.css" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUpdater.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/Main.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainController.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainDialog.fxml" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainDialog.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MessageDialog.fxml" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MessageDialog.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MessageDialog.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MessageDialog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ModuleEntry.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModuleEntry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ModulePanel.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModulePanel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/NewsBrowser.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/NewsBrowser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ProfilePane.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProfilePane.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ProgressView.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProgressView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/mcu-icon.png" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/mcu-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/remove.png" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/remove.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/translate/DEDeutsch.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/translate/DEDeutsch.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/translate/FRFrench.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/translate/FRFrench.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/translate/Languages.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/translate/Languages.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/translate/PLPolish.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/translate/PLPolish.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/translate/TranslateProxy.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/translate/TranslateProxy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/translate/USEnglish.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/translate/USEnglish.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-FXGUI/test/TestLogin.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/test/java/TestLogin.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/Agent.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Agent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/AuthManager.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/AuthManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/AuthRequest.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/AuthRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/ErrorResponse.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/ErrorResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/Profile.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Profile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/RefreshRequest.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/RefreshRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/SessionResponse.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/SessionResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PackBuilder/src/org/mcupdater/packbuilder/Main.java" afterPath="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PackBuilder/src/org/mcupdater/packbuilder/MainController.java" afterPath="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PackBuilder/src/org/mcupdater/packbuilder/MainDialog.fxml" afterPath="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainDialog.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PackBuilder/src/org/mcupdater/packbuilder/mcu-icon.png" afterPath="$PROJECT_DIR$/PackBuilder/src/main/resources/mcu-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/MCU-API.iml" afterPath="$PROJECT_DIR$/MCU-API/MCU-API.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib.iml" afterPath="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" afterPath="$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil.iml" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" afterPath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workspace-mcu.iml" afterPath="$PROJECT_DIR$/workspace-mcu.iml" />
+    <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-API/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-DownloadLib/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jopt_simple_4_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/MCU_API_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/MCU_Yggdrasil_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-API/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-DownloadLib/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -2915,7 +2818,11 @@
       <created>1392769014279</created>
       <updated>1392769014279</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Move to gradle">
+      <created>1392846603011</created>
+      <updated>1392846603011</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2940,10 +2847,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1442" height="853" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2952,7 +2859,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5010267" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998565" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33104396" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

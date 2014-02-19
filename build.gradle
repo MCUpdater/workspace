@@ -1,0 +1,51 @@
+subprojects {
+    apply plugin: 'java'
+    group = 'org.mcupdater'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+project(':MCU-Yggdrasil') {
+    dependencies {
+        compile 'com.google.code.gson:gson:2.2.4'
+    }
+}
+
+project(':MCU-DownloadLib') {
+    dependencies {
+        compile 'commons-codec:commons-codec:1.9'
+        compile 'commons-io:commons-io:2.4'
+        compile 'org.tukaani:xz:1.4'
+    }
+}
+
+project(':MCU-API') {
+    dependencies {
+        compile project(':MCU-DownloadLib')
+        compile project(':MCU-Yggdrasil')
+        compile 'commons-codec:commons-codec:1.9'
+        compile 'commons-io:commons-io:2.4'
+        compile 'com.google.code.gson:gson:2.2.4'
+    }
+}
+
+project(':MCU-FXGUI') {
+    dependencies {
+        compile project(':MCU-API')
+        compile project(':MCU-DownloadLib')
+        compile project(':MCU-Yggdrasil')
+        compile 'org.apache.commons:commons-lang3:3.2.1'
+        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+        compile 'commons-io:commons-io:2.4'
+        compile 'com.google.code.gson:gson:2.2.4'
+    }
+}
+
+project(':PackBuilder') {
+    dependencies {
+        compile project(':MCU-API')
+        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+    }
+}

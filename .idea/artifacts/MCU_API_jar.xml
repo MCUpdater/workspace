@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MCU-API:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MCU_API_jar</output-path>
+    <root id="archive" name="MCU-API.jar">
+      <element id="module-output" name="MCU-API" />
+      <element id="file-copy" path="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" />
+    </root>
+  </artifact>
+</component>
