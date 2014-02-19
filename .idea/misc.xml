@@ -4,23 +4,40 @@
     <disable_hints />
   </component>
   <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Abstraction issues</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="org.mcupdater.Yggdrasil.SessionResponse accessToken" />
+      <entry_point TYPE="field" FQNAME="org.mcupdater.Yggdrasil.SessionResponse clientToken" />
+      <entry_point TYPE="field" FQNAME="org.mcupdater.Yggdrasil.SessionResponse availableProfiles" />
+      <entry_point TYPE="field" FQNAME="org.mcupdater.Yggdrasil.SessionResponse selectedProfile" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.Yggdrasil.SessionResponse org.mcupdater.Yggdrasil.Profile[] getAvailableProfiles()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.Yggdrasil.Agent java.lang.String getName()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.Yggdrasil.Agent int getVersion()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.mojang.AssetIndex AssetIndex()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.Yggdrasil.AuthRequest AuthRequest(org.mcupdater.Yggdrasil.Agent agent, java.lang.String username, java.lang.String password, java.lang.String clientToken)" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.gui.ConsolePane ConsolePane()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.translate.DEDeutsch DEDeutsch()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.Downloadable Downloadable(java.lang.String friendlyName, java.lang.String filename, java.lang.String md5, long size, java.util.List&lt;java.net.URL&gt; downloadURLs)" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.Downloadable Downloadable(java.lang.String friendlyName, java.lang.String filename, org.mcupdater.Downloadable.HashAlgorithm algo, java.lang.String hash, long size, java.util.List&lt;java.net.URL&gt; downloadURLs)" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.DownloadQueue DownloadQueue(java.lang.String name, java.lang.String parent, org.mcupdater.TrackerListener listener, java.util.Collection&lt;org.mcupdater.Downloadable&gt; queue, java.io.File basePath, java.io.File cachePath, java.lang.String mcUser)" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.DownloadQueue DownloadQueue(java.lang.String name, java.lang.String parent, org.mcupdater.TrackerListener listener, java.util.Collection&lt;org.mcupdater.Downloadable&gt; queue, java.io.File basePath, java.io.File cachePath)" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.Yggdrasil.ErrorResponse java.lang.String getCause()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.mojang.Extract Extract()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.mojang.Extract Extract(java.lang.String[] exclude)" />
+      <entry_point TYPE="class" FQNAME="org.mcupdater.instance.FileInfo" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.translate.FRFrench FRFrench()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.model.GenericModule void addUrl(org.mcupdater.model.PrioritizedURL url)" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.model.GenericModule java.lang.String getDepends()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.model.GenericModule org.mcupdater.model.ModSide getSide()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.model.GenericModule boolean isClientSide()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.model.GenericModule boolean isServerSide()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.model.GenericModule java.util.HashMap&lt;java.lang.String,java.lang.String&gt; getMeta()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.instance.Instance java.lang.Boolean getModStatus(java.lang.String key)" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.instance.Instance java.lang.String getMCVersion()" />
+      <entry_point TYPE="method" FQNAME="org.mcupdater.instance.Instance java.lang.String getRevision()" />
+    </entry_points>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JSON" />
+    </list>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />

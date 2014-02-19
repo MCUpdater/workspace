@@ -14,6 +14,8 @@ project(':MCU-Yggdrasil') {
 }
 
 project(':MCU-DownloadLib') {
+    sourceCompatibility = 1.6
+
     dependencies {
         compile 'commons-codec:commons-codec:1.9'
         compile 'commons-io:commons-io:2.4'

@@ -10,20 +10,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-API/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-DownloadLib/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jopt_simple_4_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/MCU_API_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/MCU_Yggdrasil_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-API/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-DownloadLib/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/JSON.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/JSON.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/Localization.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Agent.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Agent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetIndex.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetIndex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/AuthRequest.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/AuthRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsolePane.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsolePane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/DownloadCache.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/DownloadCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/DownloadQueue.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/DownloadQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Downloadable.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Downloadable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/ErrorResponse.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/ErrorResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Extract.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Extract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/FMLStyleFormatter.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/FMLStyleFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Library.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Library.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib.iml" afterPath="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUSettings.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUSettings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/MinecraftVersion.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/MinecraftVersion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModuleComparator.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModuleComparator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModulePanel.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModulePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Profile.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Profile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Profile.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Profile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProgressView.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProgressView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/RefreshRequest.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/RefreshRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Rule.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Rule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerStatus.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerStatus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/SessionResponse.java" afterPath="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/SessionResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Settings.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Settings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackingInputStream.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackingInputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -90,46 +112,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java">
+      <file leaf-file-name="ConsolePane.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsolePane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1638">
+            <state line="12" column="11" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="486">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Downloadable.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Downloadable.java">
+      <file leaf-file-name="InstanceManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/InstanceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="35" selection-start="272" selection-end="272" vertical-scroll-proportion="0.21428572" vertical-offset="36" max-vertical-offset="5724">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misc.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="38" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0" vertical-offset="2160" max-vertical-offset="2520">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="64" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="738">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfilePane.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProfilePane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="32" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1530">
+            <state line="14" column="23" selection-start="336" selection-end="336" vertical-scroll-proportion="0.2734177" vertical-offset="0" max-vertical-offset="648">
               <folding />
             </state>
           </provider>
@@ -144,7 +139,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MCU-DownloadLib" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MCU-API" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -362,411 +357,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/MCU-API/MCU-API">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-API" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-API/MCU-DownloadLib">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-DownloadLib" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-API/MCU-FXGUI">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-FXGUI" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/MCU-Yggdrasil" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-API/PackBuilder">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-API/PackBuilder" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/MCU-DownloadLib">
           <value>
             <list>
@@ -843,411 +433,6 @@
               <ExternalTaskPojo>
                 <option name="description" value="Assembles classes 'test'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-DownloadLib/MCU-API">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-API" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-FXGUI" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/MCU-Yggdrasil" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-DownloadLib/PackBuilder" />
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
             </list>
@@ -1415,411 +600,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-API" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-DownloadLib" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-FXGUI" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil/PackBuilder" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/PackBuilder">
           <value>
             <list>
@@ -1905,7 +685,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1392846544666" />
+        <entry key="$PROJECT_DIR$" value="1392847670962" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2055,38 +835,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/org/mcupdater/Yggdrasil/AuthManager.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/InstanceListCell.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/AssetManager.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/HTTPSUtils.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/settings/SettingsManager.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUpdater.css" />
-        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/ITrackerListener.java" />
-        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/TrackerListener.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/test/TestLogin.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.fxml" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.fxml" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/settings/Profile.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/settings/SettingsListener.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/MCUCLI.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MCUSettings.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/out/production/MCU-FXGUI/org/mcupdater/gui/MainDialog.fxml" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/mojang/AssetIndex.java" />
-        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/Downloadable.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ServerList.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/Module.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/ModuleComparator.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ModuleEntry.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/MCUApp.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/model/GenericModule.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/ServerPackParser.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ModulePanel.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ProgressView.java" />
-        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/org/mcupdater/DownloadQueue.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/util/MCUpdater.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/org/mcupdater/instance/Instance.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/LoginDialog.java" />
-        <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MessageDialog.java" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MessageDialog.fxml" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/MainDialog.fxml" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/org/mcupdater/gui/ConsolePane.java" />
@@ -2105,7 +853,39 @@
         <option value="$PROJECT_DIR$/MCU-DownloadLib/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Downloadable.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModuleComparator.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" />
+        <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsolePane.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/DownloadCache.java" />
+        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/DownloadQueue.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Extract.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/FMLStyleFormatter.java" />
+        <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLoginException.java" />
+        <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUSettings.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" />
+        <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModulePanel.java" />
+        <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProgressView.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerStatus.java" />
+        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java" />
+        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackingInputStream.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/JSON.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetIndex.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Library.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/MinecraftVersion.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Rule.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Profile.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Settings.java" />
+        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/JSON.java" />
+        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Agent.java" />
+        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/AuthRequest.java" />
+        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/ErrorResponse.java" />
+        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Profile.java" />
+        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/RefreshRequest.java" />
+        <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/SessionResponse.java" />
       </list>
     </option>
   </component>
@@ -2126,51 +906,12 @@
             <id />
           </State>
           <State>
-            <id>Android</id>
-          </State>
-          <State>
-            <id>Class structure</id>
-          </State>
-          <State>
-            <id>Code style issues</id>
-          </State>
-          <State>
-            <id>Compiler issues</id>
-          </State>
-          <State>
             <id>Declaration redundancy</id>
-          </State>
-          <State>
-            <id>Java language level migration aids</id>
-          </State>
-          <State>
-            <id>JavaFX</id>
-          </State>
-          <State>
-            <id>Naming conventions</id>
-          </State>
-          <State>
-            <id>Pattern Validation</id>
-          </State>
-          <State>
-            <id>Performance issues</id>
-          </State>
-          <State>
-            <id>Serialization issues</id>
-          </State>
-          <State>
-            <id>Threading issues</id>
-          </State>
-          <State>
-            <id>UI Form Problems</id>
-          </State>
-          <State>
-            <id>Verbose or redundant code constructs</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>JavaFxDefaultTag</id>
+            <id>UnusedDeclaration</id>
           </State>
         </selected-state>
       </profile-state>
@@ -2187,7 +928,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -2202,41 +943,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-Yggdrasil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-FXGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2367,6 +1073,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="MCU-FXGUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2381,7 +1191,215 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-FXGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-FXGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-FXGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="settings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2405,6 +1423,41 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-FXGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2507,12 +1560,6 @@
       <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -2520,6 +1567,12 @@
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -2565,6 +1618,19 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -2590,19 +1656,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2822,7 +1875,11 @@
       <created>1392846603011</created>
       <updated>1392846603011</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Missing gradle files">
+      <created>1392846750436</created>
+      <updated>1392846750436</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2850,16 +1907,16 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39835164" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5010267" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998565" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33104396" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2867,14 +1924,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40028694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2482066" sideWeight="0.4989733" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39835164" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39835164" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2911,7 +1968,8 @@
     <MESSAGE value="Add PackBuilder to MCUpdater IDEA workspace" />
     <MESSAGE value="Add PackBuilder to MCUpdater IDEA workspace&#10;" />
     <MESSAGE value="Move to gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move to gradle" />
+    <MESSAGE value="Missing gradle files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Missing gradle files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2921,270 +1979,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProfilePane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="32" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/FMLStyleFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="34" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.25" vertical-offset="456" max-vertical-offset="864" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/PrioritizedURL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="40" selection-start="521" selection-end="521" vertical-scroll-proportion="0.53002614" vertical-offset="175" max-vertical-offset="558" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/GenericModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="28" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="4248" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModulePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1008" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.16551724" vertical-offset="0" max-vertical-offset="522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Module.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="1008" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/DownloadQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="52" selection-start="3539" selection-end="3539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2934" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/math/BigInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="0" selection-start="6990" selection-end="6990" vertical-scroll-proportion="0.33333334" vertical-offset="2753" max-vertical-offset="56952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1144" column="91" selection-start="38849" selection-end="38849" vertical-scroll-proportion="0.0" vertical-offset="11298" max-vertical-offset="21924" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProgressView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2173" selection-end="2173" vertical-scroll-proportion="1.2274882" vertical-offset="724" max-vertical-offset="3600" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/InstanceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/LoginDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="111" selection-start="757" selection-end="757" vertical-scroll-proportion="0.04265403" vertical-offset="144" max-vertical-offset="1134" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar!/com/sun/deploy/uitoolkit/impl/fx/ui/FXMessageDialog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="414" selection-end="414" vertical-scroll-proportion="0.04137931" vertical-offset="270" max-vertical-offset="1314" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/Instance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1350" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MessageDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/NewsBrowser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsolePane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsoleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="50" selection-start="1475" selection-end="1475" vertical-scroll-proportion="2.0900474" vertical-offset="0" max-vertical-offset="1008" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MessageDialog.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/SettingsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1516" selection-end="1516" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="2880" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5976" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/resources/version.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="30" selection-end="30" vertical-scroll-proportion="0.08256881" vertical-offset="0" max-vertical-offset="436" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="11" selection-start="3255" selection-end="3255" vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="11016">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.08256881" vertical-offset="0" max-vertical-offset="436" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainDialog.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1422" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainDialog.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.0669746" vertical-offset="2627" max-vertical-offset="3060" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="46026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.36292428" vertical-offset="139" max-vertical-offset="522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/MCUpdater_JavaFX.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.65405405" vertical-offset="242" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/MCU_API_jar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.627027" vertical-offset="602" max-vertical-offset="972" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="38" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0" vertical-offset="1817" max-vertical-offset="2520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProfilePane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="32" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1206">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workspace-mcu.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="332" selection-end="332" vertical-scroll-proportion="0.2078522" vertical-offset="234" max-vertical-offset="1026">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="370">
@@ -3192,9 +1986,351 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/Base.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="136" selection-end="136" vertical-scroll-proportion="0.097297296" vertical-offset="0" max-vertical-offset="954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="38" selection-start="4997" selection-end="4997" vertical-scroll-proportion="5.8378377" vertical-offset="0" max-vertical-offset="2520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.13235295" vertical-offset="0" max-vertical-offset="408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.04411765" vertical-offset="0" max-vertical-offset="408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModuleComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="60" selection-start="843" selection-end="843" vertical-scroll-proportion="0.5924051" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModuleEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/PrioritizedURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="12" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProfilePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="1206">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.20224719" vertical-offset="180" max-vertical-offset="1062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Downloadable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="35" selection-start="272" selection-end="272" vertical-scroll-proportion="0.21428572" vertical-offset="36" max-vertical-offset="5724">
+        <state line="197" column="24" selection-start="6671" selection-end="6671" vertical-scroll-proportion="0.0" vertical-offset="3546" max-vertical-offset="5508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Backup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="4" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="5976">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="4" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/DownloadCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/DownloadQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2934">
+          <folding>
+            <element signature="e#434#448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/Instance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="33" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="10" selection-start="541" selection-end="541" vertical-scroll-proportion="0.3375" vertical-offset="0" max-vertical-offset="6498">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ModulePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="15" selection-start="337" selection-end="337" vertical-scroll-proportion="0.2918919" vertical-offset="0" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="34" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.28648648" vertical-offset="704" max-vertical-offset="4662">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="23" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.28648648" vertical-offset="110" max-vertical-offset="21798">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/FMLStyleFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="435" selection-end="435" vertical-scroll-proportion="0.36455697" vertical-offset="0" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="23" selection-start="2342" selection-end="2342" vertical-scroll-proportion="0.26835442" vertical-offset="452" max-vertical-offset="9738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ProgressView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="28" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.0" vertical-offset="2065" max-vertical-offset="3240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="25" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="119" selection-end="119" vertical-scroll-proportion="0.14594595" vertical-offset="0" max-vertical-offset="370">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="517" selection-end="517" vertical-scroll-proportion="0.19459459" vertical-offset="0" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Extract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="31" selection-start="164" selection-end="164" vertical-scroll-proportion="0.20626631" vertical-offset="11" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="122" selection-end="122" vertical-scroll-proportion="0.2278481" vertical-offset="0" max-vertical-offset="1332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/OperatingSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/MinecraftVersion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="356" selection-end="356" vertical-scroll-proportion="0.36455697" vertical-offset="0" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="135" selection-end="135" vertical-scroll-proportion="0.04556962" vertical-offset="54" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="270" selection-end="270" vertical-scroll-proportion="0.36455697" vertical-offset="0" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="4" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.8956522" vertical-offset="483" max-vertical-offset="3456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="237" selection-end="237" vertical-scroll-proportion="0.31304348" vertical-offset="0" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackingInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="34" selection-start="208" selection-end="208" vertical-scroll-proportion="0.2918919" vertical-offset="0" max-vertical-offset="1134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/SettingsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0882353" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/SettingsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="2880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0882353" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/AuthManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="508" selection-end="508" vertical-scroll-proportion="0.04556962" vertical-offset="180" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/SessionResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="130" selection-end="130" vertical-scroll-proportion="0.43783784" vertical-offset="0" max-vertical-offset="1116">
+          <folding>
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/RefreshRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="144" selection-end="144" vertical-scroll-proportion="0.4699739" vertical-offset="0" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="141" selection-end="141" vertical-scroll-proportion="0.17232376" vertical-offset="114" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/ErrorResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="150" selection-end="150" vertical-scroll-proportion="0.22531645" vertical-offset="91" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/AuthRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="150" selection-end="150" vertical-scroll-proportion="0.13670886" vertical-offset="144" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="154" selection-end="154" vertical-scroll-proportion="0.4556962" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/ConsolePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/instance/InstanceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="23" selection-start="336" selection-end="336" vertical-scroll-proportion="0.2734177" vertical-offset="0" max-vertical-offset="648">
           <folding />
         </state>
       </provider>
@@ -3259,6 +2395,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
