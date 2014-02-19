@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" filepath="$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil.iml" filepath="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil.iml" />
       <module fileurl="file://$PROJECT_DIR$/PackBuilder/PackBuilder.iml" filepath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace-mcu.iml" filepath="$PROJECT_DIR$/workspace-mcu.iml" />
     </modules>
   </component>
 </project>
