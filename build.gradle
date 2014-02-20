@@ -33,6 +33,16 @@ project(':MCU-API') {
     }
 }
 
+project(':MCU-Bootstrap') {
+    sourceCompatibility = 1.6
+
+    dependencies {
+        compile project(':MCU-DownloadLib')
+        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+        compile 'org.apache.commons:commons-lang3:3.2.1'
+    }
+}
+
 project(':MCU-FXGUI') {
     configurations {
         jfxrt
