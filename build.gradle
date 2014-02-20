@@ -8,12 +8,14 @@ subprojects {
 }
 
 project(':MCU-Yggdrasil') {
+    version = '1.0'
     dependencies {
         compile 'com.google.code.gson:gson:2.2.4'
     }
 }
 
 project(':MCU-DownloadLib') {
+    version = '1.2'
     sourceCompatibility = 1.6
 
     dependencies {
@@ -24,6 +26,8 @@ project(':MCU-DownloadLib') {
 }
 
 project(':MCU-API') {
+    version = '3.2'
+
     dependencies {
         compile project(':MCU-DownloadLib')
         compile project(':MCU-Yggdrasil')
@@ -34,6 +38,7 @@ project(':MCU-API') {
 }
 
 project(':MCU-Bootstrap') {
+    version = '1.2'
     sourceCompatibility = 1.6
 
     dependencies {
@@ -41,9 +46,15 @@ project(':MCU-Bootstrap') {
         compile 'net.sf.jopt-simple:jopt-simple:4.5'
         compile 'org.apache.commons:commons-lang3:3.2.1'
     }
+
+    jar {
+        archiveName = 'MCU-Bootstrap.jar'
+        from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
 
 project(':MCU-FXGUI') {
+    version = '3.2.3'
     configurations {
         jfxrt
     }
@@ -61,6 +72,10 @@ project(':MCU-FXGUI') {
 
     compileJava {
         sourceSets.main.compileClasspath += configurations.jfxrt
+    }
+
+    jar {
+        baseName = 'MCUpdater'
     }
 }
 
