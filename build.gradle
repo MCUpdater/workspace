@@ -50,6 +50,9 @@ project(':MCU-Bootstrap') {
     jar {
         archiveName = 'MCU-Bootstrap.jar'
         from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        manifest {
+            attributes "Main-Class" : 'org.mcupdater.BootstrapForm'
+        }
     }
 }
 
