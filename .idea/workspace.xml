@@ -9,15 +9,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jfxrt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/FastPack.iml" afterPath="$PROJECT_DIR$/FastPack/FastPack.iml" />
+    <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="FastPack has more options now">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" afterPath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/MCModInfo.java" afterPath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/MCModInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" afterPath="$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" afterPath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java" afterPath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/ServerDefinition.java" afterPath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/ServerDefinition.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -90,10 +84,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="17" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.23376623" vertical-offset="1440" max-vertical-offset="1998">
+            <state line="87" column="17" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="1998">
               <folding />
             </state>
           </provider>
@@ -102,16 +96,16 @@
       <file leaf-file-name="FastPack.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="23" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="2718">
+            <state line="35" column="52" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2898">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PathWalker.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PathWalker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="0" selection-start="4181" selection-end="4181" vertical-scroll-proportion="0.0" vertical-offset="2107" max-vertical-offset="2556">
+            <state line="52" column="50" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.51428574" vertical-offset="432" max-vertical-offset="2556">
               <folding />
             </state>
           </provider>
@@ -147,6 +141,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Module.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Module.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="8" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1008">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericModule.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/GenericModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="4158">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -156,7 +168,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/FastPack" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -1115,10 +1127,10 @@
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Import.java" />
         <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/MCModCollection.java" />
         <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/MCModInfo.java" />
-        <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java" />
-        <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
         <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/ServerDefinition.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
+        <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java" />
       </list>
     </option>
   </component>
@@ -2218,7 +2230,11 @@
       <created>1394214683364</created>
       <updated>1394214683364</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="FastPack now tries to intelligently assign config files to the relevant mods.  Not perfect.">
+      <created>1394230787151</created>
+      <updated>1394230787151</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2255,7 +2271,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554945" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5010267" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33104396" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2263,7 +2279,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40028694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24748924" sideWeight="0.4989733" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32417583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32417583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2285,8 +2301,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Getting closer to beta" />
-    <MESSAGE value="Add LoginDialog class and FXML" />
     <MESSAGE value="Login dialog working" />
     <MESSAGE value="Yeah... updated code... don't remember what code I updated. :P" />
     <MESSAGE value="SettingsManager and related classes now moved to API with event system to notify interested classes of updates.&#10;" />
@@ -2310,7 +2324,9 @@
     <MESSAGE value="Add Main-Class to manifest for MCU-Bootstrap&#10;" />
     <MESSAGE value="FastPack! A CLI pack builder for MCU3!" />
     <MESSAGE value="Add license files to all projects missing license files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add license files to all projects missing license files." />
+    <MESSAGE value="FastPack now tries to intelligently assign config files to the relevant mods.  Not perfect." />
+    <MESSAGE value="FastPack has more options now" />
+    <option name="LAST_COMMIT_MESSAGE" value="FastPack has more options now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2320,11 +2336,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MCUSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="34" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.28648648" vertical-offset="704" max-vertical-offset="4662" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/FMLStyleFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="35" selection-start="435" selection-end="435" vertical-scroll-proportion="0.36455697" vertical-offset="0" max-vertical-offset="864" />
@@ -2582,13 +2593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Module.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="1008">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="5256">
@@ -2631,13 +2635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="4181" selection-end="4181" vertical-scroll-proportion="0.0" vertical-offset="2107" max-vertical-offset="2556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModuleComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="74" selection-end="74" vertical-scroll-proportion="0.20044543" vertical-offset="0" max-vertical-offset="504">
@@ -2645,16 +2642,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java">
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0" vertical-offset="419" max-vertical-offset="2718">
+        <state line="51" column="23" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.0" vertical-offset="9561" max-vertical-offset="21798">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/Module.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="23" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.0" vertical-offset="9561" max-vertical-offset="21798">
+        <state line="22" column="8" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/GenericModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="4158">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="17" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="1998">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="52" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2898">
           <folding />
         </state>
       </provider>
@@ -2669,9 +2687,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="17" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.23376623" vertical-offset="1440" max-vertical-offset="1998">
+        <state line="52" column="50" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.51428574" vertical-offset="432" max-vertical-offset="2556">
           <folding />
         </state>
       </provider>
