@@ -1,1 +1,1 @@
-include 'MCU-API', 'MCU-DownloadLib', 'MCU-Yggdrasil', 'MCU-FXGUI', 'PackBuilder', 'MCU-Bootstrap'
+include 'MCU-API', 'MCU-DownloadLib', 'MCU-Yggdrasil', 'MCU-FXGUI', 'PackBuilder', 'MCU-Bootstrap', 'FastPack'

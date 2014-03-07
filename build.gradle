@@ -97,3 +97,24 @@ project(':PackBuilder') {
         sourceSets.main.compileClasspath += configurations.jfxrt
     }
 }
+
+project(':FastPack') {
+    version = '1.1'
+    sourceCompatibility = 1.7
+
+    dependencies {
+        compile project(':MCU-API')
+        compile project(':MCU-DownloadLib')
+        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+        compile 'commons-codec:commons-codec:1.9'
+        compile 'com.google.code.gson:gson:2.2.4'
+    }
+
+    jar {
+        baseName = 'MCU-FastPack'
+        from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+        manifest {
+            attributes "Main-Class" : 'org.mcupdater.fastpack.FastPack'
+        }
+    }
+}

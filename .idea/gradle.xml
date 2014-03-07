@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FastPack" />
             <option value="$PROJECT_DIR$/MCU-API" />
             <option value="$PROJECT_DIR$/MCU-Bootstrap" />
             <option value="$PROJECT_DIR$/MCU-DownloadLib" />
