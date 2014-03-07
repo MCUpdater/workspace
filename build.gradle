@@ -58,9 +58,6 @@ project(':MCU-Bootstrap') {
 
 project(':MCU-FXGUI') {
     version = '3.2.3'
-    configurations {
-        jfxrt
-    }
 
     dependencies {
         compile project(':MCU-API')
@@ -70,11 +67,7 @@ project(':MCU-FXGUI') {
         compile 'net.sf.jopt-simple:jopt-simple:4.5'
         compile 'commons-io:commons-io:2.4'
         compile 'com.google.code.gson:gson:2.2.4'
-        jfxrt files("${System.properties['java.home']}/lib/jfxrt.jar")
-    }
-
-    compileJava {
-        sourceSets.main.compileClasspath += configurations.jfxrt
+        compile files("/usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar")
     }
 
     jar {
@@ -83,23 +76,15 @@ project(':MCU-FXGUI') {
 }
 
 project(':PackBuilder') {
-    configurations {
-        jfxrt
-    }
-
     dependencies {
         compile project(':MCU-API')
         compile 'net.sf.jopt-simple:jopt-simple:4.5'
-        jfxrt files("${System.properties['java.home']}/lib/jfxrt.jar")
-    }
-
-    compileJava {
-        sourceSets.main.compileClasspath += configurations.jfxrt
+        compile files("/usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar")
     }
 }
 
 project(':FastPack') {
-    version = '1.1'
+    version = '1.2'
     sourceCompatibility = 1.7
 
     dependencies {
@@ -107,6 +92,7 @@ project(':FastPack') {
         compile project(':MCU-DownloadLib')
         compile 'net.sf.jopt-simple:jopt-simple:4.5'
         compile 'commons-codec:commons-codec:1.9'
+        compile 'org.apache.commons:commons-lang3:3.2.1'
         compile 'com.google.code.gson:gson:2.2.4'
     }
 
