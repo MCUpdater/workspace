@@ -26,7 +26,7 @@ project(':MCU-DownloadLib') {
 }
 
 project(':MCU-API') {
-    version = '3.2'
+    version = '3.2.4'
 
     dependencies {
         compile project(':MCU-DownloadLib')
@@ -57,7 +57,7 @@ project(':MCU-Bootstrap') {
 }
 
 project(':MCU-FXGUI') {
-    version = '3.2.3'
+    version = '3.2.4'
 
     dependencies {
         compile project(':MCU-API')
