@@ -26,7 +26,7 @@ project(':MCU-DownloadLib') {
 }
 
 project(':MCU-API') {
-    version = '3.2.4'
+    version = '3.2.4a'
 
     dependencies {
         compile project(':MCU-DownloadLib')
@@ -67,7 +67,7 @@ project(':MCU-FXGUI') {
         compile 'net.sf.jopt-simple:jopt-simple:4.5'
         compile 'commons-io:commons-io:2.4'
         compile 'com.google.code.gson:gson:2.2.4'
-        compile files("/usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar")
+        compile files("${System.properties['java.home']}/lib/jfxrt.jar")
     }
 
     jar {
@@ -79,7 +79,7 @@ project(':PackBuilder') {
     dependencies {
         compile project(':MCU-API')
         compile 'net.sf.jopt-simple:jopt-simple:4.5'
-        compile files("/usr/lib/jvm/java-7-oracle/jre/lib/jfxrt.jar")
+        compile files("${System.properties['java.home']}/lib/jfxrt.jar")
     }
 }
 
