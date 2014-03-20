@@ -10,40 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/version.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-API/Base.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-API/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-Bootstrap/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-Bootstrap/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MCU-Yggdrasil/.project" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/Version.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/DownloadQueue.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/DownloadQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Downloadable.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Downloadable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/MirrorOutputStream.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/MirrorOutputStream.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/ProgressTracker.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/ProgressTracker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/TaskableExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackerListener.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/TrackerListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TrackingInputStream.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/TrackingInputStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetManager.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/mojang/AssetManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java" afterPath="$PROJECT_DIR$/MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" afterPath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLegacyAuth.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLegacyAuth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUApp.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUCLI.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUCLI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java" afterPath="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/test/java/org/mcupdater/mojang/TestClass.java" afterPath="$PROJECT_DIR$/MCU-API/src/test/java/org/mcupdater/mojang/TestClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" afterPath="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -115,12 +83,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84187084" vertical-offset="0" max-vertical-offset="2718">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2718">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.properties" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/resources/version.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Version.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1872">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Version.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="954">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,7 +136,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MCU-API" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -1096,14 +1098,12 @@
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java" />
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/org/mcupdater/version.properties" />
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Version.java" />
-        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" />
         <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLegacyAuth.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java" />
         <option value="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/Version.java" />
-        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/MCUCLI.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
@@ -1111,6 +1111,8 @@
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" />
+        <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" />
       </list>
     </option>
   </component>
@@ -1567,6 +1569,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -1658,7 +1694,7 @@
       <recent name="org.mcupdater.mojang" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.workspace-mcu [build]">
+  <component name="RunManager" selected="Application.MCUpdater JavaFX">
     <configuration default="false" name="MCU-API::home:sbarbour:workspace-mcu:MCU-Yggdrasil [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/MCU-Yggdrasil" />
@@ -2154,7 +2190,11 @@
       <created>1395184050362</created>
       <updated>1395184050362</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Versioning updates&#10;Basic HTTP Authentication implemented">
+      <created>1395337186860</created>
+      <updated>1395337186860</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2224,7 +2264,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fixed updating, removed extra messages from downloads, added dynamic pack update detection." />
     <MESSAGE value="MessageDialog added" />
     <MESSAGE value="A few sanity checks" />
     <MESSAGE value="Derp...  Add default pack to the list on launch." />
@@ -2249,7 +2288,8 @@
     <MESSAGE value="Structure and VCS cleanup&#10;" />
     <MESSAGE value="MCUpdater 3.2.4&#10; - depends is now implemented&#10;" />
     <MESSAGE value="Warnings for missing MD5s" />
-    <option name="LAST_COMMIT_MESSAGE" value="Warnings for missing MD5s" />
+    <MESSAGE value="Versioning updates&#10;Basic HTTP Authentication implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versioning updates&#10;Basic HTTP Authentication implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2663,34 +2703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23580787" vertical-offset="0" max-vertical-offset="684">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39101124" vertical-offset="132" max-vertical-offset="1602">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/resources/version.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="458">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/version.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
@@ -2701,8 +2713,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84187084" vertical-offset="0" max-vertical-offset="2718">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2718">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="954">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1872">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/resources/version.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="458">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
