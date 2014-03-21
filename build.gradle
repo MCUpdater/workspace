@@ -80,7 +80,7 @@ project(':MCU-Bootstrap') {
 
     dependencies {
         compile project(':MCU-DownloadLib')
-        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+        compile 'net.sf.jopt-simple:jopt-simple:4.6'
         compile 'org.apache.commons:commons-lang3:3.2.1'
     }
 
@@ -108,7 +108,7 @@ project(':MCU-FXGUI') {
         compile project(':MCU-DownloadLib')
         compile project(':MCU-Yggdrasil')
         compile 'org.apache.commons:commons-lang3:3.2.1'
-        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+        compile 'net.sf.jopt-simple:jopt-simple:4.6'
         compile 'commons-io:commons-io:2.4'
         compile 'com.google.code.gson:gson:2.2.4'
         compile files("${System.properties['java.home']}/lib/jfxrt.jar")
@@ -123,7 +123,7 @@ project(':PackBuilder') {
     sourceCompatibility = 1.7
     dependencies {
         compile project(':MCU-API')
-        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+        compile 'net.sf.jopt-simple:jopt-simple:4.6'
         compile files("${System.properties['java.home']}/lib/jfxrt.jar")
     }
 }
@@ -135,7 +135,7 @@ project(':FastPack') {
     dependencies {
         compile project(':MCU-API')
         compile project(':MCU-DownloadLib')
-        compile 'net.sf.jopt-simple:jopt-simple:4.5'
+        compile 'net.sf.jopt-simple:jopt-simple:4.6'
         compile 'commons-codec:commons-codec:1.9'
         compile 'org.apache.commons:commons-lang3:3.2.1'
         compile 'com.google.code.gson:gson:2.2.4'

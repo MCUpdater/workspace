@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/MCU_API_jar</output-path>
     <root id="archive" name="MCU-API.jar">
       <element id="module-output" name="MCU-API" />
-      <element id="file-copy" path="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/api/version.properties" />
     </root>
   </artifact>
 </component>

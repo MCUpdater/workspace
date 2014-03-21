@@ -10,11 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java" afterPath="$PROJECT_DIR$/MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" afterPath="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__jopt_simple_4_6.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jopt_simple_4_5.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" afterPath="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/api/version.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/version.properties" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/org/mcupdater/downloadlib/version.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/FastPack.iml" afterPath="$PROJECT_DIR$/FastPack/FastPack.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" afterPath="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Bootstrap/MCU-Bootstrap.iml" afterPath="$PROJECT_DIR$/MCU-Bootstrap/MCU-Bootstrap.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" afterPath="$PROJECT_DIR$/MCU-FXGUI/MCU-FXGUI.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/MCU_API_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/MCU_API_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" afterPath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" afterPath="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-Bootstrap/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/MCU-Bootstrap/src/main/resources/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -86,58 +94,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5518868" vertical-offset="1620" max-vertical-offset="2826">
-              <caret line="103" column="75" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2162" max-vertical-offset="2826">
+              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstanceListCell.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/InstanceListCell.java">
+      <file leaf-file-name="FastPack.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="864">
-              <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BootstrapForm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2844" max-vertical-offset="5508">
-              <caret line="278" column="27" selection-start-line="278" selection-start-column="27" selection-end-line="278" selection-end-column="27" />
-              <folding>
-                <element signature="e#3805#4731#0" expanded="true" />
-                <element signature="e#4357#4365#0" expanded="true" />
-                <element signature="e#4726#4727#0" expanded="true" />
-                <element signature="e#10780#10795#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3204" max-vertical-offset="11322">
-              <caret line="193" column="86" selection-start-line="193" selection-start-column="86" selection-end-line="193" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MCUpdater.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="22428">
-              <caret line="145" column="65" selection-start-line="145" selection-start-column="65" selection-end-line="145" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="3744">
+              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,35 +117,31 @@
         </entry>
       </file>
       <file leaf-file-name="Version.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java">
+        <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1872">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-Bootstrap/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java">
+      <file leaf-file-name="Version.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1638">
-              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.27027026" vertical-offset="72" max-vertical-offset="1818">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ServerList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="3240">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,7 +155,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MCU-API" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -950,7 +917,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2789308039739" />
+        <entry key="$PROJECT_DIR$" value="2790735366260" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1021,86 +988,86 @@
               <option name="name" value="workspace-mcu" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/open-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/ivy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/wrapper" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/ide" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/jetty" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/resources" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/code-quality" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/publish" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/maven" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/sonar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/internal-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/base-services-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/javascript" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/launcher" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/ear" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/ui" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/cpp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/core" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/antlr" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/signing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/diagnostics" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/jacoco" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/reporting" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/cli" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/core-impl" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/publish" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/base-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/announce" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/language-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/plugins" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/tooling-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/build-init" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/cpp" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/diagnostics" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/language-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/open-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/maven" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/language-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/groovy-all-1.8.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/core-impl" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/sonar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/jetty" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-cli-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-resources-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-open-api-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/ant-1.9.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-messaging-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-wrapper-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-base-services-groovy-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-core-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-base-services-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-ui-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-docs-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/ant-launcher-1.9.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-launcher-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-tooling-api-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/groovy-all-1.8.6.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-native-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-docs-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-messaging-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/ant-launcher-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-open-api-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-base-services-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-resources-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-cli-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-core-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/ant-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-base-services-groovy-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/gradle-wrapper-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-code-quality-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-plugins-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-announce-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-reporting-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-core-impl-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-sonar-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-ivy-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-osgi-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-ide-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-jetty-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-scala-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/ant-antlr-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-language-base-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-ear-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-antlr-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-cpp-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-osgi-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-jacoco-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-signing-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-language-jvm-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-publish-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-ide-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-build-comparison-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-reporting-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-build-init-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-announce-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-javascript-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-diagnostics-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-publish-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-build-comparison-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-build-init-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-sonar-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-core-impl-1.9.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-jetty-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-ear-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-cpp-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-language-base-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-code-quality-1.9.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-maven-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/ant-antlr-1.9.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-plugins-1.9.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.9-all/3jdgemv0iv8uqohg3kcp2o88r1/gradle-1.9/lib/plugins/gradle-antlr-1.9.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1122,7 +1089,6 @@
         <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Profile.java" />
         <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/RefreshRequest.java" />
         <option value="$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/SessionResponse.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainDialog.fxml" />
         <option value="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainController.java" />
         <option value="$PROJECT_DIR$/PackBuilder/src/main/resources/org/mcupdater/packbuilder/MainDialog.fxml" />
@@ -1147,7 +1113,6 @@
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/TaskableExecutor.java" />
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/org/mcupdater/version.properties" />
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/Version.java" />
-        <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCLegacyAuth.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModDownload.java" />
         <option value="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java" />
@@ -1156,7 +1121,6 @@
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Downloadable.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ServerPackParser.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/resources/version.properties" />
-        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" />
         <option value="$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java" />
         <option value="$PROJECT_DIR$/MCU-Bootstrap/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/Main.java" />
@@ -1164,7 +1128,10 @@
         <option value="$PROJECT_DIR$/MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
         <option value="$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/InstanceListCell.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
+        <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java" />
       </list>
     </option>
   </component>
@@ -1172,9 +1139,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="52" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="x" value="12" />
+    <option name="y" value="12" />
+    <option name="width" value="1900" />
+    <option name="height" value="1160" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1232,6 +1200,40 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-Yggdrasil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-FXGUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1462,6 +1464,10 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="downloadlib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1661,6 +1667,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1733,42 +1769,126 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCU-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcupdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-Yggdrasil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FastPack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-FXGUI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FastPack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MCU-API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FastPack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCUpdater" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace-mcu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FastPack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastpack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1786,7 +1906,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -1815,17 +1935,17 @@
       <recent name="org.mcupdater.gui" />
       <recent name="org.mcupdater.settings" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/MCU-API/src/main/resources" />
-      <recent name="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/util" />
-      <recent name="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources" />
-      <recent name="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/api" />
-      <recent name="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/org/mcupdater/downloadlib" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.mcupdater.api" />
       <recent name="org.mcupdater.downloadlib" />
       <recent name="org.mcupdater.mojang" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/org/mcupdater/downloadlib" />
+      <recent name="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/api" />
+      <recent name="$PROJECT_DIR$/MCU-API/src/main/resources" />
+      <recent name="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/util" />
+      <recent name="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.workspace-mcu [build]">
@@ -2332,7 +2452,11 @@
       <created>1395337934843</created>
       <updated>1395337934843</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Add FastPack to workspace .gitignore">
+      <created>1395367208390</created>
+      <updated>1395367208390</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2356,7 +2480,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1440" height="824" extended-state="6" />
+    <frame x="12" y="12" width="1900" height="1160" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2364,24 +2488,24 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32417583" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5010267" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33104396" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40028694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24748924" sideWeight="0.4989733" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32417583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24730603" sideWeight="0.4989733" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3224568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39835164" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2402,7 +2526,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="A few sanity checks" />
     <MESSAGE value="Derp...  Add default pack to the list on launch." />
     <MESSAGE value="Add PackBuilder to MCUpdater IDEA workspace" />
     <MESSAGE value="Add PackBuilder to MCUpdater IDEA workspace&#10;" />
@@ -2427,7 +2550,8 @@
     <MESSAGE value="Warnings for missing MD5s" />
     <MESSAGE value="Versioning updates&#10;Basic HTTP Authentication implemented" />
     <MESSAGE value="Update Version classes to handle launch from IDE." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Version classes to handle launch from IDE." />
+    <MESSAGE value="Add FastPack to workspace .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add FastPack to workspace .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2439,13 +2563,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/resources/org/mcupdater/packbuilder/MainDialog.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
-          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.103151865" vertical-offset="0" max-vertical-offset="698">
@@ -2457,7 +2574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16475973" vertical-offset="0" max-vertical-offset="450">
           <caret line="4" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2479,15 +2595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
           <caret line="7" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ServerList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2250">
-          <caret line="5" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2502,7 +2609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20044543" vertical-offset="0" max-vertical-offset="504">
           <caret line="5" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2510,7 +2616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="1008">
           <caret line="22" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2532,7 +2637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1160" max-vertical-offset="2880">
           <caret line="14" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2540,11 +2644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9176201" vertical-offset="553" max-vertical-offset="1620">
           <caret line="53" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1501#1700#0" expanded="false" />
-            <element signature="e#1695#1696#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2552,12 +2651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3618">
           <caret line="37" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2815#2816#0" expanded="false" />
-            <element signature="e#2840#2841#0" expanded="false" />
-            <element signature="e#2892#2893#0" expanded="false" />
-            <element signature="e#2929#2930#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2565,7 +2658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="864">
           <caret line="41" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2573,7 +2665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="900">
           <caret line="40" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2605,7 +2696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35064936" vertical-offset="828" max-vertical-offset="4896">
           <caret line="70" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2628,9 +2718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.012894" vertical-offset="103" max-vertical-offset="1026">
           <caret line="49" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2638,7 +2725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3636364" vertical-offset="0" max-vertical-offset="990">
           <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2646,7 +2732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1728" max-vertical-offset="4068">
           <caret line="128" column="32" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2654,7 +2739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
           <caret line="0" column="108" selection-start-line="0" selection-start-column="108" selection-end-line="0" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2662,7 +2746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2791" max-vertical-offset="3240">
           <caret line="180" column="19" selection-start-line="180" selection-start-column="19" selection-end-line="180" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2670,7 +2753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2678,7 +2760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2686,7 +2767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41189933" vertical-offset="0" max-vertical-offset="522">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2706,26 +2786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6809524" vertical-offset="1858" max-vertical-offset="3330">
-          <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/DownloadQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.647619" vertical-offset="2564" max-vertical-offset="2988">
           <caret line="114" column="26" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
-          <folding>
-            <element signature="e#2460#2661#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2909#3115#0" expanded="true" />
-            <element signature="e#3108#3109#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2733,7 +2797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3234" max-vertical-offset="5508">
           <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2766,29 +2829,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/version.properties">
+    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/org/mcupdater/downloadlib/version.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="954">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/resources/version.properties">
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/api/version.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="458">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2796,7 +2847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2804,9 +2854,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1638">
           <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2815,23 +2863,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1872">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-FXGUI/src/main/java/org/mcupdater/gui/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3204" max-vertical-offset="11322">
           <caret line="193" column="86" selection-start-line="193" selection-start-column="86" selection-end-line="193" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2839,9 +2875,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="22428">
           <caret line="145" column="65" selection-start-line="145" selection-start-column="65" selection-end-line="145" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2857,19 +2891,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2844" max-vertical-offset="5508">
           <caret line="278" column="27" selection-start-line="278" selection-start-column="27" selection-end-line="278" selection-end-column="27" />
-          <folding>
-            <element signature="e#3805#4731#0" expanded="true" />
-            <element signature="e#4357#4365#0" expanded="true" />
-            <element signature="e#4726#4727#0" expanded="true" />
-            <element signature="e#10780#10795#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12413793" vertical-offset="0" max-vertical-offset="1015">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ServerList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2142">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5518868" vertical-offset="1620" max-vertical-offset="2826">
-          <caret line="103" column="75" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2162" max-vertical-offset="2826">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="3744">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-DownloadLib/src/main/java/org/mcupdater/downloadlib/Version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/api/Version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27027026" vertical-offset="72" max-vertical-offset="1818">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -2929,7 +2999,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>MCU-FXGUI</last-edited>
+          <last-edited>FastPack</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2954,7 +3024,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: xz-1.4</last-edited>
+          <last-edited>Gradle: jopt-simple-4.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
