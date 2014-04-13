@@ -9,7 +9,7 @@ subprojects {
     }
 }
 
-def sharedVersion = new Version(major: 3, minor: 2, buildNum: 5)
+def sharedVersion = new Version(major: 3, minor: 2, buildNum: 6)
 
 class Version {
     int major, minor, buildNum
