@@ -9,6 +9,18 @@ subprojects {
     }
 }
 
+task gatherArtifacts << {
+    File assembledDir = mkdir("$buildDir/Artifacts")
+    subprojects.each {project ->
+        project.tasks.withType(Jar).each {archiveTask ->
+            copy {
+                from archiveTask.archivePath
+                into assembledDir
+            }
+        }
+    }
+}
+
 def sharedVersion = new Version(major: 3, minor: 2, buildNum: 6)
 
 class Version {
