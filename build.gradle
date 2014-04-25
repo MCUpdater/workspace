@@ -1,5 +1,10 @@
 import org.apache.tools.ant.filters.*
 
+buildscript {
+	repositories { mavenCentral() }
+	dependencies { classpath 'org.ajoberstar:gradle-git:0.2.3' }
+}
+
 subprojects {
     apply plugin: 'java'
     group = 'org.mcupdater'
@@ -7,6 +12,72 @@ subprojects {
     repositories {
         mavenCentral()
     }
+}
+
+import org.ajoberstar.gradle.git.tasks.*
+
+task cloneAPI(type: GitClone) {
+	def destination = file("MCU-API")
+	uri = "https://github.com/MCUpdater/MCU-API.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task cloneDownloadLib(type: GitClone) {
+	def destination = file("MCU-DownloadLib")
+	uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task cloneYggdrasil(type: GitClone) {
+	def destination = file("MCU-Yggdrasil")
+	uri = "https://github.com/MCUpdater/MCU-Yggdrasil.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task cloneBootstrap(type: GitClone) {
+	def destination = file("MCU-Bootstrap")
+	uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task cloneGUI(type: GitClone) {
+	def destination = file("MCU-FXGUI")
+	uri = "https://github.com/MCUpdater/MCU-FXGUI.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task cloneFastPack(type: GitClone) {
+	def destination = file("FastPack")
+	uri = "https://github.com/MCUpdater/FastPack.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task clonePackBuilder(type: GitClone) {
+	def destination = file("PackBuilder")
+	uri = "https://github.com/MCUpdater/PackBuilder.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task setupWorkspace << {
+	println 'Workspace ready'
+}
+
+setupWorkspace.dependsOn {
+	tasks.findAll { task -> task.name.startsWith('clone') }
 }
 
 task gatherArtifacts << {
@@ -20,6 +91,8 @@ task gatherArtifacts << {
         }
     }
 }
+
+task build(dependsOn: setupWorkspace) {}
 
 def sharedVersion = new Version(major: 3, minor: 2, buildNum: 6)
 
