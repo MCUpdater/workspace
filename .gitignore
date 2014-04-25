@@ -1,3 +1,5 @@
+.gradle/
+build/
 MCU-API/
 MCU-FXGUI/
 MCU-Yggdrasil/
