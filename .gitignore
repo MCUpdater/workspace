@@ -1,7 +1,9 @@
 .gradle/
 build/
 MCU-API/
-MCU-FXGUI/
+GUI-JavaFx/
+GUI-Minimal/
+GUI-Swing/
 MCU-Yggdrasil/
 MCU-DownloadLib/
 PackBuilder/
