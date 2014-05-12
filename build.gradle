@@ -1,5 +1,7 @@
 import org.apache.tools.ant.filters.*
 
+def sharedVersion = new Version(major: 3, minor: 2, buildNum: 7)
+
 buildscript {
 	repositories { mavenCentral() }
 	dependencies { classpath 'org.ajoberstar:gradle-git:0.2.3' }
@@ -110,8 +112,6 @@ task gatherArtifacts << {
 
 task build(dependsOn: setupWorkspace) {}
 
-def sharedVersion = new Version(major: 3, minor: 2, buildNum: 6)
-
 class Version {
     int major, minor, buildNum
 
@@ -212,6 +212,7 @@ project(':GUI-Swing') {
         compile 'net.sf.jopt-simple:jopt-simple:4.6'
         compile 'commons-io:commons-io:2.4'
         compile 'com.google.code.gson:gson:2.2.4'
+        compile files("${System.properties['java.home']}/lib/jfxrt.jar")
     }
 
     jar {
