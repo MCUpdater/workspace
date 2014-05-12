@@ -3,10 +3,12 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/FastPack" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GUI-JavaFx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GUI-Minimal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GUI-Swing" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-API" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-Bootstrap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-DownloadLib" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MCU-FXGUI" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-Yggdrasil" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PackBuilder" vcs="Git" />
   </component>

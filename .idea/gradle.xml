@@ -11,10 +11,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/FastPack" />
+            <option value="$PROJECT_DIR$/GUI-JavaFx" />
+            <option value="$PROJECT_DIR$/GUI-Minimal" />
+            <option value="$PROJECT_DIR$/GUI-Swing" />
             <option value="$PROJECT_DIR$/MCU-API" />
             <option value="$PROJECT_DIR$/MCU-Bootstrap" />
             <option value="$PROJECT_DIR$/MCU-DownloadLib" />
-            <option value="$PROJECT_DIR$/MCU-FXGUI" />
             <option value="$PROJECT_DIR$/MCU-Yggdrasil" />
             <option value="$PROJECT_DIR$/PackBuilder" />
           </set>

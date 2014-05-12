@@ -1,1 +1,1 @@
-include 'MCU-API', 'MCU-DownloadLib', 'MCU-Yggdrasil', 'GUI-JavaFx', 'GUI-Minimal', 'PackBuilder', 'MCU-Bootstrap', 'FastPack'
+include 'MCU-API', 'MCU-DownloadLib', 'MCU-Yggdrasil', 'GUI-Swing', 'GUI-JavaFx', 'GUI-Minimal', 'PackBuilder', 'MCU-Bootstrap', 'FastPack'

@@ -48,6 +48,14 @@ task cloneBootstrap(type: GitClone) {
 	enabled = !destination.exists()
 }
 
+task cloneGUISwing(type: GitClone) {
+    def destination = file("GUI-Swing")
+    uri = "https://github.com/MCUpdater/GUI-Swing.git"
+    destinationPath = destination
+    bare = false
+    enabled = !destination.exists()
+}
+
 task cloneGUIJavaFx(type: GitClone) {
 	def destination = file("GUI-JavaFx")
 	uri = "https://github.com/MCUpdater/GUI-JavaFx.git"
@@ -186,6 +194,31 @@ project(':MCU-Bootstrap') {
     }
 }
 
+project(':GUI-Swing') {
+    version = sharedVersion
+    sourceCompatibility = 1.7
+
+    afterEvaluate {
+        processResources {
+            from(sourceSets*.resources.srcDirs) { include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)]) }
+            from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
+        }
+    }
+    dependencies {
+        compile project(':MCU-API')
+        compile project(':MCU-DownloadLib')
+        compile project(':MCU-Yggdrasil')
+        compile 'org.apache.commons:commons-lang3:3.2.1'
+        compile 'net.sf.jopt-simple:jopt-simple:4.6'
+        compile 'commons-io:commons-io:2.4'
+        compile 'com.google.code.gson:gson:2.2.4'
+    }
+
+    jar {
+        baseName = "MCU"
+    }
+}
+
 project(':GUI-JavaFx') {
     version = sharedVersion
     sourceCompatibility = 1.7
@@ -205,10 +238,6 @@ project(':GUI-JavaFx') {
         compile 'commons-io:commons-io:2.4'
         compile 'com.google.code.gson:gson:2.2.4'
         compile files("${System.properties['java.home']}/lib/jfxrt.jar")
-    }
-
-    jar {
-        baseName = 'MCUpdater'
     }
 }
 
