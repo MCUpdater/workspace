@@ -212,6 +212,7 @@ project(':GUI-Swing') {
         compile 'net.sf.jopt-simple:jopt-simple:4.6'
         compile 'commons-io:commons-io:2.4'
         compile 'com.google.code.gson:gson:2.2.4'
+        compile 'org.swinglabs.swingx:swingx-all:1.6.5'
         compile files("${System.properties['java.home']}/lib/jfxrt.jar")
     }
 
