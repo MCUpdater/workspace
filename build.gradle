@@ -8,12 +8,12 @@ buildscript {
 }
 
 subprojects {
-    apply plugin: 'java'
-    group = 'org.mcupdater'
+	apply plugin: 'java'
+	group = 'org.mcupdater'
 
-    repositories {
-        mavenCentral()
-    }
+	repositories {
+		mavenCentral()
+	}
 }
 
 import org.ajoberstar.gradle.git.tasks.*
@@ -51,11 +51,11 @@ task cloneBootstrap(type: GitClone) {
 }
 
 task cloneGUISwing(type: GitClone) {
-    def destination = file("GUI-Swing")
-    uri = "https://github.com/MCUpdater/GUI-Swing.git"
-    destinationPath = destination
-    bare = false
-    enabled = !destination.exists()
+	def destination = file("GUI-Swing")
+	uri = "https://github.com/MCUpdater/GUI-Swing.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
 }
 
 task cloneGUIJavaFx(type: GitClone) {
@@ -99,202 +99,208 @@ setupWorkspace.dependsOn {
 }
 
 task gatherArtifacts << {
-    File assembledDir = mkdir("$buildDir/Artifacts")
-    subprojects.each {project ->
-        project.tasks.withType(Jar).each {archiveTask ->
-            copy {
-                from archiveTask.archivePath
-                into assembledDir
-            }
-        }
-    }
+	File assembledDir = mkdir("$buildDir/Artifacts")
+	subprojects.each { project ->
+		project.tasks.withType(Jar).each { archiveTask ->
+			copy {
+				from archiveTask.archivePath
+				into assembledDir
+			}
+		}
+	}
 }
 
 task build(dependsOn: setupWorkspace) {}
 
 class Version {
-    int major, minor, buildNum
+	int major, minor, buildNum
 
-    String toString() {
-        if (buildNum != 0) {
-            "$major.$minor.$buildNum"
-        } else {
-            "$major.$minor"
-        }
-    }
+	String toString() {
+		if (buildNum != 0) {
+			"$major.$minor.$buildNum"
+		} else {
+			"$major.$minor"
+		}
+	}
 }
 
 project(':MCU-Yggdrasil') {
-    version = '1.0'
-    dependencies {
-        compile 'com.google.code.gson:gson:2.2.4'
-    }
+	version = '1.0'
+	dependencies {
+		compile 'com.google.code.gson:gson:2.2.4'
+	}
 }
 
 project(':MCU-DownloadLib') {
-    version = new Version(major: 1, minor: 3)
-    sourceCompatibility = 1.6
+	version = new Version(major: 1, minor: 3)
+	sourceCompatibility = 1.6
 
-    afterEvaluate {
-        processResources {
-            include '**/*.properties'
-            filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-            println("Version " + version)
-        }
-    }
+	afterEvaluate {
+		processResources {
+			include '**/*.properties'
+			filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+			println("Version " + version)
+		}
+	}
 
-    dependencies {
-        compile 'commons-codec:commons-codec:1.9'
-        compile 'commons-io:commons-io:2.4'
-        compile 'org.tukaani:xz:1.4'
-    }
+	dependencies {
+		compile 'commons-codec:commons-codec:1.9'
+		compile 'commons-io:commons-io:2.4'
+		compile 'org.tukaani:xz:1.4'
+	}
 }
 
 project(':MCU-API') {
-    version = sharedVersion
-    sourceCompatibility = 1.7
+	version = sharedVersion
+	sourceCompatibility = 1.7
 
-    afterEvaluate {
-        processResources {
-            from(sourceSets*.resources.srcDirs) {
-                include '**/*.properties'
-                filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-            }
-            from(sourceSets*.resources.srcDirs) {
-                exclude '**/*.properties'
-            }
-        }
-    }
+	afterEvaluate {
+		processResources {
+			from(sourceSets*.resources.srcDirs) {
+				include '**/*.properties'
+				filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+			}
+			from(sourceSets*.resources.srcDirs) {
+				exclude '**/*.properties'
+			}
+		}
+	}
 
-    dependencies {
-        compile project(':MCU-DownloadLib')
-        compile project(':MCU-Yggdrasil')
-        compile 'commons-codec:commons-codec:1.9'
-        compile 'commons-io:commons-io:2.4'
-        compile 'com.google.code.gson:gson:2.2.4'
-    }
+	dependencies {
+		compile project(':MCU-DownloadLib')
+		compile project(':MCU-Yggdrasil')
+		compile 'commons-codec:commons-codec:1.9'
+		compile 'commons-io:commons-io:2.4'
+		compile 'com.google.code.gson:gson:2.2.4'
+	}
 }
 
 project(':MCU-Bootstrap') {
-    version = '1.2'
-    sourceCompatibility = 1.6
+	version = '1.2'
+	sourceCompatibility = 1.6
 
-    dependencies {
-        compile project(':MCU-DownloadLib')
-        compile 'net.sf.jopt-simple:jopt-simple:4.6'
-        compile 'org.apache.commons:commons-lang3:3.2.1'
-    }
+	dependencies {
+		compile project(':MCU-DownloadLib')
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'org.apache.commons:commons-lang3:3.2.1'
+	}
 
-    jar {
-        archiveName = 'MCU-Bootstrap.jar'
-        from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-        manifest {
-            attributes "Main-Class" : 'org.mcupdater.BootstrapForm'
-        }
-    }
+	jar {
+		archiveName = 'MCU-Bootstrap.jar'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.BootstrapForm'
+		}
+	}
 }
 
 project(':GUI-Swing') {
-    version = sharedVersion
-    sourceCompatibility = 1.7
+	version = sharedVersion
+	sourceCompatibility = 1.7
 
-    afterEvaluate {
-        processResources {
-            from(sourceSets*.resources.srcDirs) { include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)]) }
-            from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-        }
-    }
-    dependencies {
-        compile project(':MCU-API')
-        compile project(':MCU-DownloadLib')
-        compile project(':MCU-Yggdrasil')
-        compile 'org.apache.commons:commons-lang3:3.2.1'
-        compile 'net.sf.jopt-simple:jopt-simple:4.6'
-        compile 'commons-io:commons-io:2.4'
-        compile 'com.google.code.gson:gson:2.2.4'
-        compile 'org.swinglabs.swingx:swingx-all:1.6.5'
-        compile files("${System.properties['java.home']}/lib/jfxrt.jar")
-    }
+	afterEvaluate {
+		processResources {
+			from(sourceSets*.resources.srcDirs) {
+				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+			}
+			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
+		}
+	}
+	dependencies {
+		compile project(':MCU-API')
+		compile project(':MCU-DownloadLib')
+		compile project(':MCU-Yggdrasil')
+		compile 'org.apache.commons:commons-lang3:3.2.1'
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'commons-io:commons-io:2.4'
+		compile 'com.google.code.gson:gson:2.2.4'
+		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
+		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
+	}
 
-    jar {
-        baseName = "MCU"
-    }
+	jar {
+		baseName = "MCU"
+	}
 }
 
 project(':GUI-JavaFx') {
-    version = sharedVersion
-    sourceCompatibility = 1.7
+	version = sharedVersion
+	sourceCompatibility = 1.7
 
-    afterEvaluate {
-        processResources {
-            from(sourceSets*.resources.srcDirs) { include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)]) }
-            from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-        }
-    }
-    dependencies {
-        compile project(':MCU-API')
-        compile project(':MCU-DownloadLib')
-        compile project(':MCU-Yggdrasil')
-        compile 'org.apache.commons:commons-lang3:3.2.1'
-        compile 'net.sf.jopt-simple:jopt-simple:4.6'
-        compile 'commons-io:commons-io:2.4'
-        compile 'com.google.code.gson:gson:2.2.4'
-        compile files("${System.properties['java.home']}/lib/jfxrt.jar")
-    }
+	afterEvaluate {
+		processResources {
+			from(sourceSets*.resources.srcDirs) {
+				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+			}
+			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
+		}
+	}
+	dependencies {
+		compile project(':MCU-API')
+		compile project(':MCU-DownloadLib')
+		compile project(':MCU-Yggdrasil')
+		compile 'org.apache.commons:commons-lang3:3.2.1'
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'commons-io:commons-io:2.4'
+		compile 'com.google.code.gson:gson:2.2.4'
+		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
+	}
 }
 
 project(':GUI-Minimal') {
 	version = sharedVersion
 	sourceCompatibility = 1.7
-	
-    afterEvaluate {
-        processResources {
-            from(sourceSets*.resources.srcDirs) { include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)]) }
-            from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-        }
-    }
-    dependencies {
-        compile project(':MCU-API')
-        compile project(':MCU-DownloadLib')
-        compile project(':MCU-Yggdrasil')
-        compile 'org.apache.commons:commons-lang3:3.2.1'
-        compile 'net.sf.jopt-simple:jopt-simple:4.6'
-        compile 'commons-io:commons-io:2.4'
-        compile 'com.google.code.gson:gson:2.2.4'
-    }
 
-    jar {
-        baseName = 'MCU-Minimal'
-    }
+	afterEvaluate {
+		processResources {
+			from(sourceSets*.resources.srcDirs) {
+				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+			}
+			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
+		}
+	}
+	dependencies {
+		compile project(':MCU-API')
+		compile project(':MCU-DownloadLib')
+		compile project(':MCU-Yggdrasil')
+		compile 'org.apache.commons:commons-lang3:3.2.1'
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'commons-io:commons-io:2.4'
+		compile 'com.google.code.gson:gson:2.2.4'
+	}
+
+	jar {
+		baseName = 'MCU-Minimal'
+	}
 }
 
 project(':PackBuilder') {
-    sourceCompatibility = 1.7
-    dependencies {
-        compile project(':MCU-API')
-        compile 'net.sf.jopt-simple:jopt-simple:4.6'
-        compile files("${System.properties['java.home']}/lib/jfxrt.jar")
-    }
+	sourceCompatibility = 1.7
+	dependencies {
+		compile project(':MCU-API')
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
+	}
 }
 
 project(':FastPack') {
-    version = new Version(major: 1, minor: 5, buildNum: 3)
-    sourceCompatibility = 1.7
+	version = new Version(major: 1, minor: 5, buildNum: 3)
+	sourceCompatibility = 1.7
 
-    dependencies {
-        compile project(':MCU-API')
-        compile project(':MCU-DownloadLib')
-        compile 'net.sf.jopt-simple:jopt-simple:4.6'
-        compile 'commons-codec:commons-codec:1.9'
-        compile 'org.apache.commons:commons-lang3:3.2.1'
-        compile 'com.google.code.gson:gson:2.2.4'
-    }
+	dependencies {
+		compile project(':MCU-API')
+		compile project(':MCU-DownloadLib')
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'commons-codec:commons-codec:1.9'
+		compile 'org.apache.commons:commons-lang3:3.2.1'
+		compile 'com.google.code.gson:gson:2.2.4'
+	}
 
-    jar {
-        baseName = 'MCU-FastPack'
-        from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-        manifest {
-            attributes "Main-Class" : 'org.mcupdater.fastpack.FastPack'
-        }
-    }
+	jar {
+		baseName = 'MCU-FastPack'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.fastpack.FastPack'
+		}
+	}
 }
