@@ -2,11 +2,9 @@
   <library name="Gradle: swingx-all-1.6.5">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.swinglabs.swingx/swingx-all/1.6.5/d947460f7e2687db371c2b3b9f2f70f418d6804/swingx-all-1.6.5.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.swinglabs.swingx/swingx-all/1.6.5/d947460f7e2687db371c2b3b9f2f70f418d6804/swingx-all-1.6.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.swinglabs.swingx/swingx-all/1.6.5/7b32c29c677ffdf9d2e8f7d1d447e44303764276/swingx-all-1.6.5-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.swinglabs.swingx/swingx-all/1.6.5/7b32c29c677ffdf9d2e8f7d1d447e44303764276/swingx-all-1.6.5-sources.jar!/" />
     </SOURCES>
   </library>
