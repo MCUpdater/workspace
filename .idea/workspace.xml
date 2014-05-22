@@ -11,12 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="" />
-    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/MCU_API_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/MCU_FXGUI_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/MCU_Yggdrasil_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI-JavaFx/MCU-FXGUI.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
+    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="Removed &quot;latest MC version&quot; lookup">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -90,9 +86,14 @@
       <file leaf-file-name="MainForm.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="5346">
-              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-              <folding />
+            <state vertical-scroll-proportion="0.5975104" vertical-offset="1836" max-vertical-offset="5868">
+              <caret line="165" column="48" selection-start-line="165" selection-start-column="48" selection-end-line="165" selection-end-column="48" />
+              <folding>
+                <element signature="e#11941#11942#0" expanded="true" />
+                <element signature="e#11959#11960#0" expanded="true" />
+                <element signature="e#12296#12297#0" expanded="true" />
+                <element signature="e#12314#12315#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1441,12 +1442,12 @@
         <option value="$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/FastPack.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/ModuleWidget.java" />
         <option value="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/ModuleWidget.java" />
-        <option value="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/model/ModuleComparator.java" />
         <option value="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/Main.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java" />
         <option value="$PROJECT_DIR$/GUI-Swing/CREDITS" />
+        <option value="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" />
       </list>
     </option>
   </component>
@@ -2498,7 +2499,11 @@
       <created>1400727390865</created>
       <updated>1400727390865</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Removed &quot;latest MC version&quot; lookup">
+      <created>1400727468919</created>
+      <updated>1400727468919</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2543,7 +2548,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40028694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24494143" sideWeight="0.4989733" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25925925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2592233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2598,7 +2603,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="FastPack has more options now" />
     <MESSAGE value="Better Mod/Config matching&#10;Strip version numbers from non-mcmod.info based mod ids." />
     <MESSAGE value="Even better Mod/Config matching&#10;ModId override list&#10;" />
     <MESSAGE value="MCUpdater 3.2.3&#10; - New buttons on instance list to add a new XML and to refresh the list&#10; - New setting to toggle Minecraft process output to Console tab (default True)&#10; - Properly do settings refreshes with all lists&#10; - Added &quot;hard update&quot; checkbox to restore that functionality" />
@@ -2623,7 +2627,8 @@
     <MESSAGE value="progress" />
     <MESSAGE value="Auto-formatted" />
     <MESSAGE value="Added CREDITS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CREDITS" />
+    <MESSAGE value="Removed &quot;latest MC version&quot; lookup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed &quot;latest MC version&quot; lookup" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -2874,6 +2879,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1201" max-vertical-offset="2088">
           <caret line="67" column="109" selection-start-line="67" selection-start-column="109" selection-end-line="67" selection-end-column="109" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2904,6 +2910,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.90927833" vertical-offset="1476" max-vertical-offset="10656">
           <caret line="185" column="39" selection-start-line="185" selection-start-column="39" selection-end-line="185" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2911,6 +2918,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22119816" vertical-offset="36" max-vertical-offset="972">
           <caret line="21" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#2073#2074#0" expanded="false" />
+            <element signature="e#2116#2117#0" expanded="false" />
+            <element signature="e#2161#2162#0" expanded="false" />
+            <element signature="e#2189#2190#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2978,34 +2991,34 @@
         <state vertical-scroll-proportion="0.9677419" vertical-offset="5184" max-vertical-offset="11898">
           <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="23" />
           <folding>
-            <element signature="e#5060#5061#0" expanded="true" />
-            <element signature="e#5080#5081#0" expanded="true" />
-            <element signature="e#5121#5122#0" expanded="true" />
-            <element signature="e#5148#5149#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <element signature="e#5201#5202#0" expanded="true" />
-            <element signature="e#5236#5237#0" expanded="true" />
-            <element signature="e#5263#5264#0" expanded="true" />
-            <element signature="e#5297#5298#0" expanded="true" />
-            <element signature="e#5323#5324#0" expanded="true" />
-            <element signature="e#5374#5375#0" expanded="true" />
-            <element signature="e#5413#5414#0" expanded="true" />
-            <element signature="e#15626#15873#0" expanded="true" />
-            <element signature="e#15871#15872#0" expanded="true" />
-            <element signature="e#16450#18646#0" expanded="true" />
-            <element signature="e#18641#18642#0" expanded="true" />
-            <element signature="e#18745#19203#0" expanded="true" />
-            <element signature="e#19194#19195#0" expanded="true" />
-            <element signature="e#19308#20994#0" expanded="true" />
-            <element signature="e#20985#20986#0" expanded="true" />
-            <element signature="e#21332#21333#0" expanded="true" />
-            <element signature="e#21385#21386#0" expanded="true" />
-            <element signature="e#22899#22900#0" expanded="true" />
-            <element signature="e#22925#22926#0" expanded="true" />
-            <element signature="e#22965#22966#0" expanded="true" />
-            <element signature="e#23000#23001#0" expanded="true" />
-            <element signature="e#23029#23030#0" expanded="true" />
-            <element signature="e#23061#23062#0" expanded="true" />
+            <element signature="e#5060#5061#0" expanded="false" />
+            <element signature="e#5080#5081#0" expanded="false" />
+            <element signature="e#5121#5122#0" expanded="false" />
+            <element signature="e#5148#5149#0" expanded="false" />
+            <element signature="e#5179#5180#0" expanded="false" />
+            <element signature="e#5201#5202#0" expanded="false" />
+            <element signature="e#5236#5237#0" expanded="false" />
+            <element signature="e#5263#5264#0" expanded="false" />
+            <element signature="e#5297#5298#0" expanded="false" />
+            <element signature="e#5323#5324#0" expanded="false" />
+            <element signature="e#5374#5375#0" expanded="false" />
+            <element signature="e#5413#5414#0" expanded="false" />
+            <element signature="e#15626#15873#0" expanded="false" />
+            <element signature="e#15871#15872#0" expanded="false" />
+            <element signature="e#16450#18646#0" expanded="false" />
+            <element signature="e#18641#18642#0" expanded="false" />
+            <element signature="e#18745#19203#0" expanded="false" />
+            <element signature="e#19194#19195#0" expanded="false" />
+            <element signature="e#19308#20994#0" expanded="false" />
+            <element signature="e#20985#20986#0" expanded="false" />
+            <element signature="e#21332#21333#0" expanded="false" />
+            <element signature="e#21385#21386#0" expanded="false" />
+            <element signature="e#22899#22900#0" expanded="false" />
+            <element signature="e#22925#22926#0" expanded="false" />
+            <element signature="e#22965#22966#0" expanded="false" />
+            <element signature="e#23000#23001#0" expanded="false" />
+            <element signature="e#23029#23030#0" expanded="false" />
+            <element signature="e#23061#23062#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3020,9 +3033,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="6264">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.5975104" vertical-offset="1836" max-vertical-offset="5868">
+          <caret line="165" column="48" selection-start-line="165" selection-start-column="48" selection-end-line="165" selection-end-column="48" />
+          <folding>
+            <element signature="e#11941#11942#0" expanded="true" />
+            <element signature="e#11959#11960#0" expanded="true" />
+            <element signature="e#12296#12297#0" expanded="true" />
+            <element signature="e#12314#12315#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
