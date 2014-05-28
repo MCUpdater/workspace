@@ -11,7 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="" />
-    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="Settings dialog work">
+    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="Even more settings dialog work">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/layout/SpringUtilities.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -86,8 +87,8 @@
       <file leaf-file-name="MainForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2525" max-vertical-offset="7578">
-              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3911" max-vertical-offset="7578">
+              <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
               <folding>
                 <element signature="e#8807#10085#0" expanded="true" />
                 <element signature="e#10080#10081#0" expanded="true" />
@@ -162,15 +163,25 @@
       <file leaf-file-name="SettingsDialog.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9259259" vertical-offset="3618" max-vertical-offset="4410">
-              <caret line="226" column="61" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.8148148" vertical-offset="5238" max-vertical-offset="6480">
+              <caret line="313" column="58" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9015#9016#0" expanded="true" />
-                <element signature="e#9073#9074#0" expanded="true" />
-                <element signature="e#9138#9139#0" expanded="true" />
-                <element signature="e#9159#9160#0" expanded="true" />
+                <element signature="e#14462#14463#0" expanded="true" />
+                <element signature="e#14520#14521#0" expanded="true" />
+                <element signature="e#14585#14586#0" expanded="true" />
+                <element signature="e#14606#14607#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupLayout.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/javax/swing/GroupLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="18576" max-vertical-offset="64566">
+              <caret line="1089" column="0" selection-start-line="1089" selection-start-column="0" selection-end-line="1089" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1903,36 +1914,6 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GUI-Swing" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCUpdater" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace-mcu" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="GUI-JavaFx" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2127,18 +2108,18 @@
       <recent name="org.mcupdater.fastpack" />
       <recent name="org.mcupdater.settings" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.mcupdater.gui" />
+      <recent name="org.mcupdater.api" />
+      <recent name="org.mcupdater.downloadlib" />
+      <recent name="org.mcupdater.mojang" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources/org/mcupdater/downloadlib" />
       <recent name="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/api" />
       <recent name="$PROJECT_DIR$/MCU-API/src/main/resources" />
       <recent name="$PROJECT_DIR$/MCU-API/src/main/resources/org/mcupdater/util" />
       <recent name="$PROJECT_DIR$/MCU-DownloadLib/src/main/resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.mcupdater.gui" />
-      <recent name="org.mcupdater.api" />
-      <recent name="org.mcupdater.downloadlib" />
-      <recent name="org.mcupdater.mojang" />
     </key>
   </component>
   <component name="RestoreUpdateTree">
@@ -2823,7 +2804,11 @@
       <created>1401232682317</created>
       <updated>1401232682317</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Even more settings dialog work">
+      <created>1401294676875</created>
+      <updated>1401294676875</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2923,7 +2908,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="MCUpdater 3.2.3&#10; - New buttons on instance list to add a new XML and to refresh the list&#10; - New setting to toggle Minecraft process output to Console tab (default True)&#10; - Properly do settings refreshes with all lists&#10; - Added &quot;hard update&quot; checkbox to restore that functionality" />
     <MESSAGE value="Structure and VCS cleanup" />
     <MESSAGE value="Structure and VCS cleanup&#10;" />
     <MESSAGE value="MCUpdater 3.2.4&#10; - depends is now implemented&#10;" />
@@ -2948,7 +2932,8 @@
     <MESSAGE value="Removed &quot;latest MC version&quot; lookup" />
     <MESSAGE value="Progress tab work" />
     <MESSAGE value="Settings dialog work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Settings dialog work" />
+    <MESSAGE value="Even more settings dialog work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Even more settings dialog work" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -2961,13 +2946,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FastPack/src/main/java/org/mcupdater/fastpack/PathWalker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1332" max-vertical-offset="2808">
-          <caret line="103" column="52" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MCU-Yggdrasil/src/main/java/org/mcupdater/Yggdrasil/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
@@ -3334,10 +3312,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/javax/swing/GroupLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18576" max-vertical-offset="64566">
+          <caret line="1089" column="0" selection-start-line="1089" selection-start-column="0" selection-end-line="1089" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2525" max-vertical-offset="7578">
-          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3911" max-vertical-offset="7578">
+          <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
           <folding>
             <element signature="e#8807#10085#0" expanded="true" />
             <element signature="e#10080#10081#0" expanded="true" />
@@ -3357,14 +3343,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9259259" vertical-offset="3618" max-vertical-offset="4410">
-          <caret line="226" column="61" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.8148148" vertical-offset="5238" max-vertical-offset="6480">
+          <caret line="313" column="58" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9015#9016#0" expanded="true" />
-            <element signature="e#9073#9074#0" expanded="true" />
-            <element signature="e#9138#9139#0" expanded="true" />
-            <element signature="e#9159#9160#0" expanded="true" />
+            <element signature="e#14462#14463#0" expanded="true" />
+            <element signature="e#14520#14521#0" expanded="true" />
+            <element signature="e#14585#14586#0" expanded="true" />
+            <element signature="e#14606#14607#0" expanded="true" />
           </folding>
         </state>
       </provider>
