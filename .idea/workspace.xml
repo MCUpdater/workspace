@@ -11,11 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="" />
-    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="Progress tab work">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/layout/SpringUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Settings.java" afterPath="$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/settings/Settings.java" />
+    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="Settings dialog work">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -89,21 +86,21 @@
       <file leaf-file-name="MainForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2507" max-vertical-offset="7560">
-              <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2525" max-vertical-offset="7578">
+              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
               <folding>
-                <element signature="e#8762#10040#0" expanded="true" />
-                <element signature="e#10035#10036#0" expanded="true" />
-                <element signature="e#10074#10193#0" expanded="true" />
-                <element signature="e#10188#10189#0" expanded="true" />
-                <element signature="e#10228#10450#0" expanded="true" />
-                <element signature="e#10445#10446#0" expanded="true" />
-                <element signature="e#10483#10586#0" expanded="true" />
-                <element signature="e#10581#10582#0" expanded="true" />
-                <element signature="e#10619#10722#0" expanded="true" />
-                <element signature="e#10717#10718#0" expanded="true" />
-                <element signature="e#10755#10962#0" expanded="true" />
-                <element signature="e#10957#10958#0" expanded="true" />
+                <element signature="e#8807#10085#0" expanded="true" />
+                <element signature="e#10080#10081#0" expanded="true" />
+                <element signature="e#10119#10238#0" expanded="true" />
+                <element signature="e#10233#10234#0" expanded="true" />
+                <element signature="e#10273#10495#0" expanded="true" />
+                <element signature="e#10490#10491#0" expanded="true" />
+                <element signature="e#10528#10631#0" expanded="true" />
+                <element signature="e#10626#10627#0" expanded="true" />
+                <element signature="e#10664#10767#0" expanded="true" />
+                <element signature="e#10762#10763#0" expanded="true" />
+                <element signature="e#10800#11007#0" expanded="true" />
+                <element signature="e#11002#11003#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,14 +162,14 @@
       <file leaf-file-name="SettingsDialog.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9006342" vertical-offset="1320" max-vertical-offset="2088">
-              <caret line="97" column="51" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.9259259" vertical-offset="3618" max-vertical-offset="4410">
+              <caret line="226" column="61" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3570#3571#0" expanded="true" />
-                <element signature="e#3628#3629#0" expanded="true" />
-                <element signature="e#3693#3694#0" expanded="true" />
-                <element signature="e#3714#3715#0" expanded="true" />
+                <element signature="e#9015#9016#0" expanded="true" />
+                <element signature="e#9073#9074#0" expanded="true" />
+                <element signature="e#9138#9139#0" expanded="true" />
+                <element signature="e#9159#9160#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2144,6 +2141,120 @@
       <recent name="org.mcupdater.mojang" />
     </key>
   </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/GUI-Swing/src/main/resources/org/mcupdater/gui/folder_explore.png</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
   <component name="RunManager" selected="Application.MCU GUI-Swing">
     <configuration default="false" name="workspace-mcu [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -2708,7 +2819,11 @@
       <created>1401065067941</created>
       <updated>1401065067942</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Settings dialog work">
+      <created>1401232682317</created>
+      <updated>1401232682317</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2744,7 +2859,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39902914" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25686812" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5010267" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291262" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282967" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262136" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33104396" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2808,7 +2923,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Even better Mod/Config matching&#10;ModId override list&#10;" />
     <MESSAGE value="MCUpdater 3.2.3&#10; - New buttons on instance list to add a new XML and to refresh the list&#10; - New setting to toggle Minecraft process output to Console tab (default True)&#10; - Properly do settings refreshes with all lists&#10; - Added &quot;hard update&quot; checkbox to restore that functionality" />
     <MESSAGE value="Structure and VCS cleanup" />
     <MESSAGE value="Structure and VCS cleanup&#10;" />
@@ -2833,7 +2947,8 @@
     <MESSAGE value="Added CREDITS" />
     <MESSAGE value="Removed &quot;latest MC version&quot; lookup" />
     <MESSAGE value="Progress tab work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress tab work" />
+    <MESSAGE value="Settings dialog work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Settings dialog work" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -3213,43 +3328,43 @@
         <state vertical-scroll-proportion="0.8410104" vertical-offset="2368" max-vertical-offset="4896">
           <caret line="197" column="43" selection-start-line="197" selection-start-column="43" selection-end-line="197" selection-end-column="43" />
           <folding>
-            <element signature="e#7123#7454#0" expanded="true" />
-            <element signature="e#7449#7450#0" expanded="true" />
+            <element signature="e#7123#7454#0" expanded="false" />
+            <element signature="e#7449#7450#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2507" max-vertical-offset="7560">
-          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2525" max-vertical-offset="7578">
+          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding>
-            <element signature="e#8762#10040#0" expanded="true" />
-            <element signature="e#10035#10036#0" expanded="true" />
-            <element signature="e#10074#10193#0" expanded="true" />
-            <element signature="e#10188#10189#0" expanded="true" />
-            <element signature="e#10228#10450#0" expanded="true" />
-            <element signature="e#10445#10446#0" expanded="true" />
-            <element signature="e#10483#10586#0" expanded="true" />
-            <element signature="e#10581#10582#0" expanded="true" />
-            <element signature="e#10619#10722#0" expanded="true" />
-            <element signature="e#10717#10718#0" expanded="true" />
-            <element signature="e#10755#10962#0" expanded="true" />
-            <element signature="e#10957#10958#0" expanded="true" />
+            <element signature="e#8807#10085#0" expanded="true" />
+            <element signature="e#10080#10081#0" expanded="true" />
+            <element signature="e#10119#10238#0" expanded="true" />
+            <element signature="e#10233#10234#0" expanded="true" />
+            <element signature="e#10273#10495#0" expanded="true" />
+            <element signature="e#10490#10491#0" expanded="true" />
+            <element signature="e#10528#10631#0" expanded="true" />
+            <element signature="e#10626#10627#0" expanded="true" />
+            <element signature="e#10664#10767#0" expanded="true" />
+            <element signature="e#10762#10763#0" expanded="true" />
+            <element signature="e#10800#11007#0" expanded="true" />
+            <element signature="e#11002#11003#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9006342" vertical-offset="1320" max-vertical-offset="2088">
-          <caret line="97" column="51" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.9259259" vertical-offset="3618" max-vertical-offset="4410">
+          <caret line="226" column="61" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3628#3629#0" expanded="true" />
-            <element signature="e#3693#3694#0" expanded="true" />
-            <element signature="e#3714#3715#0" expanded="true" />
+            <element signature="e#9015#9016#0" expanded="true" />
+            <element signature="e#9073#9074#0" expanded="true" />
+            <element signature="e#9138#9139#0" expanded="true" />
+            <element signature="e#9159#9160#0" expanded="true" />
           </folding>
         </state>
       </provider>
