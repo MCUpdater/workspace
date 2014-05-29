@@ -11,8 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list id="aa3b955a-10a7-4f0e-9486-8625c5b704f5" name="Default" comment="" />
-    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="Even more settings dialog work">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/layout/SpringUtilities.java" afterPath="" />
+    <list default="true" id="511dd5f3-4c1d-4833-8ed0-2f3c89c0a765" name="New changelist" comment="Ding">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -107,6 +106,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MCUpdater.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.6088794" vertical-offset="4819" max-vertical-offset="11214">
+              <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ProgressView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/ProgressView.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -160,17 +169,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsDialog.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SettingsDialog.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8148148" vertical-offset="5238" max-vertical-offset="6480">
-              <caret line="313" column="58" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6930" max-vertical-offset="8136">
+              <caret line="410" column="16" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14462#14463#0" expanded="true" />
-                <element signature="e#14520#14521#0" expanded="true" />
-                <element signature="e#14585#14586#0" expanded="true" />
-                <element signature="e#14606#14607#0" expanded="true" />
+                <element signature="e#16531#16532#0" expanded="true" />
+                <element signature="e#16589#16590#0" expanded="true" />
+                <element signature="e#16654#16655#0" expanded="true" />
+                <element signature="e#16675#16676#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,7 +214,7 @@
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/GUI-Swing" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MCU-API" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -1816,7 +1825,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2808,7 +2817,11 @@
       <created>1401294676875</created>
       <updated>1401294676875</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Ding">
+      <created>1401318734337</created>
+      <updated>1401318734337</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2908,7 +2921,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Structure and VCS cleanup" />
     <MESSAGE value="Structure and VCS cleanup&#10;" />
     <MESSAGE value="MCUpdater 3.2.4&#10; - depends is now implemented&#10;" />
     <MESSAGE value="Warnings for missing MD5s" />
@@ -2933,7 +2945,8 @@
     <MESSAGE value="Progress tab work" />
     <MESSAGE value="Settings dialog work" />
     <MESSAGE value="Even more settings dialog work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Even more settings dialog work" />
+    <MESSAGE value="Ding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ding" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -3161,13 +3174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9677419" vertical-offset="5184" max-vertical-offset="11898">
-          <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GUI-Swing/CREDITS">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.017910447" vertical-offset="0" max-vertical-offset="1005">
@@ -3202,6 +3208,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="900">
           <caret line="21" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3246,6 +3253,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2962962" vertical-offset="0" max-vertical-offset="1116">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3320,6 +3328,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6930" max-vertical-offset="8136">
+          <caret line="410" column="16" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#16531#16532#0" expanded="true" />
+            <element signature="e#16589#16590#0" expanded="true" />
+            <element signature="e#16654#16655#0" expanded="true" />
+            <element signature="e#16675#16676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3911" max-vertical-offset="7578">
@@ -3341,17 +3363,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/SettingsDialog.java">
+    <entry file="file://$PROJECT_DIR$/MCU-API/src/main/java/org/mcupdater/util/MCUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8148148" vertical-offset="5238" max-vertical-offset="6480">
-          <caret line="313" column="58" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14462#14463#0" expanded="true" />
-            <element signature="e#14520#14521#0" expanded="true" />
-            <element signature="e#14585#14586#0" expanded="true" />
-            <element signature="e#14606#14607#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="1.6088794" vertical-offset="4819" max-vertical-offset="11214">
+          <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
