@@ -132,7 +132,7 @@ project(':MCU-Yggdrasil') {
 }
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 3)
+	version = new Version(major: 1, minor: 4)
 	sourceCompatibility = 1.6
 
 	afterEvaluate {
