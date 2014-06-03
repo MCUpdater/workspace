@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 2, buildNum: 7)
+def sharedVersion = new Version(major: 3, minor: 2, buildNum: 8)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -106,6 +106,31 @@ task gatherArtifacts << {
 				from archiveTask.archivePath
 				into assembledDir
 			}
+		}
+	}
+}
+
+task copyDeps << {
+	subprojects {subprj->
+		def allDeps = []
+		def sources = ['runtime', 'compile', 'providedRuntime', 'providedCompile']
+		subprj.configurations.asMap.each {k, v->
+			if (k in sources) {
+				allDeps.addAll v.allDependencies
+			}
+		}
+		copy{
+			from allDeps.collect { dep->
+				if (!(dep instanceof ProjectDependency)) {//exclude project deps
+					def files =  subprj.configurations.compile.files (dep)
+					files.collect { f->
+						f.path
+					}
+				} else {
+					[]
+				}
+			}
+			into "${rootProject.projectDir}/copy"
 		}
 	}
 }
