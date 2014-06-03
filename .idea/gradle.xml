@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/MCU-API" />
             <option value="$PROJECT_DIR$/MCU-Bootstrap" />
             <option value="$PROJECT_DIR$/MCU-DownloadLib" />
+            <option value="$PROJECT_DIR$/MCU-Launcher" />
             <option value="$PROJECT_DIR$/MCU-Yggdrasil" />
             <option value="$PROJECT_DIR$/PackBuilder" />
           </set>

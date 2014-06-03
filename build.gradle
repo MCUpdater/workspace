@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 2, buildNum: 8)
+def sharedVersion = new Version(major: 3, minor: 2, buildNum: 9)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -85,6 +85,14 @@ task cloneFastPack(type: GitClone) {
 task clonePackBuilder(type: GitClone) {
 	def destination = file("PackBuilder")
 	uri = "https://github.com/MCUpdater/PackBuilder.git"
+	destinationPath = destination
+	bare = false
+	enabled = !destination.exists()
+}
+
+task cloneLauncher(type: GitClone) {
+	def destination = file("MCU-Launcher")
+	uri = "https://github.com/MCUpdater/MCU-Launcher.git"
 	destinationPath = destination
 	bare = false
 	enabled = !destination.exists()
@@ -327,5 +335,14 @@ project(':FastPack') {
 		manifest {
 			attributes "Main-Class": 'org.mcupdater.fastpack.FastPack'
 		}
+	}
+}
+
+project(':MCU-Launcher') {
+	version = new Version(major: 1, minor: 0)
+	sourceCompatibility = 1.7
+
+	jar {
+		archiveName = "MCU-Launcher.jar"
 	}
 }
