@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 2)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 3)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -130,6 +130,7 @@ task copyDeps << {
 		copy{
 			from allDeps.collect { dep->
 				if (!(dep instanceof ProjectDependency)) {//exclude project deps
+					//noinspection GroovyAssignabilityCheck
 					def files =  subprj.configurations.compile.files (dep)
 					files.collect { f->
 						f.path
@@ -322,7 +323,6 @@ project(':FastPack') {
 
 	dependencies {
 		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
