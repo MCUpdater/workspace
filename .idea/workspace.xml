@@ -11,13 +11,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc68a75d-30d3-4e68-8932-5f5f84c3a6b5" name="Dropbox" comment="Added test class PackList (outputs CSV of a URL and server id passed as command line args)">
+    <list id="dc68a75d-30d3-4e68-8932-5f5f84c3a6b5" name="Dropbox" comment="" />
+    <list default="true" id="2e385626-ae41-4151-9fc3-823ec4da1907" name="PackBuilder" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/Main.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/PackBuilder/src/main/java/org/mcupdater/packbuilder/MainController.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/PackBuilder/src/main/resources/org/mcupdater/packbuilder/MainDialog.fxml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" afterPath="$PROJECT_DIR$/GUI-Swing/src/main/java/org/mcupdater/gui/MainForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" afterPath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MCUpdater.iws" />
@@ -102,7 +101,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.133829" vertical-offset="0" max-vertical-offset="6354">
+            <state vertical-scroll-proportion="0.098226465" vertical-offset="0" max-vertical-offset="6354">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
@@ -2357,6 +2356,8 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dc68a75d-30d3-4e68-8932-5f5f84c3a6b5" name="Dropbox" comment="" />
+      <changelist id="" name="OpenEye support" comment="" />
+      <changelist id="2e385626-ae41-4151-9fc3-823ec4da1907" name="PackBuilder" comment="" />
       <created>1389741272150</created>
       <updated>1389741272150</updated>
     </task>
@@ -2672,7 +2673,11 @@
       <created>1403560981905</created>
       <updated>1403560981905</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="OpenEye support">
+      <created>1403646216348</created>
+      <updated>1403646216348</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2717,7 +2722,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40028694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23385939" sideWeight="0.4989733" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25128865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25128865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2772,7 +2777,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Correct ordering of NoOverwrite element" />
     <MESSAGE value="progress" />
     <MESSAGE value="Auto-formatted" />
     <MESSAGE value="Added CREDITS" />
@@ -2797,7 +2801,8 @@
     <MESSAGE value="Fix non-JavaFx browser" />
     <MESSAGE value="Added warning to log when fallback to basic browser implementation occurs" />
     <MESSAGE value="Added test class PackList (outputs CSV of a URL and server id passed as command line args)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test class PackList (outputs CSV of a URL and server id passed as command line args)" />
+    <MESSAGE value="OpenEye support" />
+    <option name="LAST_COMMIT_MESSAGE" value="OpenEye support" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -3186,7 +3191,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.133829" vertical-offset="0" max-vertical-offset="6354">
+        <state vertical-scroll-proportion="0.098226465" vertical-offset="0" max-vertical-offset="6354">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
