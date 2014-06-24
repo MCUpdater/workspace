@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 4)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 5)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -313,7 +313,6 @@ project(':PackBuilder') {
 	dependencies {
 		compile project(':MCU-API')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 }
 
