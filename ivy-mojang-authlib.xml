@@ -3,6 +3,6 @@
 	<info
 		organisation="com.mojang"
 		module="authlib"
-	    revision="1.5.13"
+		revision="1.5.13"
 	/>
 </ivy-module>

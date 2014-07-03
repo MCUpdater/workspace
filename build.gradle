@@ -13,6 +13,10 @@ subprojects {
 
 	repositories {
 		mavenCentral()
+		ivy {
+           	artifactPattern("https://libraries.minecraft.net/com/mojang/[module]/[revision]/[module]-[revision].jar")
+			ivyPattern("http://files.mcupdater.com/ivy-mojang-authlib.xml")
+		}
 	}
 }
 
@@ -34,6 +38,7 @@ task cloneDownloadLib(type: GitClone) {
 	enabled = !destination.exists()
 }
 
+/*
 task cloneYggdrasil(type: GitClone) {
 	def destination = file("MCU-Yggdrasil")
 	uri = "https://github.com/MCUpdater/MCU-Yggdrasil.git"
@@ -41,6 +46,7 @@ task cloneYggdrasil(type: GitClone) {
 	bare = false
 	enabled = !destination.exists()
 }
+*/
 
 task cloneBootstrap(type: GitClone) {
 	def destination = file("MCU-Bootstrap")
@@ -158,12 +164,14 @@ class Version {
 	}
 }
 
+/*
 project(':MCU-Yggdrasil') {
 	version = '1.0'
 	dependencies {
 		compile 'com.google.code.gson:gson:2.2.4'
 	}
 }
+*/
 
 project(':MCU-DownloadLib') {
 	version = new Version(major: 1, minor: 5)
@@ -202,9 +210,10 @@ project(':MCU-API') {
 
 	dependencies {
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		//compile project(':MCU-Yggdrasil')
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'commons-io:commons-io:2.4'
+		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'com.google.code.gson:gson:2.2.4'
 	}
 }
@@ -243,7 +252,7 @@ project(':GUI-Swing') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.13'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
@@ -272,7 +281,7 @@ project(':GUI-JavaFx') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.13'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
@@ -296,7 +305,7 @@ project(':GUI-Minimal') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.13'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'

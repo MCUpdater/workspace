@@ -10,7 +10,6 @@
     <mapping directory="$PROJECT_DIR$/MCU-Bootstrap" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-DownloadLib" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-Launcher" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/MCU-Yggdrasil" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PackBuilder" vcs="Git" />
   </component>
 </project>

@@ -10,7 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/MCU-Bootstrap/MCU-Bootstrap.iml" filepath="$PROJECT_DIR$/MCU-Bootstrap/MCU-Bootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib.iml" filepath="$PROJECT_DIR$/MCU-DownloadLib/MCU-DownloadLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCU-Launcher/MCU-Launcher.iml" filepath="$PROJECT_DIR$/MCU-Launcher/MCU-Launcher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil.iml" filepath="$PROJECT_DIR$/MCU-Yggdrasil/MCU-Yggdrasil.iml" />
       <module fileurl="file://$PROJECT_DIR$/PackBuilder/PackBuilder.iml" filepath="$PROJECT_DIR$/PackBuilder/PackBuilder.iml" />
       <module fileurl="file://$PROJECT_DIR$/workspace-mcu.iml" filepath="$PROJECT_DIR$/workspace-mcu.iml" />
     </modules>
