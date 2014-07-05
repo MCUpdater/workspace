@@ -3,7 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/FastPack" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/GUI-JavaFx" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/GUI-Minimal" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/GUI-Swing" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MCU-API" vcs="Git" />

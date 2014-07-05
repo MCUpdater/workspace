@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 0)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 6)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -13,6 +13,10 @@ subprojects {
 
 	repositories {
 		mavenCentral()
+		ivy {
+			artifactPattern("https://libraries.minecraft.net/com/mojang/[module]/[revision]/[module]-[revision].jar")
+			ivyPattern("http://files.mcupdater.com/ivy-mojang-authlib.xml")
+		}
 	}
 }
 
@@ -34,6 +38,7 @@ task cloneDownloadLib(type: GitClone) {
 	enabled = !destination.exists()
 }
 
+/*
 task cloneYggdrasil(type: GitClone) {
 	def destination = file("MCU-Yggdrasil")
 	uri = "https://github.com/MCUpdater/MCU-Yggdrasil.git"
@@ -41,6 +46,7 @@ task cloneYggdrasil(type: GitClone) {
 	bare = false
 	enabled = !destination.exists()
 }
+*/
 
 task cloneBootstrap(type: GitClone) {
 	def destination = file("MCU-Bootstrap")
@@ -58,6 +64,7 @@ task cloneGUISwing(type: GitClone) {
 	enabled = !destination.exists()
 }
 
+/*
 task cloneGUIJavaFx(type: GitClone) {
 	def destination = file("GUI-JavaFx")
 	uri = "https://github.com/MCUpdater/GUI-JavaFx.git"
@@ -65,6 +72,7 @@ task cloneGUIJavaFx(type: GitClone) {
 	bare = false
 	enabled = !destination.exists()
 }
+*/
 
 task cloneGUIMinimal(type: GitClone) {
 	def destination = file("GUI-Minimal")
@@ -130,6 +138,7 @@ task copyDeps << {
 		copy{
 			from allDeps.collect { dep->
 				if (!(dep instanceof ProjectDependency)) {//exclude project deps
+					//noinspection GroovyAssignabilityCheck
 					def files =  subprj.configurations.compile.files (dep)
 					files.collect { f->
 						f.path
@@ -157,15 +166,17 @@ class Version {
 	}
 }
 
+/*
 project(':MCU-Yggdrasil') {
 	version = '1.0'
 	dependencies {
 		compile 'com.google.code.gson:gson:2.2.4'
 	}
 }
+*/
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 4)
+	version = new Version(major: 1, minor: 5)
 	sourceCompatibility = 1.6
 
 	afterEvaluate {
@@ -201,10 +212,13 @@ project(':MCU-API') {
 
 	dependencies {
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		//compile project(':MCU-Yggdrasil')
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'commons-io:commons-io:2.4'
+		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'com.google.code.gson:gson:2.2.4'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 }
 
@@ -242,12 +256,15 @@ project(':GUI-Swing') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.13'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
+		compile 'com.google.guava:guava:15.0'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 
@@ -256,6 +273,7 @@ project(':GUI-Swing') {
 	}
 }
 
+/*
 project(':GUI-JavaFx') {
 	version = sharedVersion
 	sourceCompatibility = 1.7
@@ -263,15 +281,15 @@ project(':GUI-JavaFx') {
 	afterEvaluate {
 		processResources {
 			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+				include '**\/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
 			}
-			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
+			from(sourceSets*.resources.srcDirs) { exclude '**\/*.properties' }
 		}
 	}
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.13'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
@@ -279,6 +297,7 @@ project(':GUI-JavaFx') {
 		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 }
+*/
 
 project(':GUI-Minimal') {
 	version = sharedVersion
@@ -295,11 +314,14 @@ project(':GUI-Minimal') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.13'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
+		compile 'com.google.guava:guava:15.0'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 
 	jar {
@@ -312,7 +334,6 @@ project(':PackBuilder') {
 	dependencies {
 		compile project(':MCU-API')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 }
 
@@ -322,7 +343,6 @@ project(':FastPack') {
 
 	dependencies {
 		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'org.apache.commons:commons-lang3:3.2.1'

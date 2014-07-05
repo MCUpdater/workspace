@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FastPack/FastPack.iml" filepath="$PROJECT_DIR$/FastPack/FastPack.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GUI-JavaFx/GUI-JavaFx.iml" filepath="$PROJECT_DIR$/GUI-JavaFx/GUI-JavaFx.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUI-Minimal/GUI-Minimal.iml" filepath="$PROJECT_DIR$/GUI-Minimal/GUI-Minimal.iml" />
       <module fileurl="file://$PROJECT_DIR$/GUI-Swing/GUI-Swing.iml" filepath="$PROJECT_DIR$/GUI-Swing/GUI-Swing.iml" />
       <module fileurl="file://$PROJECT_DIR$/MCU-API/MCU-API.iml" filepath="$PROJECT_DIR$/MCU-API/MCU-API.iml" />
