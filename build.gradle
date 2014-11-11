@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 9)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 10)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -176,7 +176,7 @@ project(':MCU-Yggdrasil') {
 */
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 5)
+	version = new Version(major: 1, minor: 6)
 	sourceCompatibility = 1.6
 
 	afterEvaluate {
