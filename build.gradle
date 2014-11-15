@@ -4,7 +4,7 @@ def sharedVersion = new Version(major: 3, minor: 3, buildNum: 10)
 
 buildscript {
 	repositories { mavenCentral() }
-	dependencies { classpath 'org.ajoberstar:gradle-git:0.2.3' }
+	dependencies { classpath 'org.ajoberstar:grgit:0.4.0' }
 }
 
 subprojects {
@@ -20,22 +20,22 @@ subprojects {
 	}
 }
 
-import org.ajoberstar.gradle.git.tasks.*
+import org.ajoberstar.grgit.*
 
-task cloneAPI(type: GitClone) {
+task cloneAPI() {
 	def destination = file("MCU-API")
-	uri = "https://github.com/MCUpdater/MCU-API.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-API.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneDownloadLib(type: GitClone) {
+task cloneDownloadLib() {
 	def destination = file("MCU-DownloadLib")
-	uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
 /*
@@ -48,20 +48,20 @@ task cloneYggdrasil(type: GitClone) {
 }
 */
 
-task cloneBootstrap(type: GitClone) {
+task cloneBootstrap() {
 	def destination = file("MCU-Bootstrap")
-	uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneGUISwing(type: GitClone) {
+task cloneGUISwing() {
 	def destination = file("GUI-Swing")
-	uri = "https://github.com/MCUpdater/GUI-Swing.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/GUI-Swing.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
 /*
@@ -74,36 +74,36 @@ task cloneGUIJavaFx(type: GitClone) {
 }
 */
 
-task cloneGUIMinimal(type: GitClone) {
+task cloneGUIMinimal() {
 	def destination = file("GUI-Minimal")
-	uri = "https://github.com/MCUpdater/GUI-Minimal.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/GUI-Minimal.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneFastPack(type: GitClone) {
+task cloneFastPack() {
 	def destination = file("FastPack")
-	uri = "https://github.com/MCUpdater/FastPack.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/FastPack.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task clonePackBuilder(type: GitClone) {
+task clonePackBuilder() {
 	def destination = file("PackBuilder")
-	uri = "https://github.com/MCUpdater/PackBuilder.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/PackBuilder.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneLauncher(type: GitClone) {
+task cloneLauncher() {
 	def destination = file("MCU-Launcher")
-	uri = "https://github.com/MCUpdater/MCU-Launcher.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
 task setupWorkspace << {
@@ -338,7 +338,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 5, buildNum: 3)
+	version = new Version(major: 1, minor: 6, buildNum: 0)
 	sourceCompatibility = 1.7
 
 	dependencies {
