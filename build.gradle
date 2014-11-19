@@ -338,7 +338,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 6, buildNum: 0)
+	version = new Version(major: 1, minor: 6, buildNum: 2)
 	sourceCompatibility = 1.7
 
 	dependencies {
