@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 10)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 12)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -338,7 +338,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 6, buildNum: 5)
+	version = new Version(major: 1, minor: 6, buildNum: 6)
 	sourceCompatibility = 1.7
 
 	dependencies {
