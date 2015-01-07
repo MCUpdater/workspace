@@ -232,6 +232,16 @@ project(':MCU-Bootstrap') {
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 	}
 
+	processResources {
+		from(sourceSets.main.resources.srcDirs) {
+			include '**/config.properties'
+			filter(ReplaceTokens, tokens: [bootstrapURL: bootstrapURL, distribution: distribution, defaultPack: defaultPack])
+		}
+		from(sourceSets.main.resources.srcDirs) {
+			exclude '**/config.properties'
+		}
+	}
+
 	jar {
 		archiveName = 'MCU-Bootstrap.jar'
 		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
