@@ -38,16 +38,6 @@ task cloneDownloadLib() {
 	}
 }
 
-/*
-task cloneYggdrasil(type: GitClone) {
-	def destination = file("MCU-Yggdrasil")
-	uri = "https://github.com/MCUpdater/MCU-Yggdrasil.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
-}
-*/
-
 task cloneBootstrap() {
 	def destination = file("MCU-Bootstrap")
 	def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
@@ -63,16 +53,6 @@ task cloneGUISwing() {
 		Grgit.clone(dir: destination, uri: uri)
 	}
 }
-
-/*
-task cloneGUIJavaFx(type: GitClone) {
-	def destination = file("GUI-JavaFx")
-	uri = "https://github.com/MCUpdater/GUI-JavaFx.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
-}
-*/
 
 task cloneGUIMinimal() {
 	def destination = file("GUI-Minimal")
@@ -165,15 +145,6 @@ class Version {
 		}
 	}
 }
-
-/*
-project(':MCU-Yggdrasil') {
-	version = '1.0'
-	dependencies {
-		compile 'com.google.code.gson:gson:2.2.4'
-	}
-}
-*/
 
 project(':MCU-DownloadLib') {
 	version = new Version(major: 1, minor: 6)
@@ -282,32 +253,6 @@ project(':GUI-Swing') {
 		baseName = "MCU"
 	}
 }
-
-/*
-project(':GUI-JavaFx') {
-	version = sharedVersion
-	sourceCompatibility = 1.7
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**\/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			}
-			from(sourceSets*.resources.srcDirs) { exclude '**\/*.properties' }
-		}
-	}
-	dependencies {
-		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
-		compile 'com.mojang:authlib:1.5.13'
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-io:commons-io:2.4'
-		compile 'com.google.code.gson:gson:2.2.4'
-		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
-	}
-}
-*/
 
 project(':GUI-Minimal') {
 	version = sharedVersion
