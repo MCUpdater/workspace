@@ -343,4 +343,11 @@ project(':MCU-Server') {
 		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
+	jar {
+		baseName = 'MCU-Server'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.MCUServer'
+		}
+	}
 }
