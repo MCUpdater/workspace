@@ -86,6 +86,14 @@ task cloneLauncher() {
 	}
 }
 
+task cloneServer() {
+	def destination = file("MCU-Server")
+	def uri = "https://github.com/MCUpdater/MCU-Server.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
+}
+
 task setupWorkspace << {
 	println 'Workspace ready'
 }
@@ -319,5 +327,20 @@ project(':MCU-Launcher') {
 
 	jar {
 		archiveName = "MCU-Launcher.jar"
+	}
+}
+
+project(':MCU-Server') {
+	version = sharedVersion
+	sourceCompatibility = 1.7
+
+	dependencies {
+		compile project(":MCU-API")
+		compile project(":MCU-DownloadLib")
+		compile 'org.apache.commons:commons-cli:1.2'
+		compile 'org.apache.commons:commons-lang3:3.3.2'
+		compile 'com.google.guava:guava:18.0'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 }

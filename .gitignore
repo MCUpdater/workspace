@@ -10,4 +10,5 @@ PackBuilder/
 MCU-Bootstrap/
 FastPack/
 MCU-Launcher/
+MCU-Server/
 .idea/
