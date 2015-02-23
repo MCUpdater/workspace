@@ -367,6 +367,7 @@ project(':QuickServer') {
 	dependencies {
 		compile project(":MCU-API")
 		compile project(":MCU-DownloadLib")
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-cli:commons-cli:1.2'
 		compile 'org.apache.commons:commons-lang3:3.3.2'
 		compile 'com.google.guava:guava:18.0'
