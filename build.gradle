@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 13)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 14)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -345,9 +345,11 @@ project(':MCU-Server') {
 	dependencies {
 		compile project(":MCU-API")
 		compile project(":MCU-DownloadLib")
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-cli:commons-cli:1.2'
 		compile 'org.apache.commons:commons-lang3:3.3.2'
 		compile 'com.google.guava:guava:18.0'
+        compile 'jline:jline:2.12.1'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
