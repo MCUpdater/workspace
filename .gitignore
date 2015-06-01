@@ -13,3 +13,7 @@ MCU-Launcher/
 MCU-Server/
 QuickServer/
 .idea/
+
+*.iml
+*.ipr
+*.iws
