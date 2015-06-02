@@ -373,6 +373,7 @@ project(':QuickServer') {
 		compile 'commons-cli:commons-cli:1.2'
 		compile 'org.apache.commons:commons-lang3:3.3.2'
 		compile 'com.google.guava:guava:18.0'
+        compile 'com.google.code.gson:gson:2.2.4'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
