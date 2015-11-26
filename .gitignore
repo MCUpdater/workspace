@@ -10,3 +10,11 @@ PackBuilder/
 MCU-Bootstrap/
 FastPack/
 MCU-Launcher/
+MCU-Server/
+QuickServer/
+.idea/
+copy/
+
+*.iml
+*.ipr
+*.iws

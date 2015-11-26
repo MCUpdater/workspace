@@ -1,10 +1,10 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 2, buildNum: 9)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 16)
 
 buildscript {
 	repositories { mavenCentral() }
-	dependencies { classpath 'org.ajoberstar:gradle-git:0.2.3' }
+	dependencies { classpath 'org.ajoberstar:grgit:0.4.0' }
 }
 
 subprojects {
@@ -13,89 +13,93 @@ subprojects {
 
 	repositories {
 		mavenCentral()
+		maven {
+			name = "mojang"
+			url = "https://libraries.minecraft.net/"
+		}
 	}
 }
 
-import org.ajoberstar.gradle.git.tasks.*
+import org.ajoberstar.grgit.*
 
-task cloneAPI(type: GitClone) {
+task cloneAPI() {
 	def destination = file("MCU-API")
-	uri = "https://github.com/MCUpdater/MCU-API.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-API.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneDownloadLib(type: GitClone) {
+task cloneDownloadLib() {
 	def destination = file("MCU-DownloadLib")
-	uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneYggdrasil(type: GitClone) {
-	def destination = file("MCU-Yggdrasil")
-	uri = "https://github.com/MCUpdater/MCU-Yggdrasil.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
-}
-
-task cloneBootstrap(type: GitClone) {
+task cloneBootstrap() {
 	def destination = file("MCU-Bootstrap")
-	uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneGUISwing(type: GitClone) {
+task cloneGUISwing() {
 	def destination = file("GUI-Swing")
-	uri = "https://github.com/MCUpdater/GUI-Swing.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/GUI-Swing.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneGUIJavaFx(type: GitClone) {
-	def destination = file("GUI-JavaFx")
-	uri = "https://github.com/MCUpdater/GUI-JavaFx.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
-}
-
-task cloneGUIMinimal(type: GitClone) {
+task cloneGUIMinimal() {
 	def destination = file("GUI-Minimal")
-	uri = "https://github.com/MCUpdater/GUI-Minimal.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/GUI-Minimal.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneFastPack(type: GitClone) {
+task cloneFastPack() {
 	def destination = file("FastPack")
-	uri = "https://github.com/MCUpdater/FastPack.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/FastPack.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task clonePackBuilder(type: GitClone) {
+task clonePackBuilder() {
 	def destination = file("PackBuilder")
-	uri = "https://github.com/MCUpdater/PackBuilder.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/PackBuilder.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
-task cloneLauncher(type: GitClone) {
+task cloneLauncher() {
 	def destination = file("MCU-Launcher")
-	uri = "https://github.com/MCUpdater/MCU-Launcher.git"
-	destinationPath = destination
-	bare = false
-	enabled = !destination.exists()
+	def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
+}
+
+task cloneServer() {
+	def destination = file("MCU-Server")
+	def uri = "https://github.com/MCUpdater/MCU-Server.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
+}
+
+task cloneQuickServer() {
+	def destination = file("QuickServer")
+	def uri = "https://github.com/MCUpdater/QuickServer.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
 }
 
 task setupWorkspace << {
@@ -130,6 +134,7 @@ task copyDeps << {
 		copy{
 			from allDeps.collect { dep->
 				if (!(dep instanceof ProjectDependency)) {//exclude project deps
+					//noinspection GroovyAssignabilityCheck
 					def files =  subprj.configurations.compile.files (dep)
 					files.collect { f->
 						f.path
@@ -157,15 +162,8 @@ class Version {
 	}
 }
 
-project(':MCU-Yggdrasil') {
-	version = '1.0'
-	dependencies {
-		compile 'com.google.code.gson:gson:2.2.4'
-	}
-}
-
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 4)
+	version = new Version(major: 1, minor: 6)
 	sourceCompatibility = 1.6
 
 	afterEvaluate {
@@ -201,10 +199,13 @@ project(':MCU-API') {
 
 	dependencies {
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		//compile project(':MCU-Yggdrasil')
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'commons-io:commons-io:2.4'
+		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'com.google.code.gson:gson:2.2.4'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 }
 
@@ -216,6 +217,16 @@ project(':MCU-Bootstrap') {
 		compile project(':MCU-DownloadLib')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
+	}
+
+	processResources {
+		from(sourceSets.main.resources.srcDirs) {
+			include '**/config.properties'
+			filter(ReplaceTokens, tokens: [bootstrapURL: bootstrapURL, distribution: distribution, defaultPack: defaultPack])
+		}
+		from(sourceSets.main.resources.srcDirs) {
+			exclude '**/config.properties'
+		}
 	}
 
 	jar {
@@ -242,41 +253,20 @@ project(':GUI-Swing') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.21'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
+		compile 'com.google.guava:guava:15.0'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 
 	jar {
 		baseName = "MCU"
-	}
-}
-
-project(':GUI-JavaFx') {
-	version = sharedVersion
-	sourceCompatibility = 1.7
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			}
-			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-		}
-	}
-	dependencies {
-		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-io:commons-io:2.4'
-		compile 'com.google.code.gson:gson:2.2.4'
-		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 }
 
@@ -295,11 +285,14 @@ project(':GUI-Minimal') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile project(':MCU-Yggdrasil')
+		compile 'com.mojang:authlib:1.5.13'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
+		compile 'com.google.guava:guava:15.0'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 
 	jar {
@@ -312,17 +305,15 @@ project(':PackBuilder') {
 	dependencies {
 		compile project(':MCU-API')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 5, buildNum: 3)
+	version = new Version(major: 1, minor: 6, buildNum: 11)
 	sourceCompatibility = 1.7
 
 	dependencies {
 		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
@@ -344,5 +335,53 @@ project(':MCU-Launcher') {
 
 	jar {
 		archiveName = "MCU-Launcher.jar"
+	}
+}
+
+project(':MCU-Server') {
+	version = sharedVersion
+	sourceCompatibility = 1.7
+
+	dependencies {
+		compile project(":MCU-API")
+		compile project(":MCU-DownloadLib")
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'commons-cli:commons-cli:1.2'
+		compile 'org.apache.commons:commons-lang3:3.3.2'
+		compile 'com.google.guava:guava:18.0'
+        compile 'jline:jline:2.12.1'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
+	}
+	jar {
+		baseName = 'MCU-Server'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.MCUServer'
+		}
+	}
+}
+
+project(':QuickServer') {
+	version = sharedVersion
+	sourceCompatibility = 1.7
+
+	dependencies {
+		compile project(":MCU-API")
+		compile project(":MCU-DownloadLib")
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'commons-cli:commons-cli:1.2'
+		compile 'org.apache.commons:commons-lang3:3.3.2'
+		compile 'com.google.guava:guava:18.0'
+        compile 'com.google.code.gson:gson:2.2.4'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
+		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
+	}
+	jar {
+		baseName = 'QuickServer'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.QuickServer'
+		}
 	}
 }
