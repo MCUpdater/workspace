@@ -260,7 +260,7 @@ project(':GUI-Swing') {
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
-		compile 'com.google.guava:guava:15.0'
+		compile 'com.google.guava:guava:18.0'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
@@ -291,7 +291,7 @@ project(':GUI-Minimal') {
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
-		compile 'com.google.guava:guava:15.0'
+		compile 'com.google.guava:guava:18.0'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
 		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
