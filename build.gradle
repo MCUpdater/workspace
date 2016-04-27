@@ -205,8 +205,6 @@ project(':MCU-API') {
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'com.google.guava:guava:18.0'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 }
 
@@ -262,8 +260,6 @@ project(':GUI-Swing') {
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
 		compile 'com.google.guava:guava:18.0'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 
@@ -293,12 +289,14 @@ project(':MCU-CLI') {
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'com.google.guava:guava:18.0'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 
 	jar {
 		baseName = 'MCU-CLI'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.MCUCLI'
+		}
 	}
 }
 
@@ -352,8 +350,6 @@ project(':MCU-Server') {
 		compile 'org.apache.commons:commons-lang3:3.3.2'
 		compile 'com.google.guava:guava:18.0'
         compile 'jline:jline:2.12.1'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 	jar {
 		baseName = 'MCU-Server'
@@ -376,8 +372,6 @@ project(':QuickServer') {
 		compile 'org.apache.commons:commons-lang3:3.3.2'
 		compile 'com.google.guava:guava:18.0'
         compile 'com.google.code.gson:gson:2.2.4'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 	jar {
 		baseName = 'QuickServer'
