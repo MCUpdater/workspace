@@ -54,9 +54,9 @@ task cloneGUISwing() {
 	}
 }
 
-task cloneGUIMinimal() {
-	def destination = file("GUI-Minimal")
-	def uri = "https://github.com/MCUpdater/GUI-Minimal.git"
+task cloneCLI() {
+	def destination = file("MCU-CLI")
+	def uri = "https://github.com/MCUpdater/MCU-CLI.git"
 	if (!destination.exists()) {
 		Grgit.clone(dir: destination, uri: uri)
 	}
@@ -272,7 +272,7 @@ project(':GUI-Swing') {
 	}
 }
 
-project(':GUI-Minimal') {
+project(':MCU-CLI') {
 	version = sharedVersion
 	sourceCompatibility = 1.7
 
@@ -298,7 +298,7 @@ project(':GUI-Minimal') {
 	}
 
 	jar {
-		baseName = 'MCU-Minimal'
+		baseName = 'MCU-CLI'
 	}
 }
 
