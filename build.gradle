@@ -163,7 +163,7 @@ class Version {
 }
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 6)
+	version = new Version(major: 1, minor: 7)
 	sourceCompatibility = 1.6
 
 	afterEvaluate {
