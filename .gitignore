@@ -4,6 +4,7 @@ MCU-API/
 GUI-JavaFx/
 GUI-Minimal/
 GUI-Swing/
+MCU-CLI/
 MCU-Yggdrasil/
 MCU-DownloadLib/
 PackBuilder/
@@ -13,6 +14,7 @@ MCU-Launcher/
 MCU-Server/
 QuickServer/
 .idea/
+copy/
 
 *.iml
 *.ipr

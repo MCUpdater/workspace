@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 16)
+def sharedVersion = new Version(major: 3, minor: 3, buildNum: 21)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -54,9 +54,9 @@ task cloneGUISwing() {
 	}
 }
 
-task cloneGUIMinimal() {
-	def destination = file("GUI-Minimal")
-	def uri = "https://github.com/MCUpdater/GUI-Minimal.git"
+task cloneCLI() {
+	def destination = file("MCU-CLI")
+	def uri = "https://github.com/MCUpdater/MCU-CLI.git"
 	if (!destination.exists()) {
 		Grgit.clone(dir: destination, uri: uri)
 	}
@@ -163,7 +163,7 @@ class Version {
 }
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 6)
+	version = new Version(major: 1, minor: 7)
 	sourceCompatibility = 1.6
 
 	afterEvaluate {
@@ -204,19 +204,19 @@ project(':MCU-API') {
 		compile 'commons-io:commons-io:2.4'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'com.google.code.gson:gson:2.2.4'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
+		compile 'com.google.guava:guava:18.0'
 	}
 }
 
 project(':MCU-Bootstrap') {
-	version = '1.2'
+	version = '1.3'
 	sourceCompatibility = 1.6
 
 	dependencies {
 		compile project(':MCU-DownloadLib')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
+		compile 'commons-io:commons-io:2.4'
 	}
 
 	processResources {
@@ -253,15 +253,13 @@ project(':GUI-Swing') {
 	dependencies {
 		compile project(':MCU-API')
 		compile project(':MCU-DownloadLib')
-		compile 'com.mojang:authlib:1.5.13'
+		compile 'com.mojang:authlib:1.5.21'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
-		compile 'com.google.guava:guava:15.0'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
+		compile 'com.google.guava:guava:18.0'
 		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 
@@ -270,7 +268,7 @@ project(':GUI-Swing') {
 	}
 }
 
-project(':GUI-Minimal') {
+project(':MCU-CLI') {
 	version = sharedVersion
 	sourceCompatibility = 1.7
 
@@ -290,13 +288,15 @@ project(':GUI-Minimal') {
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.code.gson:gson:2.2.4'
-		compile 'com.google.guava:guava:15.0'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
+		compile 'com.google.guava:guava:18.0'
 	}
 
 	jar {
-		baseName = 'MCU-Minimal'
+		baseName = 'MCU-CLI'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.MCUCLI'
+		}
 	}
 }
 
@@ -309,7 +309,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 6, buildNum: 8)
+	version = new Version(major: 1, minor: 6, buildNum: 14)
 	sourceCompatibility = 1.7
 
 	dependencies {
@@ -350,8 +350,6 @@ project(':MCU-Server') {
 		compile 'org.apache.commons:commons-lang3:3.3.2'
 		compile 'com.google.guava:guava:18.0'
         compile 'jline:jline:2.12.1'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
 	}
 	jar {
 		baseName = 'MCU-Server'
@@ -373,8 +371,7 @@ project(':QuickServer') {
 		compile 'commons-cli:commons-cli:1.2'
 		compile 'org.apache.commons:commons-lang3:3.3.2'
 		compile 'com.google.guava:guava:18.0'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.0-rc2'
-		compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.0-rc2'
+        compile 'com.google.code.gson:gson:2.2.4'
 	}
 	jar {
 		baseName = 'QuickServer'
