@@ -15,6 +15,7 @@ MCU-Server/
 QuickServer/
 .idea/
 copy/
+out/
 
 *.iml
 *.ipr
