@@ -301,7 +301,7 @@ project(':MCU-CLI') {
 }
 
 project(':PackBuilder') {
-	sourceCompatibility = 1.7
+	sourceCompatibility = 1.8
 	dependencies {
 		compile project(':MCU-API')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
