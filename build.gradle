@@ -17,6 +17,7 @@ subprojects {
 			name = "mojang"
 			url = "https://libraries.minecraft.net/"
 		}
+		maven { url 'https://jitpack.io' }
 	}
 }
 
@@ -178,6 +179,9 @@ project(':MCU-DownloadLib') {
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'commons-io:commons-io:2.4'
 		compile 'org.tukaani:xz:1.4'
+		compile 'com.github.ipfs:java-ipfs-api:v1.0.0'
+		compile 'com.github.multiformats:java-multiaddr:v1.0.0'
+		compile 'com.github.multiformats:java-multihash:v1.0.0'
 	}
 }
 
