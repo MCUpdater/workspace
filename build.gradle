@@ -168,9 +168,14 @@ project(':MCU-DownloadLib') {
 
 	afterEvaluate {
 		processResources {
-			include '**/*.properties'
-			filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			println("Version " + version)
+			from(sourceSets*.resources.srcDirs) {
+				include '**/*.properties'
+				filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+				println("Version " + version)
+			}
+			from(sourceSets*.resources.srcDirs) {
+				exclude '**/*.properties'
+			}
 		}
 	}
 
