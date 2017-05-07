@@ -164,7 +164,7 @@ class Version {
 
 project(':MCU-DownloadLib') {
 	version = new Version(major: 1, minor: 7)
-	sourceCompatibility = 1.6
+	sourceCompatibility = 1.7
 
 	afterEvaluate {
 		processResources {
@@ -305,11 +305,12 @@ project(':PackBuilder') {
 	dependencies {
 		compile project(':MCU-API')
 		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
 	}
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 6, buildNum: 14)
+	version = new Version(major: 1, minor: 6, buildNum: 15)
 	sourceCompatibility = 1.7
 
 	dependencies {
