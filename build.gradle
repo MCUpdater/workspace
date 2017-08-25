@@ -214,6 +214,9 @@ project(':MCU-API') {
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'com.google.guava:guava:18.0'
+
+		// jsoup HTML parser library @ https://jsoup.org/
+		compile 'org.jsoup:jsoup:1.10.3'
 	}
 }
 
