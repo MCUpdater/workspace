@@ -55,6 +55,14 @@ task cloneGUISwing() {
 	}
 }
 
+task cloneGUIJavaFX() {
+	def destination = file("GUI-JavaFX")
+	def uri = "https://github.com/MCUpdater/GUI-JavaFx.git"
+	if (!destination.exists()) {
+		Grgit.clone(dir: destination, uri: uri)
+	}
+}
+
 task cloneCLI() {
 	def destination = file("MCU-CLI")
 	def uri = "https://github.com/MCUpdater/MCU-CLI.git"
@@ -280,6 +288,31 @@ project(':GUI-Swing') {
 
 	jar {
 		baseName = "MCU"
+	}
+}
+
+project(':GUI-JavaFX') {
+	version = new Version(major: 0, minor: 1)
+	sourceCompatibility = 1.8
+
+	afterEvaluate {
+		processResources {
+			from(sourceSets*.resources.srcDirs) {
+				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+			}
+			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
+		}
+	}
+	dependencies {
+		compile project(':MCU-API')
+		compile project(':MCU-DownloadLib')
+		compile 'org.apache.commons:commons-lang3:3.2.1'
+		compile 'commons-io:commons-io:2.4'
+		compile 'com.google.guava:guava:18.0'
+	}
+
+	jar {
+		baseName = 'MCU-JavaFX'
 	}
 }
 

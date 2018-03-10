@@ -20,3 +20,6 @@ out/
 *.iml
 *.ipr
 *.iws
+
+.project
+.settings/
