@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 3, buildNum: 25)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 1)
 
 buildscript {
 	repositories { mavenCentral() }
@@ -324,7 +324,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 6, buildNum: 15)
+	version = new Version(major: 1, minor: 7, buildNum: 1)
 	sourceCompatibility = 1.7
 
 	dependencies {
@@ -339,7 +339,7 @@ project(':FastPack') {
 		baseName = 'MCU-FastPack'
 		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 		manifest {
-			attributes "Main-Class": 'org.mcupdater.fastpack.FastPack'
+			attributes "Main-Class": 'org.mcupdater.fastpack.Main'
 		}
 	}
 }
