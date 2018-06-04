@@ -309,6 +309,7 @@ project(':GUI-JavaFX') {
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'commons-io:commons-io:2.4'
 		compile 'com.google.guava:guava:18.0'
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
 	}
 
 	jar {
