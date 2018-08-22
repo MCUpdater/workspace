@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 1)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 3)
 
 buildscript {
 	repositories { mavenCentral() }
