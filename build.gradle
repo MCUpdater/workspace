@@ -349,11 +349,19 @@ project(':MCU-CLI') {
 }
 
 project(':PackBuilder') {
+	version = sharedVersion
 	sourceCompatibility = 1.8
 	dependencies {
 		compile project(':MCU-API')
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
+		compile 'commons-io:commons-io:2.4'
+	}
+
+	jar {
+		baseName = 'MCU-PackBuilder'
+		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+		manifest {
+			attributes "Main-Class": 'org.mcupdater.packbuilder.Main'
+		}
 	}
 }
 
