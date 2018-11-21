@@ -53,10 +53,10 @@ You can modify the [gradle.properties](https://github.com/MCUpdater/workspace/bl
 #### Step 4: Define java launch arguments.
 Then in [MCU-Bootstrap/src/main/resources/config.properties](https://github.com/MCUpdater/MCU-Bootstrap/blob/master/src/main/resources/config.properties#L5), you can set passthroughArgs to something like "--defaultMem 4G" to make the default for min/max memory 4G (instead of 1G)
 
-#### Step 5: Customize launcher name
+#### Step 5 (optional): Customize launcher name
 If you want to change the generated path where it installs/saves the instances and settings for MCUpdater, open MCU-Bootstrap/src/main/java/org/mcupdater/BootstrapForm.java and change lines [88](https://github.com/MCUpdater/MCU-Bootstrap/blob/master/src/main/java/org/mcupdater/BootstrapForm.java#L77), [92](https://github.com/MCUpdater/MCU-Bootstrap/blob/master/src/main/java/org/mcupdater/BootstrapForm.java#L81), and [97](https://github.com/MCUpdater/MCU-Bootstrap/blob/master/src/main/java/org/mcupdater/BootstrapForm.java#L86) to change MCUpdater to something like MyServerLauncher
 
-#### Step 6: Add your own Logo/Graphics.
+#### Step 6 (optional): Add your own Logo/Graphics.
 If you so desire, you can also replace the [MCU-Bootstrap/src/main/resources/bg_main.png](https://github.com/MCUpdater/MCU-Bootstrap/blob/master/src/main/resources/mcu-logo-new.png) and mcu-logo-new.png files to display your own logo as well.
 
 #### Step 7: Build your launcher.
