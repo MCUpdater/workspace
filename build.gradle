@@ -22,12 +22,13 @@ subprojects {
 }
 
 import org.ajoberstar.grgit.*
+def branch = grgit.branch.current()
 
 task cloneAPI() {
 	def destination = file("MCU-API")
 	def uri = "https://github.com/MCUpdater/MCU-API.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -35,7 +36,7 @@ task cloneDownloadLib() {
 	def destination = file("MCU-DownloadLib")
 	def uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -43,7 +44,7 @@ task cloneBootstrap() {
 	def destination = file("MCU-Bootstrap")
 	def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -51,15 +52,7 @@ task cloneGUISwing() {
 	def destination = file("GUI-Swing")
 	def uri = "https://github.com/MCUpdater/GUI-Swing.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
-	}
-}
-
-task cloneGUIJavaFX() {
-	def destination = file("GUI-JavaFX")
-	def uri = "https://github.com/MCUpdater/GUI-JavaFx.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -67,7 +60,7 @@ task cloneCLI() {
 	def destination = file("MCU-CLI")
 	def uri = "https://github.com/MCUpdater/MCU-CLI.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -75,7 +68,7 @@ task cloneFastPack() {
 	def destination = file("FastPack")
 	def uri = "https://github.com/MCUpdater/FastPack.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -83,7 +76,7 @@ task clonePackBuilder() {
 	def destination = file("PackBuilder")
 	def uri = "https://github.com/MCUpdater/PackBuilder.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -91,7 +84,7 @@ task cloneLauncher() {
 	def destination = file("MCU-Launcher")
 	def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -99,7 +92,7 @@ task cloneServer() {
 	def destination = file("MCU-Server")
 	def uri = "https://github.com/MCUpdater/MCU-Server.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -107,7 +100,7 @@ task cloneQuickServer() {
 	def destination = file("QuickServer")
 	def uri = "https://github.com/MCUpdater/QuickServer.git"
 	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri)
+		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	}
 }
 
@@ -288,32 +281,6 @@ project(':GUI-Swing') {
 
 	jar {
 		baseName = "MCU"
-	}
-}
-
-project(':GUI-JavaFX') {
-	version = new Version(major: 0, minor: 1)
-	sourceCompatibility = 1.8
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			}
-			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-		}
-	}
-	dependencies {
-		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'commons-io:commons-io:2.4'
-		compile 'com.google.guava:guava:18.0'
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-	}
-
-	jar {
-		baseName = 'MCU-JavaFX'
 	}
 }
 
