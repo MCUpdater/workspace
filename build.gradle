@@ -32,17 +32,19 @@ def workspaceGit = grgit.open()
 def workspaceBranch = workspaceGit.branch.current().getName()
 ext.setupRepo = { destination, uri, branch ->
 	if (!destination.exists()) {
-		println "Cloning new repo for ${destination}..."
+		println "Cloning new repo for ${destination} @ ${branch}..."
 		grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
 	} else {
 		def repo = grgit.open(dir: destination)
 		if( repo.branch.current().getName() != branch ) {
+			println "Detected incorrect branch for ${destination}, checking out ${branch}..."
 			try {
 				repo.checkout(branch: branch)
 			} catch (Exception e) {
 				repo.fetch(remote: "origin")
 				repo.checkout(branch: branch, createBranch: true, startPoint: "origin/${branch}")
 			}
+			repo.pull()
 		}
 	}
 }
