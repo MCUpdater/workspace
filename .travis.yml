@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 install:
-  - ./gradlew setupWorkspace
+  - gradle setupWorkspace
 script:
-  - ./gradlew build
+  - gradle build
 
