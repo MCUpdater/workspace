@@ -30,6 +30,17 @@ apply plugin: 'org.ajoberstar.grgit'
 
 def workspaceGit = grgit.open()
 def workspaceBranch = workspaceGit.branch.current().getName()
+if (workspaceBranch == "HEAD") {
+	println "Detected detatched git state, looking for actual branch name..."
+	if (System.env["TRAVIS_BRANCH"] != null) {
+		workspaceBranch = System.env["TRAVIS_BRANCH"]
+		println "Using git branch ${workspaceBranch} from travis-ci environment..."
+	} else {
+		workspaceBranch = "master"
+		println "Falling back to git branch ${workspaceBranch}..."
+	}
+}
+
 ext.setupRepo = { destination, uri, branch ->
 	if (!destination.exists()) {
 		println "Cloning new repo for ${destination} @ ${branch}..."
