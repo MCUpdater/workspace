@@ -3,8 +3,13 @@ import org.apache.tools.ant.filters.*
 def sharedVersion = new Version(major: 3, minor: 4, buildNum: 5)
 
 buildscript {
-	repositories { mavenCentral() }
-	dependencies { classpath 'org.ajoberstar:grgit:0.4.0' }
+	repositories {
+		mavenCentral()
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
+	}
+	dependencies { classpath "org.ajoberstar.grgit:grgit-gradle:3.0.0" }
 }
 
 subprojects {
@@ -21,87 +26,95 @@ subprojects {
 	}
 }
 
-import org.ajoberstar.grgit.*
-def branch = grgit.branch.current()
+apply plugin: 'org.ajoberstar.grgit'
+
+def workspaceGit = grgit.open()
+def workspaceBranch = workspaceGit.branch.current().getName()
+ext.setupRepo = { destination, uri, branch ->
+	if (!destination.exists()) {
+		println "Cloning new repo for ${destination}..."
+		grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
+	} else {
+		def repo = grgit.open(dir: destination)
+		if( repo.branch.current().getName() != branch ) {
+			try {
+				repo.checkout(branch: branch)
+			} catch (Exception e) {
+				repo.fetch(remote: "origin")
+				repo.checkout(branch: branch, createBranch: true, startPoint: "origin/${branch}")
+			}
+		}
+	}
+}
 
 task cloneAPI() {
 	def destination = file("MCU-API")
 	def uri = "https://github.com/MCUpdater/MCU-API.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
 }
 
 task cloneDownloadLib() {
 	def destination = file("MCU-DownloadLib")
 	def uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
 }
 
 task cloneBootstrap() {
 	def destination = file("MCU-Bootstrap")
 	def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
 }
 
 task cloneGUISwing() {
 	def destination = file("GUI-Swing")
 	def uri = "https://github.com/MCUpdater/GUI-Swing.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
 }
 
 task cloneCLI() {
 	def destination = file("MCU-CLI")
 	def uri = "https://github.com/MCUpdater/MCU-CLI.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
 }
 
 task cloneFastPack() {
 	def destination = file("FastPack")
 	def uri = "https://github.com/MCUpdater/FastPack.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
 }
 
 task clonePackBuilder() {
 	def destination = file("PackBuilder")
 	def uri = "https://github.com/MCUpdater/PackBuilder.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
 }
 
 task cloneLauncher() {
 	def destination = file("MCU-Launcher")
 	def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = "master"
+	setupRepo( destination, uri, branch )
 }
 
 task cloneServer() {
 	def destination = file("MCU-Server")
 	def uri = "https://github.com/MCUpdater/MCU-Server.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = "master"
+	setupRepo( destination, uri, branch )
 }
 
 task cloneQuickServer() {
 	def destination = file("QuickServer")
 	def uri = "https://github.com/MCUpdater/QuickServer.git"
-	if (!destination.exists()) {
-		Grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	}
+	def branch = "master"
+	setupRepo( destination, uri, branch )
 }
 
 task setupWorkspace << {
