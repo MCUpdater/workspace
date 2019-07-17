@@ -137,6 +137,13 @@ task cloneForgeLoader() {
 	setupRepo( destination, uri, branch )
 }
 
+task cloneLegacyForgeLoader() {
+	def destination = file("MCU-LegacyForgeLoader")
+	def uri = "https://github.com/MCUpdater/MCU-LegacyForgeLoader.git"
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
+}
+
 task setupWorkspace << {
 	println 'Workspace ready'
 }
@@ -448,5 +455,17 @@ project(':MCU-ForgeLoader') {
 	}
 	jar {
 		archiveName = "MCU-ForgeLoader.jar"
+	}
+}
+
+project(':MCU-LegacyForgeLoader') {
+	version = new Version(major: 1, minor: 0)
+	sourceCompatibility = 1.7
+
+	dependencies {
+		compile files('libs/ForgeInstaller.jar')
+	}
+	jar {
+		archiveName = "MCU-LegacyForgeLoader.jar"
 	}
 }

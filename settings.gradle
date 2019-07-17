@@ -1,1 +1,1 @@
-include 'MCU-API', 'MCU-DownloadLib', 'GUI-Swing', 'MCU-CLI', 'PackBuilder', 'MCU-Bootstrap', 'FastPack', 'MCU-Launcher', 'MCU-Server', 'QuickServer', 'MCU-ForgeLoader'
+include 'MCU-API', 'MCU-DownloadLib', 'GUI-Swing', 'MCU-CLI', 'PackBuilder', 'MCU-Bootstrap', 'FastPack', 'MCU-Launcher', 'MCU-Server', 'QuickServer', 'MCU-ForgeLoader', 'MCU-LegacyForgeLoader'
