@@ -13,6 +13,8 @@ FastPack/
 MCU-Launcher/
 MCU-Server/
 QuickServer/
+MCU-ForgeLoader/
+MCU-LegacyForgeLoader/
 .idea/
 copy/
 out/
