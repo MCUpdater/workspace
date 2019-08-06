@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 10)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 11)
 
 buildscript {
 	repositories {
@@ -211,7 +211,7 @@ class Version {
 }
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 9)
+	version = new Version(major: 1, minor: 10)
 	sourceCompatibility = 1.8
 
 	afterEvaluate {
@@ -379,7 +379,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 7, buildNum: 4)
+	version = new Version(major: 1, minor: 7, buildNum: 5)
 	sourceCompatibility = 1.8
 
 	dependencies {
