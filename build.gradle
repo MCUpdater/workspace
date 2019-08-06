@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 10)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 11)
 
 buildscript {
 	repositories {
@@ -112,66 +112,86 @@ task clonePackBuilder() {
 task cloneLauncher() {
 	def destination = file("MCU-Launcher")
 	def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
-	def branch = "master"
+	def branch = workspaceBranch
 	setupRepo( destination, uri, branch )
 }
 
 task cloneServer() {
 	def destination = file("MCU-Server")
 	def uri = "https://github.com/MCUpdater/MCU-Server.git"
-	def branch = "master"
+	def branch = workspaceBranch
 	setupRepo( destination, uri, branch )
 }
 
 task cloneQuickServer() {
 	def destination = file("QuickServer")
 	def uri = "https://github.com/MCUpdater/QuickServer.git"
-	def branch = "master"
+	def branch = workspaceBranch
 	setupRepo( destination, uri, branch )
 }
 
-task setupWorkspace << {
-	println 'Workspace ready'
+task cloneForgeLoader() {
+	def destination = file("MCU-ForgeLoader")
+	def uri = "https://github.com/MCUpdater/MCU-ForgeLoader.git"
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
+}
+
+task cloneLegacyForgeLoader() {
+	def destination = file("MCU-LegacyForgeLoader")
+	def uri = "https://github.com/MCUpdater/MCU-LegacyForgeLoader.git"
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
+}
+
+task setupWorkspace{
+	doLast {
+		println 'Workspace ready'
+	}
 }
 
 setupWorkspace.dependsOn {
 	tasks.findAll { task -> task.name.startsWith('clone') }
 }
 
-task gatherArtifacts << {
-	File assembledDir = mkdir("$buildDir/Artifacts")
-	subprojects.each { project ->
-		project.tasks.withType(Jar).each { archiveTask ->
-			copy {
-				from archiveTask.archivePath
-				into assembledDir
+task gatherArtifacts {
+	doLast {
+		File assembledDir = mkdir("$buildDir/Artifacts")
+		subprojects.each { project ->
+			project.tasks.withType(Jar).each { archiveTask ->
+				copy {
+					from archiveTask.archivePath
+					into assembledDir
+				}
 			}
 		}
 	}
 }
 
-task copyDeps << {
-	subprojects {subprj->
-		def allDeps = []
-		def sources = ['runtime', 'compile', 'providedRuntime', 'providedCompile']
-		subprj.configurations.asMap.each {k, v->
-			if (k in sources) {
-				allDeps.addAll v.allDependencies
-			}
-		}
-		copy{
-			from allDeps.collect { dep->
-				if (!(dep instanceof ProjectDependency)) {//exclude project deps
-					//noinspection GroovyAssignabilityCheck
-					def files =  subprj.configurations.compile.files (dep)
-					files.collect { f->
-						f.path
-					}
-				} else {
-					[]
+task copyDeps {
+	doLast {
+		subprojects {subprj->
+			def allDeps = []
+			def sources = ['runtime', 'compile', 'providedRuntime', 'providedCompile']
+			subprj.configurations.asMap.each {k, v->
+				if (k in sources) {
+					allDeps.addAll v.allDependencies
 				}
 			}
-			into "${rootProject.projectDir}/copy"
+			copy{
+				from allDeps.collect { dep->
+					if (!(dep instanceof ProjectDependency)) {//exclude project deps
+						//noinspection GroovyAssignabilityCheck
+						def files =  subprj.configurations.compile.files (dep)
+						files.collect { f->
+							f.path
+						}
+					} else {
+						[]
+					}
+				}
+				into "${rootProject.projectDir}/copy"
+			}
 		}
 	}
 }
@@ -191,8 +211,8 @@ class Version {
 }
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 9)
-	sourceCompatibility = 1.7
+	version = new Version(major: 1, minor: 10)
+	sourceCompatibility = 1.8
 
 	afterEvaluate {
 		processResources {
@@ -219,7 +239,7 @@ project(':MCU-DownloadLib') {
 
 project(':MCU-API') {
 	version = sharedVersion
-	sourceCompatibility = 1.7
+	sourceCompatibility = 1.8
 
 	afterEvaluate {
 		processResources {
@@ -283,7 +303,7 @@ project(':MCU-Bootstrap') {
 
 project(':GUI-Swing') {
 	version = sharedVersion
-	sourceCompatibility = 1.7
+	sourceCompatibility = 1.8
 
 	afterEvaluate {
 		processResources {
@@ -312,7 +332,7 @@ project(':GUI-Swing') {
 
 project(':MCU-CLI') {
 	version = sharedVersion
-	sourceCompatibility = 1.7
+	sourceCompatibility = 1.8
 
 	afterEvaluate {
 		processResources {
@@ -359,8 +379,8 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 7, buildNum: 4)
-	sourceCompatibility = 1.7
+	version = new Version(major: 1, minor: 7, buildNum: 5)
+	sourceCompatibility = 1.8
 
 	dependencies {
 		compile project(':MCU-API')
@@ -381,7 +401,7 @@ project(':FastPack') {
 
 project(':MCU-Launcher') {
 	version = new Version(major: 1, minor: 0)
-	sourceCompatibility = 1.7
+	sourceCompatibility = 1.8
 
 	jar {
 		archiveName = "MCU-Launcher.jar"
@@ -390,7 +410,7 @@ project(':MCU-Launcher') {
 
 project(':MCU-Server') {
 	version = sharedVersion
-	sourceCompatibility = 1.7
+	sourceCompatibility = 1.8
 
 	dependencies {
 		compile project(":MCU-API")
@@ -412,7 +432,7 @@ project(':MCU-Server') {
 
 project(':QuickServer') {
 	version = sharedVersion
-	sourceCompatibility = 1.7
+	sourceCompatibility = 1.8
 
 	dependencies {
 		compile project(":MCU-API")
@@ -429,5 +449,29 @@ project(':QuickServer') {
 		manifest {
 			attributes "Main-Class": 'org.mcupdater.QuickServer'
 		}
+	}
+}
+
+project(':MCU-ForgeLoader') {
+	version = new Version(major: 1, minor: 0)
+	sourceCompatibility = 1.8
+
+	dependencies {
+		compile files('libs/ForgeInstaller.jar')
+	}
+	jar {
+		archiveName = "MCU-ForgeLoader.jar"
+	}
+}
+
+project(':MCU-LegacyForgeLoader') {
+	version = new Version(major: 1, minor: 0)
+	sourceCompatibility = 1.7
+
+	dependencies {
+		compile files('libs/ForgeInstaller.jar')
+	}
+	jar {
+		archiveName = "MCU-LegacyForgeLoader.jar"
 	}
 }
