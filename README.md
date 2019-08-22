@@ -11,6 +11,9 @@ Command | Description
 ./gradlew setupWorkspace | This will clone all of the repositories for you
 ./gradlew build | This will build all of the projects (includes setupWorkspace so you can build straight away)
 
+### Build dependencies
+With the addition of handling the Forge installers, a manual download of a Forge installer for 1.12.x and one for 1.14.x needs to be done to be able to build the MCU-ForgeLoader and MCU-LegacyForgeLoader. This should not be necessary to do if you are only building the MCU-Bootstrap project.
+
 # Creating MCUpdater Launcher
 This project lets you create your own redistributable and potentially self updating modpack which you can give as a download and executable package to your playerbase.  Its intended to require as little brain power as technologically possible as well as allow you to add your own branding.
 
