@@ -11,6 +11,9 @@ Command | Description
 ./gradlew setupWorkspace | This will clone all of the repositories for you
 ./gradlew build | This will build all of the projects (includes setupWorkspace so you can build straight away)
 
+### Build dependencies
+With the addition of handling the Forge installers, a manual download of a Forge installer for 1.12.x and one for 1.14.x needs to be done to be able to build the MCU-ForgeLoader and MCU-LegacyForgeLoader. This should not be necessary to do if you are only building the MCU-Bootstrap project.
+
 # Creating MCUpdater Launcher
 This project lets you create your own redistributable and potentially self updating modpack which you can give as a download and executable package to your playerbase.  Its intended to require as little brain power as technologically possible as well as allow you to add your own branding.
 
@@ -60,7 +63,7 @@ If you want to change the generated path where it installs/saves the instances a
 If you so desire, you can also replace the [MCU-Bootstrap/src/main/resources/bg_main.png](https://github.com/MCUpdater/MCU-Bootstrap/blob/master/src/main/resources/mcu-logo-new.png) and mcu-logo-new.png files to display your own logo as well.
 
 #### Step 7: Build your launcher.
-Once you have made the changes you want, you can go back to the directory that has gradlew and execute it like this: "gradlew clean build gatherArtifacts"
+Once you have made the changes you want, you can go back to the directory that has gradlew and execute it like this: "gradlew clean MCU-Bootstrap:build gatherArtifacts"
 
 #### Step 8: Admire your work and be happy.
 Once it finishes, you'll have a bunch of files in build/Artifacts
