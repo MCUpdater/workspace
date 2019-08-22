@@ -60,7 +60,7 @@ If you want to change the generated path where it installs/saves the instances a
 If you so desire, you can also replace the [MCU-Bootstrap/src/main/resources/bg_main.png](https://github.com/MCUpdater/MCU-Bootstrap/blob/master/src/main/resources/mcu-logo-new.png) and mcu-logo-new.png files to display your own logo as well.
 
 #### Step 7: Build your launcher.
-Once you have made the changes you want, you can go back to the directory that has gradlew and execute it like this: "gradlew clean build gatherArtifacts"
+Once you have made the changes you want, you can go back to the directory that has gradlew and execute it like this: "gradlew clean MCU-Bootstrap:build gatherArtifacts"
 
 #### Step 8: Admire your work and be happy.
 Once it finishes, you'll have a bunch of files in build/Artifacts
