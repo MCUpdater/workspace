@@ -28,7 +28,7 @@ subprojects {
 
 apply plugin: 'org.ajoberstar.grgit'
 
-def workspaceGit = grgit.open()
+def workspaceGit = grgit.open(currentDir: project.rootDir)
 def workspaceBranch = workspaceGit.branch.current().getName()
 if (workspaceBranch == "HEAD") {
 	println "Detected detatched git state, looking for actual branch name..."
