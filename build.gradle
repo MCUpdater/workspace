@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 14)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 15)
 
 buildscript {
 	repositories {
@@ -28,7 +28,7 @@ subprojects {
 
 apply plugin: 'org.ajoberstar.grgit'
 
-def workspaceGit = grgit.open()
+def workspaceGit = grgit.open(currentDir: project.rootDir)
 def workspaceBranch = workspaceGit.branch.current().getName()
 if (workspaceBranch == "HEAD") {
 	println "Detected detatched git state, looking for actual branch name..."
@@ -379,7 +379,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 7, buildNum: 5)
+	version = new Version(major: 1, minor: 7, buildNum: 6)
 	sourceCompatibility = 1.8
 
 	dependencies {
