@@ -1,6 +1,6 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 12)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 15)
 
 buildscript {
 	repositories {
@@ -267,7 +267,7 @@ project(':MCU-API') {
 		compile 'org.hibernate:hibernate-core:5.1.10.Final'
 
 		// jsoup HTML parser library @ https://jsoup.org/
-		compile 'org.jsoup:jsoup:1.10.3'
+		compile 'org.jsoup:jsoup:1.12.1'
 	}
 }
 
@@ -379,7 +379,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 7, buildNum: 5)
+	version = new Version(major: 1, minor: 7, buildNum: 6)
 	sourceCompatibility = 1.8
 
 	dependencies {
