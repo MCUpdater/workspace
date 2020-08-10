@@ -267,7 +267,7 @@ project(':MCU-API') {
 		compile 'org.hibernate:hibernate-core:5.1.10.Final'
 
 		// jsoup HTML parser library @ https://jsoup.org/
-		compile 'org.jsoup:jsoup:1.10.3'
+		compile 'org.jsoup:jsoup:1.12.1'
 	}
 }
 
