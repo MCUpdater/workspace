@@ -1,6 +1,9 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 15)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 16)
+def downloadLibVersion = new Version(major: 1, minor: 12)
+def bootstrapVersion = new Version(major: 1, minor: 3)
+def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 7)
 
 buildscript {
 	repositories {
@@ -211,7 +214,7 @@ class Version {
 }
 
 project(':MCU-DownloadLib') {
-	version = new Version(major: 1, minor: 11)
+	version = downloadLibVersion
 	sourceCompatibility = 1.8
 
 	afterEvaluate {
@@ -262,6 +265,7 @@ project(':MCU-API') {
 		compile 'org.apache.commons:commons-lang3:3.2.1'
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'com.google.guava:guava:18.0'
+		compile 'org.tomlj:tomlj:1.0.0'
 		compile group: 'org.apache.derby', name: 'derby', version: '10.14.1.0'
 		compile group: 'org.apache.commons', name: 'commons-compress', version: '1.15'
 		compile 'org.hibernate:hibernate-core:5.1.10.Final'
@@ -272,7 +276,7 @@ project(':MCU-API') {
 }
 
 project(':MCU-Bootstrap') {
-	version = '1.3'
+	version = bootstrapVersion
 	sourceCompatibility = 1.6
 
 	dependencies {
@@ -379,7 +383,7 @@ project(':PackBuilder') {
 }
 
 project(':FastPack') {
-	version = new Version(major: 1, minor: 7, buildNum: 6)
+	version = fastpackVersion
 	sourceCompatibility = 1.8
 
 	dependencies {
