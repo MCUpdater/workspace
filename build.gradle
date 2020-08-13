@@ -1,9 +1,9 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 16)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 17)
 def downloadLibVersion = new Version(major: 1, minor: 12)
 def bootstrapVersion = new Version(major: 1, minor: 3)
-def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 7)
+def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 8)
 
 buildscript {
 	repositories {
