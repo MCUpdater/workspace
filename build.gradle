@@ -259,7 +259,7 @@ project(':MCU-API') {
 	dependencies {
 		compile project(':MCU-DownloadLib')
 		//compile project(':MCU-Yggdrasil')
-		compile 'com.mojang:authlib:1.5.25'
+		compile 'com.mojang:authlib:1.6.25'
 		compile 'commons-codec:commons-codec:1.9'
 		compile 'commons-io:commons-io:2.4'
 		compile 'org.apache.commons:commons-lang3:3.2.1'
