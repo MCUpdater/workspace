@@ -1,9 +1,9 @@
 import org.apache.tools.ant.filters.*
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 17)
+def sharedVersion = new Version(major: 3, minor: 4, buildNum: 19)
 def downloadLibVersion = new Version(major: 1, minor: 13)
 def bootstrapVersion = new Version(major: 1, minor: 3)
-def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 8)
+def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 9)
 
 buildscript {
 	repositories {
@@ -12,7 +12,7 @@ buildscript {
 			url "https://plugins.gradle.org/m2/"
 		}
 	}
-	dependencies { classpath "org.ajoberstar.grgit:grgit-gradle:3.0.0" }
+	dependencies { classpath "org.ajoberstar.grgit:grgit-gradle:4.1.0" }
 }
 
 subprojects {
@@ -87,6 +87,13 @@ task cloneBootstrap() {
 task cloneGUISwing() {
 	def destination = file("GUI-Swing")
 	def uri = "https://github.com/MCUpdater/GUI-Swing.git"
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
+}
+
+task cloneGUIJavaFX() {
+	def destination = file("GUI-JavaFX")
+	def uri = "https://github.com/MCUpdater/GUI-JavaFX.git"
 	def branch = workspaceBranch
 	setupRepo( destination, uri, branch )
 }
@@ -277,7 +284,7 @@ project(':MCU-API') {
 
 project(':MCU-Bootstrap') {
 	version = bootstrapVersion
-	sourceCompatibility = 1.6
+	sourceCompatibility = 1.8
 
 	dependencies {
 		compile project(':MCU-DownloadLib')
@@ -326,11 +333,41 @@ project(':GUI-Swing') {
 		compile 'com.google.code.gson:gson:2.2.4'
 		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
 		compile 'com.google.guava:guava:18.0'
+		compile group: 'com.formdev', name: 'flatlaf', version: '0.44'
 		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
 	}
 
 	jar {
 		baseName = "MCU"
+	}
+}
+
+project(':GUI-JavaFX') {
+	version = sharedVersion
+	sourceCompatibility = 1.8
+
+	afterEvaluate {
+		processResources {
+			from(sourceSets*.resources.srcDirs) {
+				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
+			}
+			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
+		}
+	}
+	dependencies {
+		compile project(':MCU-API')
+		compile project(':MCU-DownloadLib')
+		compile 'org.apache.commons:commons-lang3:3.2.1'
+		compile 'net.sf.jopt-simple:jopt-simple:4.6'
+		compile 'commons-io:commons-io:2.4'
+		compile 'com.google.code.gson:gson:2.2.4'
+		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
+		compile 'com.google.guava:guava:18.0'
+		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
+	}
+
+	jar {
+		baseName = "MCUFX"
 	}
 }
 
