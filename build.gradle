@@ -1,538 +1,58 @@
-import org.apache.tools.ant.filters.*
+ext.sharedVersion = new Version(major: 4, minor: 0, buildNum: 0)
+ext.downloadLibVersion = new Version(major: 1, minor: 13)
+ext.bootstrapVersion = new Version(major: 1, minor: 3)
+ext.fastpackVersion = new Version(major: 1, minor: 7, buildNum: 10)
 
-def sharedVersion = new Version(major: 3, minor: 4, buildNum: 19)
-def downloadLibVersion = new Version(major: 1, minor: 13)
-def bootstrapVersion = new Version(major: 1, minor: 3)
-def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 10)
+class Version {
+    int major, minor, buildNum
 
-buildscript {
-	repositories {
-		mavenCentral()
-		maven {
-			url "https://plugins.gradle.org/m2/"
-		}
-	}
-	dependencies { classpath "org.ajoberstar.grgit:grgit-gradle:4.1.0" }
-}
-
-subprojects {
-	apply plugin: 'java'
-	group = 'org.mcupdater'
-
-	repositories {
-		mavenCentral()
-		maven {
-			name = "mojang"
-			url = "https://libraries.minecraft.net/"
-		}
-		maven { url 'https://jitpack.io' }
-	}
-}
-
-apply plugin: 'org.ajoberstar.grgit'
-
-def workspaceGit = grgit.open(currentDir: project.rootDir)
-def workspaceBranch = workspaceGit.branch.current().getName()
-if (workspaceBranch == "HEAD") {
-	println "Detected detatched git state, looking for actual branch name..."
-	if (System.env["TRAVIS_BRANCH"] != null) {
-		workspaceBranch = System.env["TRAVIS_BRANCH"]
-		println "Using git branch ${workspaceBranch} from travis-ci environment..."
-	} else {
-		workspaceBranch = "master"
-		println "Falling back to git branch ${workspaceBranch}..."
-	}
-}
-
-ext.setupRepo = { destination, uri, branch ->
-	if (!destination.exists()) {
-		println "Cloning new repo for ${destination} @ ${branch}..."
-		grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
-	} else {
-		def repo = grgit.open(dir: destination)
-		if( repo.branch.current().getName() != branch ) {
-			println "Detected incorrect branch for ${destination}, checking out ${branch}..."
-			try {
-				repo.checkout(branch: branch)
-			} catch (Exception e) {
-				repo.fetch(remote: "origin")
-				repo.checkout(branch: branch, createBranch: true, startPoint: "origin/${branch}")
-			}
-			repo.pull()
-		}
-	}
-}
-
-task cloneAPI() {
-	def destination = file("MCU-API")
-	def uri = "https://github.com/MCUpdater/MCU-API.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneDownloadLib() {
-	def destination = file("MCU-DownloadLib")
-	def uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneBootstrap() {
-	def destination = file("MCU-Bootstrap")
-	def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneGUISwing() {
-	def destination = file("GUI-Swing")
-	def uri = "https://github.com/MCUpdater/GUI-Swing.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneGUIJavaFX() {
-	def destination = file("GUI-JavaFX")
-	def uri = "https://github.com/MCUpdater/GUI-JavaFX.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneCLI() {
-	def destination = file("MCU-CLI")
-	def uri = "https://github.com/MCUpdater/MCU-CLI.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneFastPack() {
-	def destination = file("FastPack")
-	def uri = "https://github.com/MCUpdater/FastPack.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task clonePackBuilder() {
-	def destination = file("PackBuilder")
-	def uri = "https://github.com/MCUpdater/PackBuilder.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneLauncher() {
-	def destination = file("MCU-Launcher")
-	def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneServer() {
-	def destination = file("MCU-Server")
-	def uri = "https://github.com/MCUpdater/MCU-Server.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneQuickServer() {
-	def destination = file("QuickServer")
-	def uri = "https://github.com/MCUpdater/QuickServer.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneForgeLoader() {
-	def destination = file("MCU-ForgeLoader")
-	def uri = "https://github.com/MCUpdater/MCU-ForgeLoader.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneForgeLoaderV2() {
-	def destination = file("MCU-ForgeLoader")
-	def uri = "https://github.com/MCUpdater/MCU-ForgeLoaderV2.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task cloneLegacyForgeLoader() {
-	def destination = file("MCU-LegacyForgeLoader")
-	def uri = "https://github.com/MCUpdater/MCU-LegacyForgeLoader.git"
-	def branch = workspaceBranch
-	setupRepo( destination, uri, branch )
-}
-
-task setupWorkspace{
-	doLast {
-		println 'Workspace ready'
-	}
-}
-
-setupWorkspace.dependsOn {
-	tasks.findAll { task -> task.name.startsWith('clone') }
+    String toString() {
+        if (buildNum != 0) {
+            "$major.$minor.$buildNum"
+        } else {
+            "$major.$minor"
+        }
+    }
 }
 
 task gatherArtifacts {
-	doLast {
-		File assembledDir = mkdir("$buildDir/Artifacts")
-		subprojects.each { project ->
-			project.tasks.withType(Jar).each { archiveTask ->
-				copy {
-					from archiveTask.archivePath
-					into assembledDir
-				}
-			}
-		}
-	}
+    doLast {
+        File assembledDir = mkdir("$buildDir/Artifacts")
+        subprojects.each { project ->
+            project.tasks.withType(Jar).each { archiveTask ->
+                copy {
+                    from archiveTask.archiveFile
+                    into assembledDir
+                }
+            }
+        }
+    }
 }
 
 task copyDeps {
-	doLast {
-		subprojects {subprj->
-			def allDeps = []
-			def sources = ['runtime', 'compile', 'providedRuntime', 'providedCompile']
-			subprj.configurations.asMap.each {k, v->
-				if (k in sources) {
-					allDeps.addAll v.allDependencies
-				}
-			}
-			copy{
-				from allDeps.collect { dep->
-					if (!(dep instanceof ProjectDependency)) {//exclude project deps
-						//noinspection GroovyAssignabilityCheck
-						def files =  subprj.configurations.compile.files (dep)
-						files.collect { f->
-							f.path
-						}
-					} else {
-						[]
-					}
-				}
-				into "${rootProject.projectDir}/copy"
-			}
-		}
-	}
-}
-
-task build(dependsOn: setupWorkspace) {}
-
-class Version {
-	int major, minor, buildNum
-
-	String toString() {
-		if (buildNum != 0) {
-			"$major.$minor.$buildNum"
-		} else {
-			"$major.$minor"
-		}
-	}
-}
-
-project(':MCU-DownloadLib') {
-	version = downloadLibVersion
-	sourceCompatibility = 1.8
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties'
-				filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-				println("Version " + version)
-			}
-			from(sourceSets*.resources.srcDirs) {
-				exclude '**/*.properties'
-			}
-		}
-	}
-
-	dependencies {
-		compile 'commons-codec:commons-codec:1.9'
-		compile 'commons-io:commons-io:2.4'
-		compile 'org.tukaani:xz:1.4'
-		compile 'com.github.ipfs:java-ipfs-api:v1.0.0'
-		compile 'com.github.multiformats:java-multiaddr:v1.0.0'
-		compile 'com.github.multiformats:java-multihash:v1.0.0'
-	}
-}
-
-project(':MCU-API') {
-	version = sharedVersion
-	sourceCompatibility = 1.8
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties'
-				filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			}
-			from(sourceSets*.resources.srcDirs) {
-				exclude '**/*.properties'
-			}
-		}
-	}
-
-	dependencies {
-		compile project(':MCU-DownloadLib')
-		//compile project(':MCU-Yggdrasil')
-		compile 'com.mojang:authlib:1.6.25'
-		compile 'commons-codec:commons-codec:1.9'
-		compile 'commons-io:commons-io:2.4'
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'com.google.code.gson:gson:2.2.4'
-		compile 'com.google.guava:guava:18.0'
-		compile 'org.tomlj:tomlj:1.0.0'
-		compile group: 'org.apache.derby', name: 'derby', version: '10.14.1.0'
-		compile group: 'org.apache.commons', name: 'commons-compress', version: '1.15'
-		compile 'org.hibernate:hibernate-core:5.1.10.Final'
-		compile 'org.xerial:sqlite-jdbc:3.32.3.2'
-
-		// jsoup HTML parser library @ https://jsoup.org/
-		compile 'org.jsoup:jsoup:1.12.1'
-	}
-}
-
-project(':MCU-Bootstrap') {
-	version = bootstrapVersion
-	sourceCompatibility = 1.8
-
-	dependencies {
-		compile project(':MCU-DownloadLib')
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'commons-io:commons-io:2.4'
-	}
-
-	processResources {
-		from(sourceSets.main.resources.srcDirs) {
-			include '**/config.properties'
-			filter(ReplaceTokens, tokens: [bootstrapURL: bootstrapURL, distribution: distribution, defaultPack: defaultPack])
-		}
-		from(sourceSets.main.resources.srcDirs) {
-			exclude '**/config.properties'
-		}
-	}
-
-	jar {
-		archiveName = 'MCU-Bootstrap.jar'
-		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-		manifest {
-			attributes "Main-Class": 'org.mcupdater.BootstrapForm'
-		}
-	}
-}
-
-project(':GUI-Swing') {
-	version = sharedVersion
-	sourceCompatibility = 1.8
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			}
-			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-		}
-	}
-	dependencies {
-		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-io:commons-io:2.4'
-		compile 'com.google.code.gson:gson:2.2.4'
-		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
-		compile 'com.google.guava:guava:18.0'
-		compile group: 'com.formdev', name: 'flatlaf', version: '0.44'
-		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
-	}
-
-	jar {
-		baseName = "MCU"
-	}
-}
-
-project(':GUI-JavaFX') {
-	version = sharedVersion
-	sourceCompatibility = 1.8
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			}
-			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-		}
-	}
-	dependencies {
-		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-io:commons-io:2.4'
-		compile 'com.google.code.gson:gson:2.2.4'
-		compile 'org.swinglabs.swingx:swingx-all:1.6.5'
-		compile 'com.google.guava:guava:18.0'
-		compile files("${System.properties['java.home']}/lib/jfxrt.jar")
-	}
-
-	jar {
-		baseName = "MCUFX"
-	}
-}
-
-project(':MCU-CLI') {
-	version = sharedVersion
-	sourceCompatibility = 1.8
-
-	afterEvaluate {
-		processResources {
-			from(sourceSets*.resources.srcDirs) {
-				include '**/*.properties' filter(ReplaceTokens, tokens: [verMajor: Integer.toString(version.major), verMinor: Integer.toString(version.minor), verBuild: Integer.toString(version.buildNum)])
-			}
-			from(sourceSets*.resources.srcDirs) { exclude '**/*.properties' }
-		}
-	}
-	dependencies {
-		compile project(':MCU-API')
-		compile project(':MCU-DownloadLib')
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-io:commons-io:2.4'
-		compile 'com.google.code.gson:gson:2.2.4'
-		compile 'com.google.guava:guava:18.0'
-	}
-
-	jar {
-		baseName = 'MCU-CLI'
-		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-		manifest {
-			attributes "Main-Class": 'org.mcupdater.MCUCLI'
-		}
-	}
-}
-
-project(':PackBuilder') {
-	version = sharedVersion
-	sourceCompatibility = 1.8
-	dependencies {
-		compile project(':MCU-API')
-		compile 'commons-io:commons-io:2.4'
-	}
-
-	jar {
-		baseName = 'MCU-PackBuilder'
-		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-		manifest {
-			attributes "Main-Class": 'org.mcupdater.packbuilder.Main'
-		}
-	}
-}
-
-project(':FastPack') {
-	version = fastpackVersion
-	sourceCompatibility = 1.8
-
-	dependencies {
-		compile project(':MCU-API')
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-codec:commons-codec:1.9'
-		compile 'org.apache.commons:commons-lang3:3.2.1'
-		compile 'com.google.code.gson:gson:2.2.4'
-	}
-
-	jar {
-		baseName = 'MCU-FastPack'
-		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-		manifest {
-			attributes "Main-Class": 'org.mcupdater.fastpack.Main'
-		}
-	}
-}
-
-project(':MCU-Launcher') {
-	version = new Version(major: 1, minor: 0)
-	sourceCompatibility = 1.8
-
-	jar {
-		archiveName = "MCU-Launcher.jar"
-	}
-}
-
-project(':MCU-Server') {
-	version = sharedVersion
-	sourceCompatibility = 1.8
-
-	dependencies {
-		compile project(":MCU-API")
-		compile project(":MCU-DownloadLib")
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-cli:commons-cli:1.2'
-		compile 'org.apache.commons:commons-lang3:3.3.2'
-		compile 'com.google.guava:guava:18.0'
-        compile 'jline:jline:2.12.1'
-	}
-	jar {
-		baseName = 'MCU-Server'
-		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-		manifest {
-			attributes "Main-Class": 'org.mcupdater.MCUServer'
-		}
-	}
-}
-
-project(':QuickServer') {
-	version = sharedVersion
-	sourceCompatibility = 1.8
-
-	dependencies {
-		compile project(":MCU-API")
-		compile project(":MCU-DownloadLib")
-		compile 'net.sf.jopt-simple:jopt-simple:4.6'
-		compile 'commons-cli:commons-cli:1.2'
-		compile 'org.apache.commons:commons-lang3:3.3.2'
-		compile 'com.google.guava:guava:18.0'
-        compile 'com.google.code.gson:gson:2.2.4'
-	}
-	jar {
-		baseName = 'QuickServer'
-		from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-		manifest {
-			attributes "Main-Class": 'org.mcupdater.QuickServer'
-		}
-	}
-}
-
-project(':MCU-ForgeLoader') {
-	version = new Version(major: 1, minor: 0)
-	sourceCompatibility = 1.8
-
-	dependencies {
-		compile files('libs/ForgeInstaller.jar')
-	}
-	jar {
-		archiveName = "MCU-ForgeLoader.jar"
-	}
-}
-
-project(':MCU-ForgeLoaderV2') {
-	version = new Version(major: 1, minor: 0)
-	sourceCompatibility = 1.8
-
-	dependencies {
-		compile files('libs/ForgeInstaller.jar')
-	}
-	jar {
-		archiveName = "MCU-ForgeLoaderV2.jar"
-	}
-}
-
-project(':MCU-LegacyForgeLoader') {
-	version = new Version(major: 1, minor: 0)
-	sourceCompatibility = 1.7
-
-	dependencies {
-		compile files('libs/ForgeInstaller.jar')
-	}
-	jar {
-		archiveName = "MCU-LegacyForgeLoader.jar"
-	}
+    doLast {
+        subprojects {subprj->
+            def allDeps = []
+            def sources = ['runtime', 'compile', 'providedRuntime', 'providedCompile']
+            subprj.configurations.asMap.each {k, v->
+                if (k in sources) {
+                    allDeps.addAll v.allDependencies
+                }
+            }
+            copy{
+                from allDeps.collect { dep->
+                    if (!(dep instanceof ProjectDependency)) {//exclude project deps
+                        //noinspection GroovyAssignabilityCheck
+                        def files =  subprj.configurations.compile.files (dep)
+                        files.collect { f->
+                            f.path
+                        }
+                    } else {
+                        []
+                    }
+                }
+                into "${rootProject.projectDir}/copy"
+            }
+        }
+    }
 }
