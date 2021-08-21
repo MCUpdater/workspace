@@ -5,6 +5,7 @@ MCU-Bootstrap
 MCU-CLI
 MCU-DownloadLib
 MCU-ForgeLoader
+MCU-ForgeLoaderV2
 MCU-Launcher
 MCU-LegacyForgeLoader
 MCU-Server

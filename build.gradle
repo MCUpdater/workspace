@@ -3,7 +3,7 @@ import org.apache.tools.ant.filters.*
 def sharedVersion = new Version(major: 3, minor: 4, buildNum: 19)
 def downloadLibVersion = new Version(major: 1, minor: 13)
 def bootstrapVersion = new Version(major: 1, minor: 3)
-def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 9)
+def fastpackVersion = new Version(major: 1, minor: 7, buildNum: 10)
 
 buildscript {
 	repositories {
@@ -147,6 +147,13 @@ task cloneForgeLoader() {
 	setupRepo( destination, uri, branch )
 }
 
+task cloneForgeLoaderV2() {
+	def destination = file("MCU-ForgeLoader")
+	def uri = "https://github.com/MCUpdater/MCU-ForgeLoaderV2.git"
+	def branch = workspaceBranch
+	setupRepo( destination, uri, branch )
+}
+
 task cloneLegacyForgeLoader() {
 	def destination = file("MCU-LegacyForgeLoader")
 	def uri = "https://github.com/MCUpdater/MCU-LegacyForgeLoader.git"
@@ -276,6 +283,7 @@ project(':MCU-API') {
 		compile group: 'org.apache.derby', name: 'derby', version: '10.14.1.0'
 		compile group: 'org.apache.commons', name: 'commons-compress', version: '1.15'
 		compile 'org.hibernate:hibernate-core:5.1.10.Final'
+		compile 'org.xerial:sqlite-jdbc:3.32.3.2'
 
 		// jsoup HTML parser library @ https://jsoup.org/
 		compile 'org.jsoup:jsoup:1.12.1'
@@ -502,6 +510,18 @@ project(':MCU-ForgeLoader') {
 	}
 	jar {
 		archiveName = "MCU-ForgeLoader.jar"
+	}
+}
+
+project(':MCU-ForgeLoaderV2') {
+	version = new Version(major: 1, minor: 0)
+	sourceCompatibility = 1.8
+
+	dependencies {
+		compile files('libs/ForgeInstaller.jar')
+	}
+	jar {
+		archiveName = "MCU-ForgeLoaderV2.jar"
 	}
 }
 
