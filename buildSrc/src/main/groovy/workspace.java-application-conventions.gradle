@@ -11,5 +11,5 @@ plugins {
 }
 
 dependencies {
-    implementation 'net.sf.jopt-simple:jopt-simple:4.6'
+    implementation 'net.sf.jopt-simple:jopt-simple:6.0-alpha-3'
 }
