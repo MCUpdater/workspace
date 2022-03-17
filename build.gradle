@@ -1,7 +1,7 @@
-ext.sharedVersion = new Version(major: 4, minor: 0, buildNum: 0)
+ext.sharedVersion = new Version(major: 4, minor: 0, buildNum: 1)
 ext.downloadLibVersion = new Version(major: 1, minor: 14)
 ext.bootstrapVersion = new Version(major: 1, minor: 4)
-ext.fastpackVersion = new Version(major: 1, minor: 7, buildNum: 10)
+ext.fastpackVersion = new Version(major: 1, minor: 8, buildNum: 1)
 
 class Version {
     int major, minor, buildNum
