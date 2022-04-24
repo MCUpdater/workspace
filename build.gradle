@@ -3,6 +3,18 @@ ext.downloadLibVersion = new Version(major: 1, minor: 14)
 ext.bootstrapVersion = new Version(major: 1, minor: 4)
 ext.fastpackVersion = new Version(major: 1, minor: 8, buildNum: 1)
 
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies { classpath "org.ajoberstar.grgit:grgit-gradle:4.1.0" }
+}
+
+apply plugin: 'org.ajoberstar.grgit'
+
 class Version {
     int major, minor, buildNum
 
@@ -56,3 +68,131 @@ task copyDeps {
         }
     }
 }
+
+// ---------- workspace setup ---------- //
+
+def workspaceGit = grgit.open(currentDir: project.rootDir)
+def workspaceBranch = workspaceGit.branch.current().getName()
+if (workspaceBranch == "HEAD") {
+    println "Detected detatched git state, looking for actual branch name..."
+    if (System.env["TRAVIS_BRANCH"] != null) {
+        workspaceBranch = System.env["TRAVIS_BRANCH"]
+        println "Using git branch ${workspaceBranch} from travis-ci environment..."
+    } else {
+        workspaceBranch = "master"
+        println "Falling back to git branch ${workspaceBranch}..."
+    }
+}
+
+ext.setupRepo = { destination, uri, branch ->
+    if (!destination.exists()) {
+        println "Cloning new repo for ${destination} @ ${branch}..."
+        grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
+    } else {
+        def repo = grgit.open(dir: destination)
+        if( repo.branch.current().getName() != branch ) {
+            println "Detected incorrect branch for ${destination}, checking out ${branch}..."
+            try {
+                repo.checkout(branch: branch)
+            } catch (Exception e) {
+                repo.fetch(remote: "origin")
+                repo.checkout(branch: branch, createBranch: true, startPoint: "origin/${branch}")
+            }
+            repo.pull()
+        }
+    }
+}
+
+task setupWorkspace {
+    doLast {
+        println 'Workspace ready'
+    }
+}
+setupWorkspace.dependsOn {
+    tasks.findAll { task -> task.name.startsWith('clone') }
+}
+
+task cloneAPI() {
+    def destination = file("MCU-API")
+    def uri = "https://github.com/MCUpdater/MCU-API.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneDownloadLib() {
+    def destination = file("MCU-DownloadLib")
+    def uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneBootstrap() {
+    def destination = file("MCU-Bootstrap")
+    def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneGUISwing() {
+    def destination = file("GUI-Swing")
+    def uri = "https://github.com/MCUpdater/GUI-Swing.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneCLI() {
+    def destination = file("MCU-CLI")
+    def uri = "https://github.com/MCUpdater/MCU-CLI.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneFastPack() {
+    def destination = file("FastPack")
+    def uri = "https://github.com/MCUpdater/FastPack.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task clonePackBuilder() {
+    def destination = file("PackBuilder")
+    def uri = "https://github.com/MCUpdater/PackBuilder.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneLauncher() {
+    def destination = file("MCU-Launcher")
+    def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneServer() {
+    def destination = file("MCU-Server")
+    def uri = "https://github.com/MCUpdater/MCU-Server.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneQuickServer() {
+    def destination = file("QuickServer")
+    def uri = "https://github.com/MCUpdater/QuickServer.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneForgeLoader() {
+    def destination = file("MCU-ForgeLoader")
+    def uri = "https://github.com/MCUpdater/MCU-ForgeLoader.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneLegacyForgeLoader() {
+    def destination = file("MCU-LegacyForgeLoader")
+    def uri = "https://github.com/MCUpdater/MCU-LegacyForgeLoader.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
