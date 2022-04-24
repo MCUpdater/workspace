@@ -133,9 +133,9 @@ task cloneBootstrap() {
     setupRepo( destination, uri, branch )
 }
 
-task cloneGUISwing() {
-    def destination = file("GUI-Swing")
-    def uri = "https://github.com/MCUpdater/GUI-Swing.git"
+task cloneGUIJavaFX() {
+    def destination = file("GUI-JavaFX")
+    def uri = "https://github.com/MCUpdater/GUI-JavaFX.git"
     def branch = workspaceBranch
     setupRepo( destination, uri, branch )
 }
@@ -185,6 +185,13 @@ task cloneQuickServer() {
 task cloneForgeLoader() {
     def destination = file("MCU-ForgeLoader")
     def uri = "https://github.com/MCUpdater/MCU-ForgeLoader.git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+
+task cloneForgeLoaderV2() {
+    def destination = file("MCU-ForgeLoaderV2")
+    def uri = "https://github.com/MCUpdater/MCU-ForgeLoaderV2.git"
     def branch = workspaceBranch
     setupRepo( destination, uri, branch )
 }
