@@ -109,97 +109,26 @@ task setupWorkspace {
     }
 }
 setupWorkspace.dependsOn {
-    tasks.findAll { task -> task.name.startsWith('clone') }
+    //tasks.findAll { task -> task.name.startsWith('clone') }
+    cloneAllDeps
 }
 
-task cloneAPI() {
-    def destination = file("MCU-API")
-    def uri = "https://github.com/MCUpdater/MCU-API.git"
+ext.cloneDep = { projectName ->
+    def destination = file(projectName)
+    def uri = "https://github.com/MCUpdater/"+projectName+".git"
     def branch = workspaceBranch
     setupRepo( destination, uri, branch )
 }
+task cloneAllDeps {
+    def projects = ["MCU-API", "MCU-DownloadLib", "MCU-Bootstrap", "GUI-JavaFX", "MCU-CLI", "FastPack", "PackBuilder", "MCU-Launcher", "MCU-Server", "QuickServer"]
+    def loaders = ["MCU-ForgeLoader", "MCU-ForgeLoaderV2", "MCU-LegacyForgeLoader"]
 
-task cloneDownloadLib() {
-    def destination = file("MCU-DownloadLib")
-    def uri = "https://github.com/MCUpdater/MCU-DownloadLib.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
+    for (project in projects) {
+        cloneDep(project)
+    }
+    for (project in loaders) {
+        cloneDep(project)
+        // make sure that we have our forge installer jars in place
+        assert file( project+"/libs/ForgeInstaller.jar" ).exists()
+    }
 }
-
-task cloneBootstrap() {
-    def destination = file("MCU-Bootstrap")
-    def uri = "https://github.com/MCUpdater/MCU-Bootstrap.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneGUIJavaFX() {
-    def destination = file("GUI-JavaFX")
-    def uri = "https://github.com/MCUpdater/GUI-JavaFX.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneCLI() {
-    def destination = file("MCU-CLI")
-    def uri = "https://github.com/MCUpdater/MCU-CLI.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneFastPack() {
-    def destination = file("FastPack")
-    def uri = "https://github.com/MCUpdater/FastPack.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task clonePackBuilder() {
-    def destination = file("PackBuilder")
-    def uri = "https://github.com/MCUpdater/PackBuilder.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneLauncher() {
-    def destination = file("MCU-Launcher")
-    def uri = "https://github.com/MCUpdater/MCU-Launcher.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneServer() {
-    def destination = file("MCU-Server")
-    def uri = "https://github.com/MCUpdater/MCU-Server.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneQuickServer() {
-    def destination = file("QuickServer")
-    def uri = "https://github.com/MCUpdater/QuickServer.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneForgeLoader() {
-    def destination = file("MCU-ForgeLoader")
-    def uri = "https://github.com/MCUpdater/MCU-ForgeLoader.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneForgeLoaderV2() {
-    def destination = file("MCU-ForgeLoaderV2")
-    def uri = "https://github.com/MCUpdater/MCU-ForgeLoaderV2.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
-task cloneLegacyForgeLoader() {
-    def destination = file("MCU-LegacyForgeLoader")
-    def uri = "https://github.com/MCUpdater/MCU-LegacyForgeLoader.git"
-    def branch = workspaceBranch
-    setupRepo( destination, uri, branch )
-}
-
