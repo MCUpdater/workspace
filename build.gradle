@@ -3,6 +3,18 @@ ext.downloadLibVersion = new Version(major: 1, minor: 14)
 ext.bootstrapVersion = new Version(major: 1, minor: 4)
 ext.fastpackVersion = new Version(major: 1, minor: 8, buildNum: 1)
 
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies { classpath "org.ajoberstar.grgit:grgit-gradle:4.1.0" }
+}
+
+apply plugin: 'org.ajoberstar.grgit'
+
 class Version {
     int major, minor, buildNum
 
@@ -54,5 +66,69 @@ task copyDeps {
                 into "${rootProject.projectDir}/copy"
             }
         }
+    }
+}
+
+// ---------- workspace setup ---------- //
+
+def workspaceGit = grgit.open(currentDir: project.rootDir)
+def workspaceBranch = workspaceGit.branch.current().getName()
+if (workspaceBranch == "HEAD") {
+    println "Detected detatched git state, looking for actual branch name..."
+    if (System.env["TRAVIS_BRANCH"] != null) {
+        workspaceBranch = System.env["TRAVIS_BRANCH"]
+        println "Using git branch ${workspaceBranch} from travis-ci environment..."
+    } else {
+        workspaceBranch = "master"
+        println "Falling back to git branch ${workspaceBranch}..."
+    }
+}
+
+ext.setupRepo = { destination, uri, branch ->
+    if (!destination.exists()) {
+        println "Cloning new repo for ${destination} @ ${branch}..."
+        grgit.clone(dir: destination, uri: uri, refToCheckout: branch)
+    } else {
+        def repo = grgit.open(dir: destination)
+        if( repo.branch.current().getName() != branch ) {
+            println "Detected incorrect branch for ${destination}, checking out ${branch}..."
+            try {
+                repo.checkout(branch: branch)
+            } catch (Exception e) {
+                repo.fetch(remote: "origin")
+                repo.checkout(branch: branch, createBranch: true, startPoint: "origin/${branch}")
+            }
+            repo.pull()
+        }
+    }
+}
+
+task setupWorkspace {
+    doLast {
+        println 'Workspace ready'
+    }
+}
+setupWorkspace.dependsOn {
+    //tasks.findAll { task -> task.name.startsWith('clone') }
+    cloneAllDeps
+}
+
+ext.cloneDep = { projectName ->
+    def destination = file(projectName)
+    def uri = "https://github.com/MCUpdater/"+projectName+".git"
+    def branch = workspaceBranch
+    setupRepo( destination, uri, branch )
+}
+task cloneAllDeps {
+    def projects = ["MCU-API", "MCU-DownloadLib", "MCU-Bootstrap", "GUI-JavaFX", "MCU-CLI", "FastPack", "PackBuilder", "MCU-Launcher", "MCU-Server", "QuickServer"]
+    def loaders = ["MCU-ForgeLoader", "MCU-ForgeLoaderV2", "MCU-LegacyForgeLoader"]
+
+    for (project in projects) {
+        cloneDep(project)
+    }
+    for (project in loaders) {
+        cloneDep(project)
+        // make sure that we have our forge installer jars in place
+        assert file( project+"/libs/ForgeInstaller.jar" ).exists()
     }
 }
